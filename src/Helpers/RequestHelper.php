@@ -1,6 +1,6 @@
 <?php
 
-namespace Kaweb\FixfloClient\Helpers;
+namespace Kaweb\Phixfly\Helpers;
 
 
 class RequestHelper

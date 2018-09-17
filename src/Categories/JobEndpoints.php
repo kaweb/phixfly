@@ -1,10 +1,10 @@
 <?php
 
-namespace Kaweb\FixfloClient\Categories;
+namespace Kaweb\Phixfly\Categories;
 
 
-use Kaweb\FixfloClient\Helpers\RequestHelper;
-use Kaweb\FixfloClient\Models\JobModel;
+use Kaweb\Phixfly\Helpers\RequestHelper;
+use Kaweb\Phixfly\Models\JobModel;
 
 class JobEndpoints
 {

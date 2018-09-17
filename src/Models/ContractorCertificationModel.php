@@ -1,6 +1,6 @@
 <?php
 
-namespace Kaweb\FixfloClient\Models;
+namespace Kaweb\Phixfly\Models;
 
 class ContractorCertificationModel
 {

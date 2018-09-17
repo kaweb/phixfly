@@ -1,23 +1,23 @@
 <?php
 
-namespace Kaweb\FixfloClient;
+namespace Kaweb\Phixfly;
 
-use Kaweb\FixfloClient\Categories\AgencyEndpoints;
-use Kaweb\FixfloClient\Categories\AgentEndpoints;
-use Kaweb\FixfloClient\Categories\BlockEndpoints;
-use Kaweb\FixfloClient\Categories\ContractorEndpoints;
-use Kaweb\FixfloClient\Categories\EstatesEndpoints;
-use Kaweb\FixfloClient\Categories\IssueDraftEndpoints;
-use Kaweb\FixfloClient\Categories\IssueEndpoints;
-use Kaweb\FixfloClient\Categories\JobEndpoints;
-use Kaweb\FixfloClient\Categories\LandlordEndpoints;
-use Kaweb\FixfloClient\Categories\LandlordPropertyEndpoints;
-use Kaweb\FixfloClient\Categories\LeaseholderEndpoints;
-use Kaweb\FixfloClient\Categories\PropertyEndpoints;
-use Kaweb\FixfloClient\Categories\QuickViewPanelEndpoints;
-use Kaweb\FixfloClient\Categories\TenantEndpoints;
-use Kaweb\FixfloClient\Categories\WebhooksEndpoints;
-use Kaweb\FixfloClient\Helpers\RequestHelper;
+use Kaweb\Phixfly\Categories\AgencyEndpoints;
+use Kaweb\Phixfly\Categories\AgentEndpoints;
+use Kaweb\Phixfly\Categories\BlockEndpoints;
+use Kaweb\Phixfly\Categories\ContractorEndpoints;
+use Kaweb\Phixfly\Categories\EstatesEndpoints;
+use Kaweb\Phixfly\Categories\IssueDraftEndpoints;
+use Kaweb\Phixfly\Categories\IssueEndpoints;
+use Kaweb\Phixfly\Categories\JobEndpoints;
+use Kaweb\Phixfly\Categories\LandlordEndpoints;
+use Kaweb\Phixfly\Categories\LandlordPropertyEndpoints;
+use Kaweb\Phixfly\Categories\LeaseholderEndpoints;
+use Kaweb\Phixfly\Categories\PropertyEndpoints;
+use Kaweb\Phixfly\Categories\QuickViewPanelEndpoints;
+use Kaweb\Phixfly\Categories\TenantEndpoints;
+use Kaweb\Phixfly\Categories\WebhooksEndpoints;
+use Kaweb\Phixfly\Helpers\RequestHelper;
 
 class Client
 {
@@ -27,13 +27,13 @@ class Client
     protected $requestHelper;
 
     /**
-     * Create a FixfloClient
+     * Create a Phixfly
      *
      * @param string $subdomain
      * @param string $authToken
      * @return Client
      */
-    public static function create(string $subdomain, string $authToken) : Client
+    public static function create($subdomain, $authToken)
     {
         return new self(new RequestHelper($subdomain, $authToken));
     }
