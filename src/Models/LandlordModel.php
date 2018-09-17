@@ -105,7 +105,7 @@ class LandlordModel
      * @param AssignedAgentModel $assignedAgent
      * @param AddressModel $address
      */
-    public function __construct(string $id, string $externalRef, string $companyName, string $title, string $firstName, string $surname, string $emailAddress, string $contactNumber, string $contactNumberAlt, string $displayName, int $worksAuthorisationLimit, string $emailCC, bool $isDeleted, \DateTime $updateDate, AssignedAgentModel $assignedAgent, AddressModel $address)
+    public function __construct($id, $externalRef, $companyName, $title, $firstName, $surname, $emailAddress, $contactNumber, $contactNumberAlt, $displayName, $worksAuthorisationLimit, $emailCC, $isDeleted, \DateTime $updateDate, AssignedAgentModel $assignedAgent, AddressModel $address)
     {
         $this->id = $id;
         $this->externalRef = $externalRef;
@@ -128,7 +128,7 @@ class LandlordModel
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId()
     {
         return $this->id;
     }
@@ -136,7 +136,7 @@ class LandlordModel
     /**
      * @param string $id
      */
-    public function setId(string $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -144,7 +144,7 @@ class LandlordModel
     /**
      * @return string
      */
-    public function getExternalRef(): string
+    public function getExternalRef()
     {
         return $this->externalRef;
     }
@@ -152,7 +152,7 @@ class LandlordModel
     /**
      * @param string $externalRef
      */
-    public function setExternalRef(string $externalRef)
+    public function setExternalRef($externalRef)
     {
         $this->externalRef = $externalRef;
     }
@@ -160,7 +160,7 @@ class LandlordModel
     /**
      * @return string
      */
-    public function getCompanyName(): string
+    public function getCompanyName()
     {
         return $this->companyName;
     }
@@ -168,7 +168,7 @@ class LandlordModel
     /**
      * @param string $companyName
      */
-    public function setCompanyName(string $companyName)
+    public function setCompanyName($companyName)
     {
         $this->companyName = $companyName;
     }
@@ -176,7 +176,7 @@ class LandlordModel
     /**
      * @return string
      */
-    public function getTitle(): string
+    public function getTitle()
     {
         return $this->title;
     }
@@ -184,7 +184,7 @@ class LandlordModel
     /**
      * @param string $title
      */
-    public function setTitle(string $title)
+    public function setTitle($title)
     {
         $this->title = $title;
     }
@@ -192,7 +192,7 @@ class LandlordModel
     /**
      * @return string
      */
-    public function getFirstName(): string
+    public function getFirstName()
     {
         return $this->firstName;
     }
@@ -200,7 +200,7 @@ class LandlordModel
     /**
      * @param string $firstName
      */
-    public function setFirstName(string $firstName)
+    public function setFirstName($firstName)
     {
         $this->firstName = $firstName;
     }
@@ -208,7 +208,7 @@ class LandlordModel
     /**
      * @return string
      */
-    public function getSurname(): string
+    public function getSurname()
     {
         return $this->surname;
     }
@@ -216,7 +216,7 @@ class LandlordModel
     /**
      * @param string $surname
      */
-    public function setSurname(string $surname)
+    public function setSurname($surname)
     {
         $this->surname = $surname;
     }
@@ -224,7 +224,7 @@ class LandlordModel
     /**
      * @return string
      */
-    public function getEmailAddress(): string
+    public function getEmailAddress()
     {
         return $this->emailAddress;
     }
@@ -232,7 +232,7 @@ class LandlordModel
     /**
      * @param string $emailAddress
      */
-    public function setEmailAddress(string $emailAddress)
+    public function setEmailAddress($emailAddress)
     {
         $this->emailAddress = $emailAddress;
     }
@@ -240,7 +240,7 @@ class LandlordModel
     /**
      * @return string
      */
-    public function getContactNumber(): string
+    public function getContactNumber()
     {
         return $this->contactNumber;
     }
@@ -248,7 +248,7 @@ class LandlordModel
     /**
      * @param string $contactNumber
      */
-    public function setContactNumber(string $contactNumber)
+    public function setContactNumber($contactNumber)
     {
         $this->contactNumber = $contactNumber;
     }
@@ -256,7 +256,7 @@ class LandlordModel
     /**
      * @return string
      */
-    public function getContactNumberAlt(): string
+    public function getContactNumberAlt()
     {
         return $this->contactNumberAlt;
     }
@@ -264,7 +264,7 @@ class LandlordModel
     /**
      * @param string $contactNumberAlt
      */
-    public function setContactNumberAlt(string $contactNumberAlt)
+    public function setContactNumberAlt($contactNumberAlt)
     {
         $this->contactNumberAlt = $contactNumberAlt;
     }
@@ -272,7 +272,7 @@ class LandlordModel
     /**
      * @return string
      */
-    public function getDisplayName(): string
+    public function getDisplayName()
     {
         return $this->displayName;
     }
@@ -280,7 +280,7 @@ class LandlordModel
     /**
      * @param string $displayName
      */
-    public function setDisplayName(string $displayName)
+    public function setDisplayName($displayName)
     {
         $this->displayName = $displayName;
     }
@@ -288,7 +288,7 @@ class LandlordModel
     /**
      * @return int
      */
-    public function getWorksAuthorisationLimit(): int
+    public function getWorksAuthorisationLimit()
     {
         return $this->worksAuthorisationLimit;
     }
@@ -296,7 +296,7 @@ class LandlordModel
     /**
      * @param int $worksAuthorisationLimit
      */
-    public function setWorksAuthorisationLimit(int $worksAuthorisationLimit)
+    public function setWorksAuthorisationLimit($worksAuthorisationLimit)
     {
         $this->worksAuthorisationLimit = $worksAuthorisationLimit;
     }
@@ -304,7 +304,7 @@ class LandlordModel
     /**
      * @return string
      */
-    public function getEmailCC(): string
+    public function getEmailCC()
     {
         return $this->emailCC;
     }
@@ -312,7 +312,7 @@ class LandlordModel
     /**
      * @param string $emailCC
      */
-    public function setEmailCC(string $emailCC)
+    public function setEmailCC($emailCC)
     {
         $this->emailCC = $emailCC;
     }
@@ -320,7 +320,7 @@ class LandlordModel
     /**
      * @return bool
      */
-    public function isDeleted(): bool
+    public function isDeleted()
     {
         return $this->isDeleted;
     }
@@ -328,7 +328,7 @@ class LandlordModel
     /**
      * @param bool $isDeleted
      */
-    public function setIsDeleted(bool $isDeleted)
+    public function setIsDeleted($isDeleted)
     {
         $this->isDeleted = $isDeleted;
     }
@@ -336,7 +336,7 @@ class LandlordModel
     /**
      * @return \DateTime
      */
-    public function getUpdateDate(): \DateTime
+    public function getUpdateDate()
     {
         return $this->updateDate;
     }
@@ -352,7 +352,7 @@ class LandlordModel
     /**
      * @return AssignedAgentModel
      */
-    public function getAssignedAgent(): AssignedAgentModel
+    public function getAssignedAgent()
     {
         return $this->assignedAgent;
     }
@@ -368,7 +368,7 @@ class LandlordModel
     /**
      * @return AddressModel
      */
-    public function getAddress(): AddressModel
+    public function getAddress()
     {
         return $this->address;
     }

@@ -45,7 +45,7 @@ class IssueStatusSummaryModel
      * @param string $htmlColourHi
      * @param int $count
      */
-    public function __construct(int $statusId, string $status, string $label, string $htmlColour, string $htmlColourHi, int $count)
+    public function __construct($statusId, $status, $label, $htmlColour, $htmlColourHi, $count)
     {
         $this->statusId = $statusId;
         $this->status = $status;
@@ -58,7 +58,7 @@ class IssueStatusSummaryModel
     /**
      * @return int
      */
-    public function getStatusId(): int
+    public function getStatusId()
     {
         return $this->statusId;
     }
@@ -66,7 +66,7 @@ class IssueStatusSummaryModel
     /**
      * @param int $statusId
      */
-    public function setStatusId(int $statusId)
+    public function setStatusId($statusId)
     {
         $this->statusId = $statusId;
     }
@@ -74,7 +74,7 @@ class IssueStatusSummaryModel
     /**
      * @return string
      */
-    public function getStatus(): string
+    public function getStatus()
     {
         return $this->status;
     }
@@ -82,7 +82,7 @@ class IssueStatusSummaryModel
     /**
      * @param string $status
      */
-    public function setStatus(string $status)
+    public function setStatus($status)
     {
         $this->status = $status;
     }
@@ -90,7 +90,7 @@ class IssueStatusSummaryModel
     /**
      * @return string
      */
-    public function getLabel(): string
+    public function getLabel()
     {
         return $this->label;
     }
@@ -98,7 +98,7 @@ class IssueStatusSummaryModel
     /**
      * @param string $label
      */
-    public function setLabel(string $label)
+    public function setLabel($label)
     {
         $this->label = $label;
     }
@@ -106,7 +106,7 @@ class IssueStatusSummaryModel
     /**
      * @return string
      */
-    public function getHtmlColour(): string
+    public function getHtmlColour()
     {
         return $this->htmlColour;
     }
@@ -114,7 +114,7 @@ class IssueStatusSummaryModel
     /**
      * @param string $htmlColour
      */
-    public function setHtmlColour(string $htmlColour)
+    public function setHtmlColour($htmlColour)
     {
         $this->htmlColour = $htmlColour;
     }
@@ -122,7 +122,7 @@ class IssueStatusSummaryModel
     /**
      * @return string
      */
-    public function getHtmlColourHi(): string
+    public function getHtmlColourHi()
     {
         return $this->htmlColourHi;
     }
@@ -130,7 +130,7 @@ class IssueStatusSummaryModel
     /**
      * @param string $htmlColourHi
      */
-    public function setHtmlColourHi(string $htmlColourHi)
+    public function setHtmlColourHi($htmlColourHi)
     {
         $this->htmlColourHi = $htmlColourHi;
     }
@@ -138,7 +138,7 @@ class IssueStatusSummaryModel
     /**
      * @return int
      */
-    public function getCount(): int
+    public function getCount()
     {
         return $this->count;
     }
@@ -146,7 +146,7 @@ class IssueStatusSummaryModel
     /**
      * @param int $count
      */
-    public function setCount(int $count)
+    public function setCount($count)
     {
         $this->count = $count;
     }

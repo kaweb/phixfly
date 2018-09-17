@@ -45,7 +45,7 @@ class LandlordPropertyModel
      * @param \DateTime $dateTo
      * @param AddressModel $address
      */
-    public function __construct(int $id, string $landlordId, int $propertyId, \DateTime $dateFrom, \DateTime $dateTo, AddressModel $address)
+    public function __construct($id, $landlordId, $propertyId, \DateTime $dateFrom, \DateTime $dateTo, AddressModel $address)
     {
         $this->id = $id;
         $this->landlordId = $landlordId;
@@ -58,7 +58,7 @@ class LandlordPropertyModel
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
@@ -66,7 +66,7 @@ class LandlordPropertyModel
     /**
      * @param int $id
      */
-    public function setId(int $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -74,7 +74,7 @@ class LandlordPropertyModel
     /**
      * @return string
      */
-    public function getLandlordId(): string
+    public function getLandlordId()
     {
         return $this->landlordId;
     }
@@ -82,7 +82,7 @@ class LandlordPropertyModel
     /**
      * @param string $landlordId
      */
-    public function setLandlordId(string $landlordId)
+    public function setLandlordId($landlordId)
     {
         $this->landlordId = $landlordId;
     }
@@ -90,7 +90,7 @@ class LandlordPropertyModel
     /**
      * @return int
      */
-    public function getPropertyId(): int
+    public function getPropertyId()
     {
         return $this->propertyId;
     }
@@ -98,7 +98,7 @@ class LandlordPropertyModel
     /**
      * @param int $propertyId
      */
-    public function setPropertyId(int $propertyId)
+    public function setPropertyId($propertyId)
     {
         $this->propertyId = $propertyId;
     }
@@ -106,7 +106,7 @@ class LandlordPropertyModel
     /**
      * @return \DateTime
      */
-    public function getDateFrom(): \DateTime
+    public function getDateFrom()
     {
         return $this->dateFrom;
     }
@@ -122,7 +122,7 @@ class LandlordPropertyModel
     /**
      * @return \DateTime
      */
-    public function getDateTo(): \DateTime
+    public function getDateTo()
     {
         return $this->dateTo;
     }
@@ -138,7 +138,7 @@ class LandlordPropertyModel
     /**
      * @return AddressModel
      */
-    public function getAddress(): AddressModel
+    public function getAddress()
     {
         return $this->address;
     }

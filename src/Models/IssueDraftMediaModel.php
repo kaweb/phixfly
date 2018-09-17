@@ -45,7 +45,7 @@ class IssueDraftMediaModel
      * @param string $shortDesc
      * @param string $encodedByteData
      */
-    public function __construct(int $id, int $issueDraftId, string $url, string $contentType, string $shortDesc, string $encodedByteData)
+    public function __construct($id, $issueDraftId, $url, $contentType, $shortDesc, $encodedByteData)
     {
         $this->id = $id;
         $this->issueDraftId = $issueDraftId;
@@ -58,7 +58,7 @@ class IssueDraftMediaModel
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
@@ -66,7 +66,7 @@ class IssueDraftMediaModel
     /**
      * @param int $id
      */
-    public function setId(int $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -74,7 +74,7 @@ class IssueDraftMediaModel
     /**
      * @return int
      */
-    public function getIssueDraftId(): int
+    public function getIssueDraftId()
     {
         return $this->issueDraftId;
     }
@@ -82,7 +82,7 @@ class IssueDraftMediaModel
     /**
      * @param int $issueDraftId
      */
-    public function setIssueDraftId(int $issueDraftId)
+    public function setIssueDraftId($issueDraftId)
     {
         $this->issueDraftId = $issueDraftId;
     }
@@ -90,7 +90,7 @@ class IssueDraftMediaModel
     /**
      * @return string
      */
-    public function getUrl(): string
+    public function getUrl()
     {
         return $this->url;
     }
@@ -98,7 +98,7 @@ class IssueDraftMediaModel
     /**
      * @param string $url
      */
-    public function setUrl(string $url)
+    public function setUrl($url)
     {
         $this->url = $url;
     }
@@ -106,7 +106,7 @@ class IssueDraftMediaModel
     /**
      * @return string
      */
-    public function getContentType(): string
+    public function getContentType()
     {
         return $this->contentType;
     }
@@ -114,7 +114,7 @@ class IssueDraftMediaModel
     /**
      * @param string $contentType
      */
-    public function setContentType(string $contentType)
+    public function setContentType($contentType)
     {
         $this->contentType = $contentType;
     }
@@ -122,7 +122,7 @@ class IssueDraftMediaModel
     /**
      * @return string
      */
-    public function getShortDesc(): string
+    public function getShortDesc()
     {
         return $this->shortDesc;
     }
@@ -130,7 +130,7 @@ class IssueDraftMediaModel
     /**
      * @param string $shortDesc
      */
-    public function setShortDesc(string $shortDesc)
+    public function setShortDesc($shortDesc)
     {
         $this->shortDesc = $shortDesc;
     }

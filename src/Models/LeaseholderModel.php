@@ -91,8 +91,9 @@ class LeaseholderModel
      * @param string $emailCC
      * @param bool $isDeleted
      * @param \DateTime $updateDate
+     * @param AddressModel $address
      */
-    public function __construct(string $id, string $externalLeaseholderReference, string $companyName, string $title, string $firstName, string $surname, string $emailAddress, string $contactNumber, string $contactNumberAlt, string $displayName, string $emailCC, bool $isDeleted, \DateTime $updateDate, AddressModel $address)
+    public function __construct($id, $externalLeaseholderReference, $companyName, $title, $firstName, $surname, $emailAddress, $contactNumber, $contactNumberAlt, $displayName, $emailCC, $isDeleted, \DateTime $updateDate, AddressModel $address)
     {
         $this->id = $id;
         $this->externalLeaseholderReference = $externalLeaseholderReference;
@@ -113,7 +114,7 @@ class LeaseholderModel
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId()
     {
         return $this->id;
     }
@@ -121,7 +122,7 @@ class LeaseholderModel
     /**
      * @param string $id
      */
-    public function setId(string $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -129,7 +130,7 @@ class LeaseholderModel
     /**
      * @return string
      */
-    public function getExternalLeaseholderReference(): string
+    public function getExternalLeaseholderReference()
     {
         return $this->externalLeaseholderReference;
     }
@@ -137,7 +138,7 @@ class LeaseholderModel
     /**
      * @param string $externalLeaseholderReference
      */
-    public function setExternalLeaseholderReference(string $externalLeaseholderReference)
+    public function setExternalLeaseholderReference($externalLeaseholderReference)
     {
         $this->externalLeaseholderReference = $externalLeaseholderReference;
     }
@@ -145,7 +146,7 @@ class LeaseholderModel
     /**
      * @return string
      */
-    public function getCompanyName(): string
+    public function getCompanyName()
     {
         return $this->companyName;
     }
@@ -153,7 +154,7 @@ class LeaseholderModel
     /**
      * @param string $companyName
      */
-    public function setCompanyName(string $companyName)
+    public function setCompanyName($companyName)
     {
         $this->companyName = $companyName;
     }
@@ -161,7 +162,7 @@ class LeaseholderModel
     /**
      * @return string
      */
-    public function getTitle(): string
+    public function getTitle()
     {
         return $this->title;
     }
@@ -169,7 +170,7 @@ class LeaseholderModel
     /**
      * @param string $title
      */
-    public function setTitle(string $title)
+    public function setTitle($title)
     {
         $this->title = $title;
     }
@@ -177,7 +178,7 @@ class LeaseholderModel
     /**
      * @return string
      */
-    public function getFirstName(): string
+    public function getFirstName()
     {
         return $this->firstName;
     }
@@ -185,7 +186,7 @@ class LeaseholderModel
     /**
      * @param string $firstName
      */
-    public function setFirstName(string $firstName)
+    public function setFirstName($firstName)
     {
         $this->firstName = $firstName;
     }
@@ -193,7 +194,7 @@ class LeaseholderModel
     /**
      * @return string
      */
-    public function getSurname(): string
+    public function getSurname()
     {
         return $this->surname;
     }
@@ -201,7 +202,7 @@ class LeaseholderModel
     /**
      * @param string $surname
      */
-    public function setSurname(string $surname)
+    public function setSurname($surname)
     {
         $this->surname = $surname;
     }
@@ -209,7 +210,7 @@ class LeaseholderModel
     /**
      * @return string
      */
-    public function getEmailAddress(): string
+    public function getEmailAddress()
     {
         return $this->emailAddress;
     }
@@ -217,7 +218,7 @@ class LeaseholderModel
     /**
      * @param string $emailAddress
      */
-    public function setEmailAddress(string $emailAddress)
+    public function setEmailAddress($emailAddress)
     {
         $this->emailAddress = $emailAddress;
     }
@@ -225,7 +226,7 @@ class LeaseholderModel
     /**
      * @return string
      */
-    public function getContactNumber(): string
+    public function getContactNumber()
     {
         return $this->contactNumber;
     }
@@ -233,7 +234,7 @@ class LeaseholderModel
     /**
      * @param string $contactNumber
      */
-    public function setContactNumber(string $contactNumber)
+    public function setContactNumber($contactNumber)
     {
         $this->contactNumber = $contactNumber;
     }
@@ -241,7 +242,7 @@ class LeaseholderModel
     /**
      * @return string
      */
-    public function getContactNumberAlt(): string
+    public function getContactNumberAlt()
     {
         return $this->contactNumberAlt;
     }
@@ -249,7 +250,7 @@ class LeaseholderModel
     /**
      * @param string $contactNumberAlt
      */
-    public function setContactNumberAlt(string $contactNumberAlt)
+    public function setContactNumberAlt($contactNumberAlt)
     {
         $this->contactNumberAlt = $contactNumberAlt;
     }
@@ -257,7 +258,7 @@ class LeaseholderModel
     /**
      * @return string
      */
-    public function getDisplayName(): string
+    public function getDisplayName()
     {
         return $this->displayName;
     }
@@ -265,7 +266,7 @@ class LeaseholderModel
     /**
      * @param string $displayName
      */
-    public function setDisplayName(string $displayName)
+    public function setDisplayName($displayName)
     {
         $this->displayName = $displayName;
     }
@@ -273,7 +274,7 @@ class LeaseholderModel
     /**
      * @return string
      */
-    public function getEmailCC(): string
+    public function getEmailCC()
     {
         return $this->emailCC;
     }
@@ -281,7 +282,7 @@ class LeaseholderModel
     /**
      * @param string $emailCC
      */
-    public function setEmailCC(string $emailCC)
+    public function setEmailCC($emailCC)
     {
         $this->emailCC = $emailCC;
     }
@@ -289,7 +290,7 @@ class LeaseholderModel
     /**
      * @return bool
      */
-    public function isDeleted(): bool
+    public function isDeleted()
     {
         return $this->isDeleted;
     }
@@ -297,7 +298,7 @@ class LeaseholderModel
     /**
      * @param bool $isDeleted
      */
-    public function setIsDeleted(bool $isDeleted)
+    public function setIsDeleted($isDeleted)
     {
         $this->isDeleted = $isDeleted;
     }
@@ -305,7 +306,7 @@ class LeaseholderModel
     /**
      * @return \DateTime
      */
-    public function getUpdateDate(): \DateTime
+    public function getUpdateDate()
     {
         return $this->updateDate;
     }
@@ -321,7 +322,7 @@ class LeaseholderModel
     /**
      * @return AddressModel
      */
-    public function getAddress(): AddressModel
+    public function getAddress()
     {
         return $this->address;
     }

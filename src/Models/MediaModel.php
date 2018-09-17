@@ -45,7 +45,7 @@ class MediaModel
      * @param string $shortDesc
      * @param string $addedByUserTypeId
      */
-    public function __construct(string $url, string $contentType, string $mediaType, string $mediaTypeDescription, string $shortDesc, string $addedByUserTypeId)
+    public function __construct($url, $contentType, $mediaType, $mediaTypeDescription, $shortDesc, $addedByUserTypeId)
     {
         $this->url = $url;
         $this->contentType = $contentType;
@@ -58,7 +58,7 @@ class MediaModel
     /**
      * @return string
      */
-    public function getUrl(): string
+    public function getUrl()
     {
         return $this->url;
     }
@@ -66,7 +66,7 @@ class MediaModel
     /**
      * @param string $url
      */
-    public function setUrl(string $url)
+    public function setUrl($url)
     {
         $this->url = $url;
     }
@@ -74,7 +74,7 @@ class MediaModel
     /**
      * @return string
      */
-    public function getContentType(): string
+    public function getContentType()
     {
         return $this->contentType;
     }
@@ -82,7 +82,7 @@ class MediaModel
     /**
      * @param string $contentType
      */
-    public function setContentType(string $contentType)
+    public function setContentType($contentType)
     {
         $this->contentType = $contentType;
     }
@@ -90,7 +90,7 @@ class MediaModel
     /**
      * @return string
      */
-    public function getMediaType(): string
+    public function getMediaType()
     {
         return $this->mediaType;
     }
@@ -98,7 +98,7 @@ class MediaModel
     /**
      * @param string $mediaType
      */
-    public function setMediaType(string $mediaType)
+    public function setMediaType($mediaType)
     {
         $this->mediaType = $mediaType;
     }
@@ -106,7 +106,7 @@ class MediaModel
     /**
      * @return string
      */
-    public function getMediaTypeDescription(): string
+    public function getMediaTypeDescription()
     {
         return $this->mediaTypeDescription;
     }
@@ -114,7 +114,7 @@ class MediaModel
     /**
      * @param string $mediaTypeDescription
      */
-    public function setMediaTypeDescription(string $mediaTypeDescription)
+    public function setMediaTypeDescription($mediaTypeDescription)
     {
         $this->mediaTypeDescription = $mediaTypeDescription;
     }
@@ -122,7 +122,7 @@ class MediaModel
     /**
      * @return string
      */
-    public function getShortDesc(): string
+    public function getShortDesc()
     {
         return $this->shortDesc;
     }
@@ -130,7 +130,7 @@ class MediaModel
     /**
      * @param string $shortDesc
      */
-    public function setShortDesc(string $shortDesc)
+    public function setShortDesc($shortDesc)
     {
         $this->shortDesc = $shortDesc;
     }
@@ -138,7 +138,7 @@ class MediaModel
     /**
      * @return string
      */
-    public function getAddedByUserTypeId(): string
+    public function getAddedByUserTypeId()
     {
         return $this->addedByUserTypeId;
     }
@@ -146,7 +146,7 @@ class MediaModel
     /**
      * @param string $addedByUserTypeId
      */
-    public function setAddedByUserTypeId(string $addedByUserTypeId)
+    public function setAddedByUserTypeId($addedByUserTypeId)
     {
         $this->addedByUserTypeId = $addedByUserTypeId;
     }

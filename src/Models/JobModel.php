@@ -171,7 +171,7 @@ class JobModel
      * @param QuoteApprovalModel $insurerApproval
      * @param ContractorModel $contractor
      */
-    public function __construct(string $id, string $issueId, string $tenantNotes, string $jobberNotes, \DateTime $startDate, string $externalRefJob, string $priceAgencyPayableGross, string $priceAgencyPayableNet, string $priceAgencyPayableTax, string $priceAgencyReceivableTax, string $jobInvoiceNumber, string $quotedPriceAgencyPayableGross, string $quotedPriceAgencyPayableNet, string $quotedPriceAgencyPayableTax, string $quotedPriceAgencyReceivableGross, string $quotedPriceAgencyReceivableNet, string $quotedPriceAgencyReceivableTax, string $appointmentDescription, string $appointmentRange, \DateTime $createdDate, \DateTime $jobCompleted, string $jobDuration, bool $tenantAcceptedStartDate, bool $jobberAgreedWithTenantStartDate, QuoteApprovalModel $landlordApproval, QuoteApprovalModel $insurerApproval, ContractorModel $contractor)
+    public function __construct($id, $issueId, $tenantNotes, $jobberNotes, \DateTime $startDate, $externalRefJob, $priceAgencyPayableGross, $priceAgencyPayableNet, $priceAgencyPayableTax, $priceAgencyReceivableTax, $jobInvoiceNumber, $quotedPriceAgencyPayableGross, $quotedPriceAgencyPayableNet, $quotedPriceAgencyPayableTax, $quotedPriceAgencyReceivableGross, $quotedPriceAgencyReceivableNet, $quotedPriceAgencyReceivableTax, $appointmentDescription, $appointmentRange, \DateTime $createdDate, \DateTime $jobCompleted, $jobDuration, $tenantAcceptedStartDate, $jobberAgreedWithTenantStartDate, QuoteApprovalModel $landlordApproval, QuoteApprovalModel $insurerApproval, ContractorModel $contractor)
     {
         $this->id = $id;
         $this->issueId = $issueId;
@@ -205,7 +205,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId()
     {
         return $this->id;
     }
@@ -213,7 +213,7 @@ class JobModel
     /**
      * @param string $id
      */
-    public function setId(string $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -221,7 +221,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getIssueId(): string
+    public function getIssueId()
     {
         return $this->issueId;
     }
@@ -229,7 +229,7 @@ class JobModel
     /**
      * @param string $issueId
      */
-    public function setIssueId(string $issueId)
+    public function setIssueId($issueId)
     {
         $this->issueId = $issueId;
     }
@@ -237,7 +237,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getTenantNotes(): string
+    public function getTenantNotes()
     {
         return $this->tenantNotes;
     }
@@ -245,7 +245,7 @@ class JobModel
     /**
      * @param string $tenantNotes
      */
-    public function setTenantNotes(string $tenantNotes)
+    public function setTenantNotes($tenantNotes)
     {
         $this->tenantNotes = $tenantNotes;
     }
@@ -253,7 +253,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getJobberNotes(): string
+    public function getJobberNotes()
     {
         return $this->jobberNotes;
     }
@@ -261,7 +261,7 @@ class JobModel
     /**
      * @param string $jobberNotes
      */
-    public function setJobberNotes(string $jobberNotes)
+    public function setJobberNotes($jobberNotes)
     {
         $this->jobberNotes = $jobberNotes;
     }
@@ -269,7 +269,7 @@ class JobModel
     /**
      * @return \DateTime
      */
-    public function getStartDate(): \DateTime
+    public function getStartDate()
     {
         return $this->startDate;
     }
@@ -285,7 +285,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getExternalRefJob(): string
+    public function getExternalRefJob()
     {
         return $this->externalRefJob;
     }
@@ -293,7 +293,7 @@ class JobModel
     /**
      * @param string $externalRefJob
      */
-    public function setExternalRefJob(string $externalRefJob)
+    public function setExternalRefJob($externalRefJob)
     {
         $this->externalRefJob = $externalRefJob;
     }
@@ -301,7 +301,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getPriceAgencyPayableGross(): string
+    public function getPriceAgencyPayableGross()
     {
         return $this->priceAgencyPayableGross;
     }
@@ -309,7 +309,7 @@ class JobModel
     /**
      * @param string $priceAgencyPayableGross
      */
-    public function setPriceAgencyPayableGross(string $priceAgencyPayableGross)
+    public function setPriceAgencyPayableGross($priceAgencyPayableGross)
     {
         $this->priceAgencyPayableGross = $priceAgencyPayableGross;
     }
@@ -317,7 +317,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getPriceAgencyPayableNet(): string
+    public function getPriceAgencyPayableNet()
     {
         return $this->priceAgencyPayableNet;
     }
@@ -325,7 +325,7 @@ class JobModel
     /**
      * @param string $priceAgencyPayableNet
      */
-    public function setPriceAgencyPayableNet(string $priceAgencyPayableNet)
+    public function setPriceAgencyPayableNet($priceAgencyPayableNet)
     {
         $this->priceAgencyPayableNet = $priceAgencyPayableNet;
     }
@@ -333,7 +333,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getPriceAgencyPayableTax(): string
+    public function getPriceAgencyPayableTax()
     {
         return $this->priceAgencyPayableTax;
     }
@@ -341,7 +341,7 @@ class JobModel
     /**
      * @param string $priceAgencyPayableTax
      */
-    public function setPriceAgencyPayableTax(string $priceAgencyPayableTax)
+    public function setPriceAgencyPayableTax($priceAgencyPayableTax)
     {
         $this->priceAgencyPayableTax = $priceAgencyPayableTax;
     }
@@ -349,7 +349,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getPriceAgencyReceivableTax(): string
+    public function getPriceAgencyReceivableTax()
     {
         return $this->priceAgencyReceivableTax;
     }
@@ -357,7 +357,7 @@ class JobModel
     /**
      * @param string $priceAgencyReceivableTax
      */
-    public function setPriceAgencyReceivableTax(string $priceAgencyReceivableTax)
+    public function setPriceAgencyReceivableTax($priceAgencyReceivableTax)
     {
         $this->priceAgencyReceivableTax = $priceAgencyReceivableTax;
     }
@@ -365,7 +365,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getJobInvoiceNumber(): string
+    public function getJobInvoiceNumber()
     {
         return $this->jobInvoiceNumber;
     }
@@ -373,7 +373,7 @@ class JobModel
     /**
      * @param string $jobInvoiceNumber
      */
-    public function setJobInvoiceNumber(string $jobInvoiceNumber)
+    public function setJobInvoiceNumber($jobInvoiceNumber)
     {
         $this->jobInvoiceNumber = $jobInvoiceNumber;
     }
@@ -381,7 +381,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getQuotedPriceAgencyPayableGross(): string
+    public function getQuotedPriceAgencyPayableGross()
     {
         return $this->quotedPriceAgencyPayableGross;
     }
@@ -389,7 +389,7 @@ class JobModel
     /**
      * @param string $quotedPriceAgencyPayableGross
      */
-    public function setQuotedPriceAgencyPayableGross(string $quotedPriceAgencyPayableGross)
+    public function setQuotedPriceAgencyPayableGross($quotedPriceAgencyPayableGross)
     {
         $this->quotedPriceAgencyPayableGross = $quotedPriceAgencyPayableGross;
     }
@@ -397,7 +397,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getQuotedPriceAgencyPayableNet(): string
+    public function getQuotedPriceAgencyPayableNet()
     {
         return $this->quotedPriceAgencyPayableNet;
     }
@@ -405,7 +405,7 @@ class JobModel
     /**
      * @param string $quotedPriceAgencyPayableNet
      */
-    public function setQuotedPriceAgencyPayableNet(string $quotedPriceAgencyPayableNet)
+    public function setQuotedPriceAgencyPayableNet($quotedPriceAgencyPayableNet)
     {
         $this->quotedPriceAgencyPayableNet = $quotedPriceAgencyPayableNet;
     }
@@ -413,7 +413,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getQuotedPriceAgencyPayableTax(): string
+    public function getQuotedPriceAgencyPayableTax()
     {
         return $this->quotedPriceAgencyPayableTax;
     }
@@ -421,7 +421,7 @@ class JobModel
     /**
      * @param string $quotedPriceAgencyPayableTax
      */
-    public function setQuotedPriceAgencyPayableTax(string $quotedPriceAgencyPayableTax)
+    public function setQuotedPriceAgencyPayableTax($quotedPriceAgencyPayableTax)
     {
         $this->quotedPriceAgencyPayableTax = $quotedPriceAgencyPayableTax;
     }
@@ -429,7 +429,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getQuotedPriceAgencyReceivableGross(): string
+    public function getQuotedPriceAgencyReceivableGross()
     {
         return $this->quotedPriceAgencyReceivableGross;
     }
@@ -437,7 +437,7 @@ class JobModel
     /**
      * @param string $quotedPriceAgencyReceivableGross
      */
-    public function setQuotedPriceAgencyReceivableGross(string $quotedPriceAgencyReceivableGross)
+    public function setQuotedPriceAgencyReceivableGross($quotedPriceAgencyReceivableGross)
     {
         $this->quotedPriceAgencyReceivableGross = $quotedPriceAgencyReceivableGross;
     }
@@ -445,7 +445,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getQuotedPriceAgencyReceivableNet(): string
+    public function getQuotedPriceAgencyReceivableNet()
     {
         return $this->quotedPriceAgencyReceivableNet;
     }
@@ -453,7 +453,7 @@ class JobModel
     /**
      * @param string $quotedPriceAgencyReceivableNet
      */
-    public function setQuotedPriceAgencyReceivableNet(string $quotedPriceAgencyReceivableNet)
+    public function setQuotedPriceAgencyReceivableNet($quotedPriceAgencyReceivableNet)
     {
         $this->quotedPriceAgencyReceivableNet = $quotedPriceAgencyReceivableNet;
     }
@@ -461,7 +461,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getQuotedPriceAgencyReceivableTax(): string
+    public function getQuotedPriceAgencyReceivableTax()
     {
         return $this->quotedPriceAgencyReceivableTax;
     }
@@ -469,7 +469,7 @@ class JobModel
     /**
      * @param string $quotedPriceAgencyReceivableTax
      */
-    public function setQuotedPriceAgencyReceivableTax(string $quotedPriceAgencyReceivableTax)
+    public function setQuotedPriceAgencyReceivableTax($quotedPriceAgencyReceivableTax)
     {
         $this->quotedPriceAgencyReceivableTax = $quotedPriceAgencyReceivableTax;
     }
@@ -477,7 +477,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getAppointmentDescription(): string
+    public function getAppointmentDescription()
     {
         return $this->appointmentDescription;
     }
@@ -485,7 +485,7 @@ class JobModel
     /**
      * @param string $appointmentDescription
      */
-    public function setAppointmentDescription(string $appointmentDescription)
+    public function setAppointmentDescription($appointmentDescription)
     {
         $this->appointmentDescription = $appointmentDescription;
     }
@@ -493,7 +493,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getAppointmentRange(): string
+    public function getAppointmentRange()
     {
         return $this->appointmentRange;
     }
@@ -501,7 +501,7 @@ class JobModel
     /**
      * @param string $appointmentRange
      */
-    public function setAppointmentRange(string $appointmentRange)
+    public function setAppointmentRange($appointmentRange)
     {
         $this->appointmentRange = $appointmentRange;
     }
@@ -509,7 +509,7 @@ class JobModel
     /**
      * @return \DateTime
      */
-    public function getCreatedDate(): \DateTime
+    public function getCreatedDate()
     {
         return $this->createdDate;
     }
@@ -525,7 +525,7 @@ class JobModel
     /**
      * @return \DateTime
      */
-    public function getJobCompleted(): \DateTime
+    public function getJobCompleted()
     {
         return $this->jobCompleted;
     }
@@ -541,7 +541,7 @@ class JobModel
     /**
      * @return string
      */
-    public function getJobDuration(): string
+    public function getJobDuration()
     {
         return $this->jobDuration;
     }
@@ -549,7 +549,7 @@ class JobModel
     /**
      * @param string $jobDuration
      */
-    public function setJobDuration(string $jobDuration)
+    public function setJobDuration($jobDuration)
     {
         $this->jobDuration = $jobDuration;
     }
@@ -557,7 +557,7 @@ class JobModel
     /**
      * @return bool
      */
-    public function isTenantAcceptedStartDate(): bool
+    public function isTenantAcceptedStartDate()
     {
         return $this->tenantAcceptedStartDate;
     }
@@ -565,7 +565,7 @@ class JobModel
     /**
      * @param bool $tenantAcceptedStartDate
      */
-    public function setTenantAcceptedStartDate(bool $tenantAcceptedStartDate)
+    public function setTenantAcceptedStartDate($tenantAcceptedStartDate)
     {
         $this->tenantAcceptedStartDate = $tenantAcceptedStartDate;
     }
@@ -573,7 +573,7 @@ class JobModel
     /**
      * @return bool
      */
-    public function isJobberAgreedWithTenantStartDate(): bool
+    public function isJobberAgreedWithTenantStartDate()
     {
         return $this->jobberAgreedWithTenantStartDate;
     }
@@ -581,7 +581,7 @@ class JobModel
     /**
      * @param bool $jobberAgreedWithTenantStartDate
      */
-    public function setJobberAgreedWithTenantStartDate(bool $jobberAgreedWithTenantStartDate)
+    public function setJobberAgreedWithTenantStartDate($jobberAgreedWithTenantStartDate)
     {
         $this->jobberAgreedWithTenantStartDate = $jobberAgreedWithTenantStartDate;
     }
@@ -589,7 +589,7 @@ class JobModel
     /**
      * @return QuoteApprovalModel
      */
-    public function getLandlordApproval(): QuoteApprovalModel
+    public function getLandlordApproval()
     {
         return $this->landlordApproval;
     }
@@ -605,7 +605,7 @@ class JobModel
     /**
      * @return QuoteApprovalModel
      */
-    public function getInsurerApproval(): QuoteApprovalModel
+    public function getInsurerApproval()
     {
         return $this->insurerApproval;
     }
@@ -621,7 +621,7 @@ class JobModel
     /**
      * @return ContractorModel
      */
-    public function getContractor(): ContractorModel
+    public function getContractor()
     {
         return $this->contractor;
     }

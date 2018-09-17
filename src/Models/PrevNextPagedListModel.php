@@ -39,7 +39,7 @@ class PrevNextPagedListModel
      * @param int $totalItems
      * @param int $totalPages
      */
-    public function __construct(string $previousUrl, string $nextUrl, array $items, int $totalItems, int $totalPages)
+    public function __construct($previousUrl, $nextUrl, array $items, $totalItems, $totalPages)
     {
         $this->previousUrl = $previousUrl;
         $this->nextUrl = $nextUrl;
@@ -51,7 +51,7 @@ class PrevNextPagedListModel
     /**
      * @return string
      */
-    public function getPreviousUrl(): string
+    public function getPreviousUrl()
     {
         return $this->previousUrl;
     }
@@ -59,7 +59,7 @@ class PrevNextPagedListModel
     /**
      * @param string $previousUrl
      */
-    public function setPreviousUrl(string $previousUrl)
+    public function setPreviousUrl($previousUrl)
     {
         $this->previousUrl = $previousUrl;
     }
@@ -67,7 +67,7 @@ class PrevNextPagedListModel
     /**
      * @return string
      */
-    public function getNextUrl(): string
+    public function getNextUrl()
     {
         return $this->nextUrl;
     }
@@ -75,7 +75,7 @@ class PrevNextPagedListModel
     /**
      * @param string $nextUrl
      */
-    public function setNextUrl(string $nextUrl)
+    public function setNextUrl($nextUrl)
     {
         $this->nextUrl = $nextUrl;
     }
@@ -99,7 +99,7 @@ class PrevNextPagedListModel
     /**
      * @return int
      */
-    public function getTotalItems(): int
+    public function getTotalItems()
     {
         return $this->totalItems;
     }
@@ -107,7 +107,7 @@ class PrevNextPagedListModel
     /**
      * @param int $totalItems
      */
-    public function setTotalItems(int $totalItems)
+    public function setTotalItems($totalItems)
     {
         $this->totalItems = $totalItems;
     }
@@ -115,7 +115,7 @@ class PrevNextPagedListModel
     /**
      * @return int
      */
-    public function getTotalPages(): int
+    public function getTotalPages()
     {
         return $this->totalPages;
     }
@@ -123,7 +123,7 @@ class PrevNextPagedListModel
     /**
      * @param int $totalPages
      */
-    public function setTotalPages(int $totalPages)
+    public function setTotalPages($totalPages)
     {
         $this->totalPages = $totalPages;
     }

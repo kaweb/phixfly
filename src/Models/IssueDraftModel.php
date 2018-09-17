@@ -93,7 +93,7 @@ class IssueDraftModel
      * @param int $propertyId
      * @param string $externalPropertyRef
      */
-    public function __construct(int $id, \DateTime $updated, string $issueTitle, int $faultId, string $faultNotes, array $issueDraftMedia, string $title, string $firstName, string $surname, string $contactNumber, string $contactNumberAlt, AddressModel $address, int $propertyId, string $externalPropertyRef)
+    public function __construct($id, \DateTime $updated, $issueTitle, $faultId, $faultNotes, array $issueDraftMedia, $title, $firstName, $surname, $contactNumber, $contactNumberAlt, AddressModel $address, $propertyId, $externalPropertyRef)
     {
         $this->id = $id;
         $this->updated = $updated;
@@ -114,7 +114,7 @@ class IssueDraftModel
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
@@ -122,7 +122,7 @@ class IssueDraftModel
     /**
      * @param int $id
      */
-    public function setId(int $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -130,7 +130,7 @@ class IssueDraftModel
     /**
      * @return \DateTime
      */
-    public function getUpdated(): \DateTime
+    public function getUpdated()
     {
         return $this->updated;
     }
@@ -146,7 +146,7 @@ class IssueDraftModel
     /**
      * @return string
      */
-    public function getIssueTitle(): string
+    public function getIssueTitle()
     {
         return $this->issueTitle;
     }
@@ -154,7 +154,7 @@ class IssueDraftModel
     /**
      * @param string $issueTitle
      */
-    public function setIssueTitle(string $issueTitle)
+    public function setIssueTitle($issueTitle)
     {
         $this->issueTitle = $issueTitle;
     }
@@ -162,7 +162,7 @@ class IssueDraftModel
     /**
      * @return int
      */
-    public function getFaultId(): int
+    public function getFaultId()
     {
         return $this->faultId;
     }
@@ -170,7 +170,7 @@ class IssueDraftModel
     /**
      * @param int $faultId
      */
-    public function setFaultId(int $faultId)
+    public function setFaultId($faultId)
     {
         $this->faultId = $faultId;
     }
@@ -178,7 +178,7 @@ class IssueDraftModel
     /**
      * @return IssueDraftMediaModel[]
      */
-    public function getIssueDraftMedia(): array
+    public function getIssueDraftMedia()
     {
         return $this->issueDraftMedia;
     }
@@ -194,7 +194,7 @@ class IssueDraftModel
     /**
      * @return string
      */
-    public function getTitle(): string
+    public function getTitle()
     {
         return $this->title;
     }
@@ -202,7 +202,7 @@ class IssueDraftModel
     /**
      * @param string $title
      */
-    public function setTitle(string $title)
+    public function setTitle($title)
     {
         $this->title = $title;
     }
@@ -210,7 +210,7 @@ class IssueDraftModel
     /**
      * @return string
      */
-    public function getFirstName(): string
+    public function getFirstName()
     {
         return $this->firstName;
     }
@@ -218,7 +218,7 @@ class IssueDraftModel
     /**
      * @param string $firstName
      */
-    public function setFirstName(string $firstName)
+    public function setFirstName($firstName)
     {
         $this->firstName = $firstName;
     }
@@ -226,7 +226,7 @@ class IssueDraftModel
     /**
      * @return string
      */
-    public function getSurname(): string
+    public function getSurname()
     {
         return $this->surname;
     }
@@ -234,7 +234,7 @@ class IssueDraftModel
     /**
      * @param string $surname
      */
-    public function setSurname(string $surname)
+    public function setSurname($surname)
     {
         $this->surname = $surname;
     }
@@ -242,7 +242,7 @@ class IssueDraftModel
     /**
      * @return string
      */
-    public function getContactNumber(): string
+    public function getContactNumber()
     {
         return $this->contactNumber;
     }
@@ -250,7 +250,7 @@ class IssueDraftModel
     /**
      * @param string $contactNumber
      */
-    public function setContactNumber(string $contactNumber)
+    public function setContactNumber($contactNumber)
     {
         $this->contactNumber = $contactNumber;
     }
@@ -258,7 +258,7 @@ class IssueDraftModel
     /**
      * @return string
      */
-    public function getContactNumberAlt(): string
+    public function getContactNumberAlt()
     {
         return $this->contactNumberAlt;
     }
@@ -266,7 +266,7 @@ class IssueDraftModel
     /**
      * @param string $contactNumberAlt
      */
-    public function setContactNumberAlt(string $contactNumberAlt)
+    public function setContactNumberAlt($contactNumberAlt)
     {
         $this->contactNumberAlt = $contactNumberAlt;
     }
@@ -274,7 +274,7 @@ class IssueDraftModel
     /**
      * @return AddressModel
      */
-    public function getAddress(): AddressModel
+    public function getAddress()
     {
         return $this->address;
     }
@@ -290,7 +290,7 @@ class IssueDraftModel
     /**
      * @return int
      */
-    public function getPropertyId(): int
+    public function getPropertyId()
     {
         return $this->propertyId;
     }
@@ -298,7 +298,7 @@ class IssueDraftModel
     /**
      * @param int $propertyId
      */
-    public function setPropertyId(int $propertyId)
+    public function setPropertyId($propertyId)
     {
         $this->propertyId = $propertyId;
     }
@@ -306,7 +306,7 @@ class IssueDraftModel
     /**
      * @return string
      */
-    public function getExternalPropertyRef(): string
+    public function getExternalPropertyRef()
     {
         return $this->externalPropertyRef;
     }
@@ -314,7 +314,7 @@ class IssueDraftModel
     /**
      * @param string $externalPropertyRef
      */
-    public function setExternalPropertyRef(string $externalPropertyRef)
+    public function setExternalPropertyRef($externalPropertyRef)
     {
         $this->externalPropertyRef = $externalPropertyRef;
     }

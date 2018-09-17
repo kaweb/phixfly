@@ -63,7 +63,7 @@ class LeaseholderPropertyModel
      * @param string $externalBlockRef
      * @param \DateTime $updateDate
      */
-    public function __construct(int $id, string $leaseHolderId, int $propertyId, \DateTime $dateFrom, \DateTime $dateTo, AddressModel $address, int $blockId, string $externalBlockRef, \DateTime $updateDate)
+    public function __construct($id, $leaseHolderId, $propertyId, \DateTime $dateFrom, \DateTime $dateTo, AddressModel $address, $blockId, $externalBlockRef, \DateTime $updateDate)
     {
         $this->id = $id;
         $this->leaseHolderId = $leaseHolderId;
@@ -79,7 +79,7 @@ class LeaseholderPropertyModel
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
@@ -87,7 +87,7 @@ class LeaseholderPropertyModel
     /**
      * @param int $id
      */
-    public function setId(int $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -95,7 +95,7 @@ class LeaseholderPropertyModel
     /**
      * @return string
      */
-    public function getLeaseHolderId(): string
+    public function getLeaseHolderId()
     {
         return $this->leaseHolderId;
     }
@@ -103,7 +103,7 @@ class LeaseholderPropertyModel
     /**
      * @param string $leaseHolderId
      */
-    public function setLeaseHolderId(string $leaseHolderId)
+    public function setLeaseHolderId($leaseHolderId)
     {
         $this->leaseHolderId = $leaseHolderId;
     }
@@ -111,7 +111,7 @@ class LeaseholderPropertyModel
     /**
      * @return int
      */
-    public function getPropertyId(): int
+    public function getPropertyId()
     {
         return $this->propertyId;
     }
@@ -119,7 +119,7 @@ class LeaseholderPropertyModel
     /**
      * @param int $propertyId
      */
-    public function setPropertyId(int $propertyId)
+    public function setPropertyId($propertyId)
     {
         $this->propertyId = $propertyId;
     }
@@ -127,7 +127,7 @@ class LeaseholderPropertyModel
     /**
      * @return \DateTime
      */
-    public function getDateFrom(): \DateTime
+    public function getDateFrom()
     {
         return $this->dateFrom;
     }
@@ -143,7 +143,7 @@ class LeaseholderPropertyModel
     /**
      * @return \DateTime
      */
-    public function getDateTo(): \DateTime
+    public function getDateTo()
     {
         return $this->dateTo;
     }
@@ -159,7 +159,7 @@ class LeaseholderPropertyModel
     /**
      * @return AddressModel
      */
-    public function getAddress(): AddressModel
+    public function getAddress()
     {
         return $this->address;
     }
@@ -175,7 +175,7 @@ class LeaseholderPropertyModel
     /**
      * @return int
      */
-    public function getBlockId(): int
+    public function getBlockId()
     {
         return $this->blockId;
     }
@@ -183,7 +183,7 @@ class LeaseholderPropertyModel
     /**
      * @param int $blockId
      */
-    public function setBlockId(int $blockId)
+    public function setBlockId($blockId)
     {
         $this->blockId = $blockId;
     }
@@ -191,7 +191,7 @@ class LeaseholderPropertyModel
     /**
      * @return string
      */
-    public function getExternalBlockRef(): string
+    public function getExternalBlockRef()
     {
         return $this->externalBlockRef;
     }
@@ -199,7 +199,7 @@ class LeaseholderPropertyModel
     /**
      * @param string $externalBlockRef
      */
-    public function setExternalBlockRef(string $externalBlockRef)
+    public function setExternalBlockRef($externalBlockRef)
     {
         $this->externalBlockRef = $externalBlockRef;
     }
@@ -207,7 +207,7 @@ class LeaseholderPropertyModel
     /**
      * @return \DateTime
      */
-    public function getUpdateDate(): \DateTime
+    public function getUpdateDate()
     {
         return $this->updateDate;
     }

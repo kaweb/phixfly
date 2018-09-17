@@ -39,7 +39,7 @@ class EnvelopeModel
      * @param string[] $messages
      * @param array $entity
      */
-    public function __construct(int $httpStatusCode, string $httpStatusCodeDesc, array $errors, array $messages, array $entity)
+    public function __construct($httpStatusCode, $httpStatusCodeDesc, array $errors, array $messages, array $entity)
     {
         $this->httpStatusCode = $httpStatusCode;
         $this->httpStatusCodeDesc = $httpStatusCodeDesc;
@@ -51,7 +51,7 @@ class EnvelopeModel
     /**
      * @return int
      */
-    public function getHttpStatusCode(): int
+    public function getHttpStatusCode()
     {
         return $this->httpStatusCode;
     }
@@ -59,7 +59,7 @@ class EnvelopeModel
     /**
      * @param int $httpStatusCode
      */
-    public function setHttpStatusCode(int $httpStatusCode)
+    public function setHttpStatusCode($httpStatusCode)
     {
         $this->httpStatusCode = $httpStatusCode;
     }
@@ -67,7 +67,7 @@ class EnvelopeModel
     /**
      * @return string
      */
-    public function getHttpStatusCodeDesc(): string
+    public function getHttpStatusCodeDesc()
     {
         return $this->httpStatusCodeDesc;
     }
@@ -75,7 +75,7 @@ class EnvelopeModel
     /**
      * @param string $httpStatusCodeDesc
      */
-    public function setHttpStatusCodeDesc(string $httpStatusCodeDesc)
+    public function setHttpStatusCodeDesc($httpStatusCodeDesc)
     {
         $this->httpStatusCodeDesc = $httpStatusCodeDesc;
     }
@@ -83,7 +83,7 @@ class EnvelopeModel
     /**
      * @return array
      */
-    public function getErrors(): array
+    public function getErrors()
     {
         return $this->errors;
     }
@@ -99,7 +99,7 @@ class EnvelopeModel
     /**
      * @return array
      */
-    public function getMessages(): array
+    public function getMessages()
     {
         return $this->messages;
     }
@@ -115,7 +115,7 @@ class EnvelopeModel
     /**
      * @return array
      */
-    public function getEntity(): array
+    public function getEntity()
     {
         return $this->entity;
     }

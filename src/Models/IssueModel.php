@@ -201,7 +201,7 @@ class IssueModel
      * @param \DateTime $quoteEndTime
      * @param \DateTime $attendanceDate
      */
-    public function __construct(string $id, string $tenantId, string $externalRefTenancyAgreement, string $title, string $faultTitle, string $faultCategory, array $additionalDetails, string $faultNotes, string $faultPriority, string $salutation, string $firstName, string $surname, string $emailAddress, array $media, string $tenantNotes, string $status, string $statusChanged, string $created, string $tenantPresenceRequested, string $tenantAcceptComplete, string $termsAccepted, string $callbackId, PropertyPostModel $property, BlockModel $block, JobModel $job, FaultTreeModel $faultTree, string $worksAuthorisationLimit, string $blockName, AssignedAgentModel $assignedAgent, array $quotes, \DateTime $quoteEndTime, \DateTime $attendanceDate)
+    public function __construct($id, $tenantId, $externalRefTenancyAgreement, $title, $faultTitle, $faultCategory, array $additionalDetails, $faultNotes, $faultPriority, $salutation, $firstName, $surname, $emailAddress, array $media, $tenantNotes, $status, $statusChanged, $created, $tenantPresenceRequested, $tenantAcceptComplete, $termsAccepted, $callbackId, PropertyPostModel $property, BlockModel $block, JobModel $job, FaultTreeModel $faultTree, $worksAuthorisationLimit, $blockName, AssignedAgentModel $assignedAgent, array $quotes, \DateTime $quoteEndTime, \DateTime $attendanceDate)
     {
         $this->id = $id;
         $this->tenantId = $tenantId;
@@ -240,7 +240,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId()
     {
         return $this->id;
     }
@@ -248,7 +248,7 @@ class IssueModel
     /**
      * @param string $id
      */
-    public function setId(string $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -256,7 +256,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getTenantId(): string
+    public function getTenantId()
     {
         return $this->tenantId;
     }
@@ -264,7 +264,7 @@ class IssueModel
     /**
      * @param string $tenantId
      */
-    public function setTenantId(string $tenantId)
+    public function setTenantId($tenantId)
     {
         $this->tenantId = $tenantId;
     }
@@ -272,7 +272,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getExternalRefTenancyAgreement(): string
+    public function getExternalRefTenancyAgreement()
     {
         return $this->externalRefTenancyAgreement;
     }
@@ -280,7 +280,7 @@ class IssueModel
     /**
      * @param string $externalRefTenancyAgreement
      */
-    public function setExternalRefTenancyAgreement(string $externalRefTenancyAgreement)
+    public function setExternalRefTenancyAgreement($externalRefTenancyAgreement)
     {
         $this->externalRefTenancyAgreement = $externalRefTenancyAgreement;
     }
@@ -288,7 +288,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getTitle(): string
+    public function getTitle()
     {
         return $this->title;
     }
@@ -296,7 +296,7 @@ class IssueModel
     /**
      * @param string $title
      */
-    public function setTitle(string $title)
+    public function setTitle($title)
     {
         $this->title = $title;
     }
@@ -304,7 +304,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getFaultTitle(): string
+    public function getFaultTitle()
     {
         return $this->faultTitle;
     }
@@ -312,7 +312,7 @@ class IssueModel
     /**
      * @param string $faultTitle
      */
-    public function setFaultTitle(string $faultTitle)
+    public function setFaultTitle($faultTitle)
     {
         $this->faultTitle = $faultTitle;
     }
@@ -320,7 +320,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getFaultCategory(): string
+    public function getFaultCategory()
     {
         return $this->faultCategory;
     }
@@ -328,7 +328,7 @@ class IssueModel
     /**
      * @param string $faultCategory
      */
-    public function setFaultCategory(string $faultCategory)
+    public function setFaultCategory($faultCategory)
     {
         $this->faultCategory = $faultCategory;
     }
@@ -336,7 +336,7 @@ class IssueModel
     /**
      * @return AdditionalDetailModel[]
      */
-    public function getAdditionalDetails(): array
+    public function getAdditionalDetails()
     {
         return $this->additionalDetails;
     }
@@ -352,7 +352,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getFaultNotes(): string
+    public function getFaultNotes()
     {
         return $this->faultNotes;
     }
@@ -360,7 +360,7 @@ class IssueModel
     /**
      * @param string $faultNotes
      */
-    public function setFaultNotes(string $faultNotes)
+    public function setFaultNotes($faultNotes)
     {
         $this->faultNotes = $faultNotes;
     }
@@ -368,7 +368,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getFaultPriority(): string
+    public function getFaultPriority()
     {
         return $this->faultPriority;
     }
@@ -376,7 +376,7 @@ class IssueModel
     /**
      * @param string $faultPriority
      */
-    public function setFaultPriority(string $faultPriority)
+    public function setFaultPriority($faultPriority)
     {
         $this->faultPriority = $faultPriority;
     }
@@ -384,7 +384,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getSalutation(): string
+    public function getSalutation()
     {
         return $this->salutation;
     }
@@ -392,7 +392,7 @@ class IssueModel
     /**
      * @param string $salutation
      */
-    public function setSalutation(string $salutation)
+    public function setSalutation($salutation)
     {
         $this->salutation = $salutation;
     }
@@ -400,7 +400,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getFirstName(): string
+    public function getFirstName()
     {
         return $this->firstName;
     }
@@ -408,7 +408,7 @@ class IssueModel
     /**
      * @param string $firstName
      */
-    public function setFirstName(string $firstName)
+    public function setFirstName($firstName)
     {
         $this->firstName = $firstName;
     }
@@ -416,7 +416,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getSurname(): string
+    public function getSurname()
     {
         return $this->surname;
     }
@@ -424,7 +424,7 @@ class IssueModel
     /**
      * @param string $surname
      */
-    public function setSurname(string $surname)
+    public function setSurname($surname)
     {
         $this->surname = $surname;
     }
@@ -432,7 +432,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getEmailAddress(): string
+    public function getEmailAddress()
     {
         return $this->emailAddress;
     }
@@ -440,7 +440,7 @@ class IssueModel
     /**
      * @param string $emailAddress
      */
-    public function setEmailAddress(string $emailAddress)
+    public function setEmailAddress($emailAddress)
     {
         $this->emailAddress = $emailAddress;
     }
@@ -448,7 +448,7 @@ class IssueModel
     /**
      * @return MediaModel[]
      */
-    public function getMedia(): array
+    public function getMedia()
     {
         return $this->media;
     }
@@ -464,7 +464,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getTenantNotes(): string
+    public function getTenantNotes()
     {
         return $this->tenantNotes;
     }
@@ -472,7 +472,7 @@ class IssueModel
     /**
      * @param string $tenantNotes
      */
-    public function setTenantNotes(string $tenantNotes)
+    public function setTenantNotes($tenantNotes)
     {
         $this->tenantNotes = $tenantNotes;
     }
@@ -480,7 +480,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getStatus(): string
+    public function getStatus()
     {
         return $this->status;
     }
@@ -488,7 +488,7 @@ class IssueModel
     /**
      * @param string $status
      */
-    public function setStatus(string $status)
+    public function setStatus($status)
     {
         $this->status = $status;
     }
@@ -496,7 +496,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getStatusChanged(): string
+    public function getStatusChanged()
     {
         return $this->statusChanged;
     }
@@ -504,7 +504,7 @@ class IssueModel
     /**
      * @param string $statusChanged
      */
-    public function setStatusChanged(string $statusChanged)
+    public function setStatusChanged($statusChanged)
     {
         $this->statusChanged = $statusChanged;
     }
@@ -512,7 +512,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getCreated(): string
+    public function getCreated()
     {
         return $this->created;
     }
@@ -520,7 +520,7 @@ class IssueModel
     /**
      * @param string $created
      */
-    public function setCreated(string $created)
+    public function setCreated($created)
     {
         $this->created = $created;
     }
@@ -528,7 +528,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getTenantPresenceRequested(): string
+    public function getTenantPresenceRequested()
     {
         return $this->tenantPresenceRequested;
     }
@@ -536,7 +536,7 @@ class IssueModel
     /**
      * @param string $tenantPresenceRequested
      */
-    public function setTenantPresenceRequested(string $tenantPresenceRequested)
+    public function setTenantPresenceRequested($tenantPresenceRequested)
     {
         $this->tenantPresenceRequested = $tenantPresenceRequested;
     }
@@ -544,7 +544,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getTenantAcceptComplete(): string
+    public function getTenantAcceptComplete()
     {
         return $this->tenantAcceptComplete;
     }
@@ -552,7 +552,7 @@ class IssueModel
     /**
      * @param string $tenantAcceptComplete
      */
-    public function setTenantAcceptComplete(string $tenantAcceptComplete)
+    public function setTenantAcceptComplete($tenantAcceptComplete)
     {
         $this->tenantAcceptComplete = $tenantAcceptComplete;
     }
@@ -560,7 +560,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getTermsAccepted(): string
+    public function getTermsAccepted()
     {
         return $this->termsAccepted;
     }
@@ -568,7 +568,7 @@ class IssueModel
     /**
      * @param string $termsAccepted
      */
-    public function setTermsAccepted(string $termsAccepted)
+    public function setTermsAccepted($termsAccepted)
     {
         $this->termsAccepted = $termsAccepted;
     }
@@ -576,7 +576,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getCallbackId(): string
+    public function getCallbackId()
     {
         return $this->callbackId;
     }
@@ -584,7 +584,7 @@ class IssueModel
     /**
      * @param string $callbackId
      */
-    public function setCallbackId(string $callbackId)
+    public function setCallbackId($callbackId)
     {
         $this->callbackId = $callbackId;
     }
@@ -592,7 +592,7 @@ class IssueModel
     /**
      * @return PropertyPostModel
      */
-    public function getProperty(): PropertyPostModel
+    public function getProperty()
     {
         return $this->property;
     }
@@ -608,7 +608,7 @@ class IssueModel
     /**
      * @return BlockModel
      */
-    public function getBlock(): BlockModel
+    public function getBlock()
     {
         return $this->block;
     }
@@ -624,7 +624,7 @@ class IssueModel
     /**
      * @return JobModel
      */
-    public function getJob(): JobModel
+    public function getJob()
     {
         return $this->job;
     }
@@ -640,7 +640,7 @@ class IssueModel
     /**
      * @return FaultTreeModel
      */
-    public function getFaultTree(): FaultTreeModel
+    public function getFaultTree()
     {
         return $this->faultTree;
     }
@@ -656,7 +656,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getWorksAuthorisationLimit(): string
+    public function getWorksAuthorisationLimit()
     {
         return $this->worksAuthorisationLimit;
     }
@@ -664,7 +664,7 @@ class IssueModel
     /**
      * @param string $worksAuthorisationLimit
      */
-    public function setWorksAuthorisationLimit(string $worksAuthorisationLimit)
+    public function setWorksAuthorisationLimit($worksAuthorisationLimit)
     {
         $this->worksAuthorisationLimit = $worksAuthorisationLimit;
     }
@@ -672,7 +672,7 @@ class IssueModel
     /**
      * @return string
      */
-    public function getBlockName(): string
+    public function getBlockName()
     {
         return $this->blockName;
     }
@@ -680,7 +680,7 @@ class IssueModel
     /**
      * @param string $blockName
      */
-    public function setBlockName(string $blockName)
+    public function setBlockName($blockName)
     {
         $this->blockName = $blockName;
     }
@@ -688,7 +688,7 @@ class IssueModel
     /**
      * @return AssignedAgentModel
      */
-    public function getAssignedAgent(): AssignedAgentModel
+    public function getAssignedAgent()
     {
         return $this->assignedAgent;
     }
@@ -704,7 +704,7 @@ class IssueModel
     /**
      * @return QuoteModel[]
      */
-    public function getQuotes(): array
+    public function getQuotes()
     {
         return $this->quotes;
     }
@@ -720,7 +720,7 @@ class IssueModel
     /**
      * @return \DateTime
      */
-    public function getQuoteEndTime(): \DateTime
+    public function getQuoteEndTime()
     {
         return $this->quoteEndTime;
     }
@@ -736,7 +736,7 @@ class IssueModel
     /**
      * @return \DateTime
      */
-    public function getAttendanceDate(): \DateTime
+    public function getAttendanceDate()
     {
         return $this->attendanceDate;
     }

@@ -57,7 +57,7 @@ class IssueSummaryModel
      * @param string $issueTitle
      * @param AddressModel $address
      */
-    public function __construct(string $id, string $issueId, int $statusId, string $status, \DateTime $statusChanged, \DateTime $created, string $issueTitle, AddressModel $address)
+    public function __construct($id, $issueId, $statusId, $status, \DateTime $statusChanged, \DateTime $created, $issueTitle, AddressModel $address)
     {
         $this->id = $id;
         $this->issueId = $issueId;
@@ -72,7 +72,7 @@ class IssueSummaryModel
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId()
     {
         return $this->id;
     }
@@ -80,7 +80,7 @@ class IssueSummaryModel
     /**
      * @param string $id
      */
-    public function setId(string $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -88,7 +88,7 @@ class IssueSummaryModel
     /**
      * @return string
      */
-    public function getIssueId(): string
+    public function getIssueId()
     {
         return $this->issueId;
     }
@@ -96,7 +96,7 @@ class IssueSummaryModel
     /**
      * @param string $issueId
      */
-    public function setIssueId(string $issueId)
+    public function setIssueId($issueId)
     {
         $this->issueId = $issueId;
     }
@@ -104,7 +104,7 @@ class IssueSummaryModel
     /**
      * @return int
      */
-    public function getStatusId(): int
+    public function getStatusId()
     {
         return $this->statusId;
     }
@@ -112,7 +112,7 @@ class IssueSummaryModel
     /**
      * @param int $statusId
      */
-    public function setStatusId(int $statusId)
+    public function setStatusId($statusId)
     {
         $this->statusId = $statusId;
     }
@@ -120,7 +120,7 @@ class IssueSummaryModel
     /**
      * @return string
      */
-    public function getStatus(): string
+    public function getStatus()
     {
         return $this->status;
     }
@@ -128,7 +128,7 @@ class IssueSummaryModel
     /**
      * @param string $status
      */
-    public function setStatus(string $status)
+    public function setStatus($status)
     {
         $this->status = $status;
     }
@@ -136,7 +136,7 @@ class IssueSummaryModel
     /**
      * @return \DateTime
      */
-    public function getStatusChanged(): \DateTime
+    public function getStatusChanged()
     {
         return $this->statusChanged;
     }
@@ -152,7 +152,7 @@ class IssueSummaryModel
     /**
      * @return \DateTime
      */
-    public function getCreated(): \DateTime
+    public function getCreated()
     {
         return $this->created;
     }
@@ -168,7 +168,7 @@ class IssueSummaryModel
     /**
      * @return string
      */
-    public function getIssueTitle(): string
+    public function getIssueTitle()
     {
         return $this->issueTitle;
     }
@@ -176,7 +176,7 @@ class IssueSummaryModel
     /**
      * @param string $issueTitle
      */
-    public function setIssueTitle(string $issueTitle)
+    public function setIssueTitle($issueTitle)
     {
         $this->issueTitle = $issueTitle;
     }
@@ -184,7 +184,7 @@ class IssueSummaryModel
     /**
      * @return AddressModel
      */
-    public function getAddress(): AddressModel
+    public function getAddress()
     {
         return $this->address;
     }
