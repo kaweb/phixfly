@@ -93,7 +93,7 @@ class BlockModel
      * @param AssignedAgentModel $assignedAgent
      * @param \DateTime $updateDate
      */
-    public function __construct(string $id, string $externalBlockRef, bool $isStandAlone, string $name, AddressModel $address, string $keyReference, \DateTime $managementStartDate, \DateTime $managementEndDate, int $estateId, string $externalEstateRef, string $landlordId, string $externalLandlordRef, AssignedAgentModel $assignedAgent, \DateTime $updateDate)
+    public function __construct($id, $externalBlockRef, $isStandAlone, $name, AddressModel $address, $keyReference, \DateTime $managementStartDate, \DateTime $managementEndDate, $estateId, $externalEstateRef, $landlordId, $externalLandlordRef, AssignedAgentModel $assignedAgent, \DateTime $updateDate)
     {
         $this->id = $id;
         $this->externalBlockRef = $externalBlockRef;
@@ -114,7 +114,7 @@ class BlockModel
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId()
     {
         return $this->id;
     }
@@ -122,7 +122,7 @@ class BlockModel
     /**
      * @param string $id
      */
-    public function setId(string $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -130,7 +130,7 @@ class BlockModel
     /**
      * @return string
      */
-    public function getExternalBlockRef(): string
+    public function getExternalBlockRef()
     {
         return $this->externalBlockRef;
     }
@@ -138,7 +138,7 @@ class BlockModel
     /**
      * @param string $externalBlockRef
      */
-    public function setExternalBlockRef(string $externalBlockRef)
+    public function setExternalBlockRef($externalBlockRef)
     {
         $this->externalBlockRef = $externalBlockRef;
     }
@@ -146,7 +146,7 @@ class BlockModel
     /**
      * @return bool
      */
-    public function isStandAlone(): bool
+    public function isStandAlone()
     {
         return $this->isStandAlone;
     }
@@ -154,7 +154,7 @@ class BlockModel
     /**
      * @param bool $isStandAlone
      */
-    public function setIsStandAlone(bool $isStandAlone)
+    public function setIsStandAlone($isStandAlone)
     {
         $this->isStandAlone = $isStandAlone;
     }
@@ -162,7 +162,7 @@ class BlockModel
     /**
      * @return string
      */
-    public function getName(): string
+    public function getName()
     {
         return $this->name;
     }
@@ -170,7 +170,7 @@ class BlockModel
     /**
      * @param string $name
      */
-    public function setName(string $name)
+    public function setName($name)
     {
         $this->name = $name;
     }
@@ -178,7 +178,7 @@ class BlockModel
     /**
      * @return AddressModel
      */
-    public function getAddress(): AddressModel
+    public function getAddress()
     {
         return $this->address;
     }
@@ -194,7 +194,7 @@ class BlockModel
     /**
      * @return string
      */
-    public function getKeyReference(): string
+    public function getKeyReference()
     {
         return $this->keyReference;
     }
@@ -202,7 +202,7 @@ class BlockModel
     /**
      * @param string $keyReference
      */
-    public function setKeyReference(string $keyReference)
+    public function setKeyReference($keyReference)
     {
         $this->keyReference = $keyReference;
     }
@@ -210,7 +210,7 @@ class BlockModel
     /**
      * @return \DateTime
      */
-    public function getManagementStartDate(): \DateTime
+    public function getManagementStartDate()
     {
         return $this->managementStartDate;
     }
@@ -226,7 +226,7 @@ class BlockModel
     /**
      * @return \DateTime
      */
-    public function getManagementEndDate(): \DateTime
+    public function getManagementEndDate()
     {
         return $this->managementEndDate;
     }
@@ -242,7 +242,7 @@ class BlockModel
     /**
      * @return int
      */
-    public function getEstateId(): int
+    public function getEstateId()
     {
         return $this->estateId;
     }
@@ -250,7 +250,7 @@ class BlockModel
     /**
      * @param int $estateId
      */
-    public function setEstateId(int $estateId)
+    public function setEstateId($estateId)
     {
         $this->estateId = $estateId;
     }
@@ -258,7 +258,7 @@ class BlockModel
     /**
      * @return string
      */
-    public function getExternalEstateRef(): string
+    public function getExternalEstateRef()
     {
         return $this->externalEstateRef;
     }
@@ -266,7 +266,7 @@ class BlockModel
     /**
      * @param string $externalEstateRef
      */
-    public function setExternalEstateRef(string $externalEstateRef)
+    public function setExternalEstateRef($externalEstateRef)
     {
         $this->externalEstateRef = $externalEstateRef;
     }
@@ -274,7 +274,7 @@ class BlockModel
     /**
      * @return string
      */
-    public function getLandlordId(): string
+    public function getLandlordId()
     {
         return $this->landlordId;
     }
@@ -282,7 +282,7 @@ class BlockModel
     /**
      * @param string $landlordId
      */
-    public function setLandlordId(string $landlordId)
+    public function setLandlordId($landlordId)
     {
         $this->landlordId = $landlordId;
     }
@@ -290,7 +290,7 @@ class BlockModel
     /**
      * @return string
      */
-    public function getExternalLandlordRef(): string
+    public function getExternalLandlordRef()
     {
         return $this->externalLandlordRef;
     }
@@ -298,7 +298,7 @@ class BlockModel
     /**
      * @param string $externalLandlordRef
      */
-    public function setExternalLandlordRef(string $externalLandlordRef)
+    public function setExternalLandlordRef($externalLandlordRef)
     {
         $this->externalLandlordRef = $externalLandlordRef;
     }
@@ -306,7 +306,7 @@ class BlockModel
     /**
      * @return AssignedAgentModel
      */
-    public function getAssignedAgent(): AssignedAgentModel
+    public function getAssignedAgent()
     {
         return $this->assignedAgent;
     }
@@ -322,7 +322,7 @@ class BlockModel
     /**
      * @return \DateTime
      */
-    public function getUpdateDate(): \DateTime
+    public function getUpdateDate()
     {
         return $this->updateDate;
     }

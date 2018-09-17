@@ -27,7 +27,7 @@ class ContractorCertificationModel
      * @param string $name
      * @param \DateTime $expiry
      */
-    public function __construct(int $id, string $name, \DateTime $expiry)
+    public function __construct($id, $name, \DateTime $expiry)
     {
         $this->id = $id;
         $this->name = $name;
@@ -37,7 +37,7 @@ class ContractorCertificationModel
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
@@ -45,7 +45,7 @@ class ContractorCertificationModel
     /**
      * @param int $id
      */
-    public function setId(int $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -53,7 +53,7 @@ class ContractorCertificationModel
     /**
      * @return string
      */
-    public function getName(): string
+    public function getName()
     {
         return $this->name;
     }
@@ -61,7 +61,7 @@ class ContractorCertificationModel
     /**
      * @param string $name
      */
-    public function setName(string $name)
+    public function setName($name)
     {
         $this->name = $name;
     }
@@ -69,7 +69,7 @@ class ContractorCertificationModel
     /**
      * @return \DateTime
      */
-    public function getExpiry(): \DateTime
+    public function getExpiry()
     {
         return $this->expiry;
     }
