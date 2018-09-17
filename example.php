@@ -2,7 +2,7 @@
 
 include('vendor/autoload.php');
 
-$Phixfly = \Kaweb\Phixfly\Client::create('inventoryhive', 'th5sOmboOYBI7rcx9VRj22K1tqeDlwowgzhyEqHPPKUADlLjohfBKWMaCCDkVgMz');
+$Phixfly = \Kaweb\Phixfly\Client::create('yoursubdomain', 'th15154nex4mpl3t0k3n');
 $response = $Phixfly->contractorEndpoints()->getContractorServices();
 
 print_r($response);
