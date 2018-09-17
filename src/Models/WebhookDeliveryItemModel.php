@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class WebhookDeliveryItemModel implements ModelInterface
+class WebhookDeliveryItemModel extends BaseModel
 {
     /**
      * @var string
@@ -195,15 +195,5 @@ class WebhookDeliveryItemModel implements ModelInterface
     public function setResponseBody($responseBody)
     {
         $this->responseBody = $responseBody;
-    }
-
-    /**
-     * This function will allow us to get the object's protected variables as an array.
-     *
-     * @return array
-     */
-    function toArray()
-    {
-        // TODO: Implement toArray() method.
     }
 }

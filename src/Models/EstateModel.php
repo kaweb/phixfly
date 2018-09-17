@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class EstateModel implements ModelInterface
+class EstateModel extends BaseModel
 {
     /**
      * @var int
@@ -126,15 +126,5 @@ class EstateModel implements ModelInterface
     public function setUpdateDate($updateDate)
     {
         $this->updateDate = $updateDate;
-    }
-
-    /**
-     * This function will allow us to get the object's protected variables as an array.
-     *
-     * @return array
-     */
-    function toArray()
-    {
-        // TODO: Implement toArray() method.
     }
 }

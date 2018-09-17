@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class FaultTreeModel implements ModelInterface
+class FaultTreeModel extends BaseModel
 {
     /**
      * @var int
@@ -80,15 +80,5 @@ class FaultTreeModel implements ModelInterface
     public function setFaultTreeParent1($faultTreeParent1)
     {
         $this->faultTreeParent1 = $faultTreeParent1;
-    }
-
-    /**
-     * This function will allow us to get the object's protected variables as an array.
-     *
-     * @return array
-     */
-    function toArray()
-    {
-        // TODO: Implement toArray() method.
     }
 }

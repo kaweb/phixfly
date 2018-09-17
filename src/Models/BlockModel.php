@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class BlockModel implements ModelInterface
+class BlockModel extends BaseModel
 {
     /**
      * @var string
@@ -333,15 +333,5 @@ class BlockModel implements ModelInterface
     public function setUpdateDate(\DateTime $updateDate)
     {
         $this->updateDate = $updateDate;
-    }
-
-    /**
-     * This function will allow us to get the object's protected variables as an array.
-     *
-     * @return array
-     */
-    function toArray()
-    {
-        // TODO: Implement toArray() method.
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class AssignedAgentModel implements ModelInterface
+class AssignedAgentModel extends BaseModel
 {
     /**
      * @var string
@@ -103,15 +103,5 @@ class AssignedAgentModel implements ModelInterface
     public function setDisplayName($displayName)
     {
         $this->displayName = $displayName;
-    }
-
-    /**
-     * This function will allow us to get the object's protected variables as an array.
-     *
-     * @return array
-     */
-    function toArray()
-    {
-        // TODO: Implement toArray() method.
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class ContractorCertificationModel implements ModelInterface
+class ContractorCertificationModel extends BaseModel
 {
     /**
      * @var int
@@ -80,15 +80,5 @@ class ContractorCertificationModel implements ModelInterface
     public function setExpiry(\DateTime $expiry)
     {
         $this->expiry = $expiry;
-    }
-
-    /**
-     * This function will allow us to get the object's protected variables as an array.
-     *
-     * @return array
-     */
-    function toArray()
-    {
-        // TODO: Implement toArray() method.
     }
 }

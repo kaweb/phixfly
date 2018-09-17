@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class PrevNextPagerModel implements ModelInterface
+class PrevNextPagerModel extends BaseModel
 {
     /**
      * @var string
@@ -126,15 +126,5 @@ class PrevNextPagerModel implements ModelInterface
     public function setTotalPages($totalPages)
     {
         $this->totalPages = $totalPages;
-    }
-
-    /**
-     * This function will allow us to get the object's protected variables as an array.
-     *
-     * @return array
-     */
-    function toArray()
-    {
-        // TODO: Implement toArray() method.
     }
 }

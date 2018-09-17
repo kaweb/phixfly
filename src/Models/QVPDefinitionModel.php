@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class QVPDefinitionModel implements ModelInterface
+class QVPDefinitionModel extends BaseModel
 {
     /**
      * @var int
@@ -103,15 +103,5 @@ class QVPDefinitionModel implements ModelInterface
     public function setUrl($url)
     {
         $this->url = $url;
-    }
-
-    /**
-     * This function will allow us to get the object's protected variables as an array.
-     *
-     * @return array
-     */
-    function toArray()
-    {
-        // TODO: Implement toArray() method.
     }
 }

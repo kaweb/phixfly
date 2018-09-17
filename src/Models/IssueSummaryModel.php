@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class IssueSummaryModel implements ModelInterface
+class IssueSummaryModel extends BaseModel
 {
     /**
      * @var string
@@ -195,15 +195,5 @@ class IssueSummaryModel implements ModelInterface
     public function setAddress(AddressModel $address)
     {
         $this->address = $address;
-    }
-
-    /**
-     * This function will allow us to get the object's protected variables as an array.
-     *
-     * @return array
-     */
-    function toArray()
-    {
-        // TODO: Implement toArray() method.
     }
 }

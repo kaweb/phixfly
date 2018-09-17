@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class IssueModel implements ModelInterface
+class IssueModel extends BaseModel
 {
     /**
      * @var string
@@ -747,15 +747,5 @@ class IssueModel implements ModelInterface
     public function setAttendanceDate(\DateTime $attendanceDate)
     {
         $this->attendanceDate = $attendanceDate;
-    }
-
-    /**
-     * This function will allow us to get the object's protected variables as an array.
-     *
-     * @return array
-     */
-    function toArray()
-    {
-        // TODO: Implement toArray() method.
     }
 }

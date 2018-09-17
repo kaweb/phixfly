@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class LandlordPropertyModel implements ModelInterface
+class LandlordPropertyModel extends BaseModel
 {
     /**
      * @var int
@@ -149,15 +149,5 @@ class LandlordPropertyModel implements ModelInterface
     public function setAddress(AddressModel $address)
     {
         $this->address = $address;
-    }
-
-    /**
-     * This function will allow us to get the object's protected variables as an array.
-     *
-     * @return array
-     */
-    function toArray()
-    {
-        // TODO: Implement toArray() method.
     }
 }

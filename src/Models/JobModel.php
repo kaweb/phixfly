@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class JobModel implements ModelInterface
+class JobModel extends BaseModel
 {
     /**
      * @var string
@@ -632,15 +632,5 @@ class JobModel implements ModelInterface
     public function setContractor(ContractorModel $contractor)
     {
         $this->contractor = $contractor;
-    }
-
-    /**
-     * This function will allow us to get the object's protected variables as an array.
-     *
-     * @return array
-     */
-    function toArray()
-    {
-        // TODO: Implement toArray() method.
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class AdditionalDetailModel implements ModelInterface
+class AdditionalDetailModel extends BaseModel
 {
     /**
      * The question/prompt offered to the reporting user
@@ -62,18 +62,5 @@ class AdditionalDetailModel implements ModelInterface
     public function setValue($value)
     {
         $this->value = $value;
-    }
-
-    /**
-     * This function will allow us to get the object's protected variables as an array.
-     *
-     * @return array
-     */
-    function toArray()
-    {
-        return [
-            'label' => $this->label,
-            'value' => $this->value
-        ];
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class IssueStatusSummaryModel implements ModelInterface
+class IssueStatusSummaryModel extends BaseModel
 {
     /**
      * @var int
@@ -149,15 +149,5 @@ class IssueStatusSummaryModel implements ModelInterface
     public function setCount($count)
     {
         $this->count = $count;
-    }
-
-    /**
-     * This function will allow us to get the object's protected variables as an array.
-     *
-     * @return array
-     */
-    function toArray()
-    {
-        // TODO: Implement toArray() method.
     }
 }
