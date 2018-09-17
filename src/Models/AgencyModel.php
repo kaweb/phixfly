@@ -297,5 +297,9 @@ class AgencyModel implements ModelInterface
     function toArray()
     {
         // TODO: Implement toArray() method.
+        return [
+            'id' => $this->id,
+
+        ];
     }
 }

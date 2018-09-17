@@ -1,5 +1,5 @@
 # Phixfly
-A pretty fly PHP Client for the Fixflow API.
+A pretty fly PHP Client for the [Fixflo API](https://api-docs.fixflo.com).
 
 # Composer
 You can use `composer require kaweb/phixfly` to get the latest released version of the project. 
