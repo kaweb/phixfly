@@ -99,7 +99,7 @@ class ContractorModel
      * @param array $certifications
      * @param \DateTime $updateDate
      */
-    public function __construct(string $id, string $externalRef, string $companyName, string $title, string $firstName, string $surname, string $emailAddress, string $contactNumber, string $contactNumberAlt, string $displayName, bool $isDeleted, array $services, AddressModel $address, array $certifications, \DateTime $updateDate)
+    public function __construct($id, $externalRef, $companyName, $title, $firstName, $surname, $emailAddress, $contactNumber, $contactNumberAlt, $displayName, $isDeleted, array $services, AddressModel $address, array $certifications, \DateTime $updateDate)
     {
         $this->id = $id;
         $this->externalRef = $externalRef;
@@ -115,6 +115,246 @@ class ContractorModel
         $this->services = $services;
         $this->address = $address;
         $this->certifications = $certifications;
+        $this->updateDate = $updateDate;
+    }
+
+    /**
+     * @return string
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param string $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalRef()
+    {
+        return $this->externalRef;
+    }
+
+    /**
+     * @param string $externalRef
+     */
+    public function setExternalRef($externalRef)
+    {
+        $this->externalRef = $externalRef;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCompanyName()
+    {
+        return $this->companyName;
+    }
+
+    /**
+     * @param string $companyName
+     */
+    public function setCompanyName($companyName)
+    {
+        $this->companyName = $companyName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * @param string $title
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFirstName()
+    {
+        return $this->firstName;
+    }
+
+    /**
+     * @param string $firstName
+     */
+    public function setFirstName($firstName)
+    {
+        $this->firstName = $firstName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSurname()
+    {
+        return $this->surname;
+    }
+
+    /**
+     * @param string $surname
+     */
+    public function setSurname($surname)
+    {
+        $this->surname = $surname;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEmailAddress()
+    {
+        return $this->emailAddress;
+    }
+
+    /**
+     * @param string $emailAddress
+     */
+    public function setEmailAddress($emailAddress)
+    {
+        $this->emailAddress = $emailAddress;
+    }
+
+    /**
+     * @return string
+     */
+    public function getContactNumber()
+    {
+        return $this->contactNumber;
+    }
+
+    /**
+     * @param string $contactNumber
+     */
+    public function setContactNumber($contactNumber)
+    {
+        $this->contactNumber = $contactNumber;
+    }
+
+    /**
+     * @return string
+     */
+    public function getContactNumberAlt()
+    {
+        return $this->contactNumberAlt;
+    }
+
+    /**
+     * @param string $contactNumberAlt
+     */
+    public function setContactNumberAlt($contactNumberAlt)
+    {
+        $this->contactNumberAlt = $contactNumberAlt;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDisplayName()
+    {
+        return $this->displayName;
+    }
+
+    /**
+     * @param string $displayName
+     */
+    public function setDisplayName($displayName)
+    {
+        $this->displayName = $displayName;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isDeleted()
+    {
+        return $this->isDeleted;
+    }
+
+    /**
+     * @param bool $isDeleted
+     */
+    public function setIsDeleted($isDeleted)
+    {
+        $this->isDeleted = $isDeleted;
+    }
+
+    /**
+     * @return ContractorServiceModel[]
+     */
+    public function getServices()
+    {
+        return $this->services;
+    }
+
+    /**
+     * @param ContractorServiceModel[] $services
+     */
+    public function setServices($services)
+    {
+        $this->services = $services;
+    }
+
+    /**
+     * @return AddressModel
+     */
+    public function getAddress()
+    {
+        return $this->address;
+    }
+
+    /**
+     * @param AddressModel $address
+     */
+    public function setAddress($address)
+    {
+        $this->address = $address;
+    }
+
+    /**
+     * @return ContractorCertificationModel[]
+     */
+    public function getCertifications()
+    {
+        return $this->certifications;
+    }
+
+    /**
+     * @param ContractorCertificationModel[] $certifications
+     */
+    public function setCertifications($certifications)
+    {
+        $this->certifications = $certifications;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getUpdateDate()
+    {
+        return $this->updateDate;
+    }
+
+    /**
+     * @param \DateTime $updateDate
+     */
+    public function setUpdateDate($updateDate)
+    {
         $this->updateDate = $updateDate;
     }
 }
