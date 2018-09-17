@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class LeaseholderModel
+class LeaseholderModel implements ModelInterface
 {
     /**
      * @var string
@@ -335,4 +335,13 @@ class LeaseholderModel
         $this->address = $address;
     }
 
+    /**
+     * This function will allow us to get the object's protected variables as an array.
+     *
+     * @return array
+     */
+    function toArray()
+    {
+        // TODO: Implement toArray() method.
+    }
 }

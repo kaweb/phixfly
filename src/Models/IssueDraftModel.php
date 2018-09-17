@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class IssueDraftModel
+class IssueDraftModel implements ModelInterface
 {
     /**
      * @var int
@@ -317,5 +317,15 @@ class IssueDraftModel
     public function setExternalPropertyRef($externalPropertyRef)
     {
         $this->externalPropertyRef = $externalPropertyRef;
+    }
+
+    /**
+     * This function will allow us to get the object's protected variables as an array.
+     *
+     * @return array
+     */
+    function toArray()
+    {
+        // TODO: Implement toArray() method.
     }
 }

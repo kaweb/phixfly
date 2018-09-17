@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class AgencyModel
+class AgencyModel implements ModelInterface
 {
     /**
      * @var string
@@ -287,5 +287,15 @@ class AgencyModel
     public function setLocale($locale)
     {
         $this->locale = $locale;
+    }
+
+    /**
+     * This function will allow us to get the object's protected variables as an array.
+     *
+     * @return array
+     */
+    function toArray()
+    {
+        // TODO: Implement toArray() method.
     }
 }

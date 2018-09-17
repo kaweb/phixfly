@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class WebhookModel
+class WebhookModel implements ModelInterface
 {
     /**
      * @var string
@@ -57,5 +57,15 @@ class WebhookModel
     public function setUrl($url)
     {
         $this->url = $url;
+    }
+
+    /**
+     * This function will allow us to get the object's protected variables as an array.
+     *
+     * @return array
+     */
+    function toArray()
+    {
+        // TODO: Implement toArray() method.
     }
 }

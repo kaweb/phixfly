@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class MediaModel
+class MediaModel implements ModelInterface
 {
     /**
      * @var string
@@ -149,5 +149,15 @@ class MediaModel
     public function setAddedByUserTypeId($addedByUserTypeId)
     {
         $this->addedByUserTypeId = $addedByUserTypeId;
+    }
+
+    /**
+     * This function will allow us to get the object's protected variables as an array.
+     *
+     * @return array
+     */
+    function toArray()
+    {
+        // TODO: Implement toArray() method.
     }
 }

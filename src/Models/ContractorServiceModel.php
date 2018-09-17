@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class ContractorServiceModel
+class ContractorServiceModel implements ModelInterface
 {
     /**
      * @var int
@@ -80,5 +80,15 @@ class ContractorServiceModel
     public function setNameAndSymptoms(array $nameAndSymptoms)
     {
         $this->nameAndSymptoms = $nameAndSymptoms;
+    }
+
+    /**
+     * This function will allow us to get the object's protected variables as an array.
+     *
+     * @return array
+     */
+    function toArray()
+    {
+        // TODO: Implement toArray() method.
     }
 }

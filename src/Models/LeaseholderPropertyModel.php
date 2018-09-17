@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class LeaseholderPropertyModel
+class LeaseholderPropertyModel implements ModelInterface
 {
     /**
      * @var int
@@ -218,5 +218,15 @@ class LeaseholderPropertyModel
     public function setUpdateDate(\DateTime $updateDate)
     {
         $this->updateDate = $updateDate;
+    }
+
+    /**
+     * This function will allow us to get the object's protected variables as an array.
+     *
+     * @return array
+     */
+    function toArray()
+    {
+        // TODO: Implement toArray() method.
     }
 }

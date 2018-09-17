@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class ContractorModel
+class ContractorModel implements ModelInterface
 {
     /**
      * @var string
@@ -356,5 +356,15 @@ class ContractorModel
     public function setUpdateDate($updateDate)
     {
         $this->updateDate = $updateDate;
+    }
+
+    /**
+     * This function will allow us to get the object's protected variables as an array.
+     *
+     * @return array
+     */
+    function toArray()
+    {
+        // TODO: Implement toArray() method.
     }
 }

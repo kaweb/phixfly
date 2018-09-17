@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class QuoteModel
+class QuoteModel implements ModelInterface
 {
     /**
      * @var string
@@ -218,5 +218,15 @@ class QuoteModel
     public function setPriceAgencyReceivableTax($priceAgencyReceivableTax)
     {
         $this->priceAgencyReceivableTax = $priceAgencyReceivableTax;
+    }
+
+    /**
+     * This function will allow us to get the object's protected variables as an array.
+     *
+     * @return array
+     */
+    function toArray()
+    {
+        // TODO: Implement toArray() method.
     }
 }

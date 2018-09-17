@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class ApiWebhookModel
+class ApiWebhookModel implements ModelInterface
 {
     /**
      * @var string
@@ -57,5 +57,15 @@ class ApiWebhookModel
     public function setEvent($event)
     {
         $this->event = $event;
+    }
+
+    /**
+     * This function will allow us to get the object's protected variables as an array.
+     *
+     * @return array
+     */
+    function toArray()
+    {
+        // TODO: Implement toArray() method.
     }
 }

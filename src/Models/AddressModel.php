@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class AddressModel
+class AddressModel implements ModelInterface
 {
     /**
      * @var string
@@ -149,5 +149,22 @@ class AddressModel
     public function setCountry($country)
     {
         $this->country = $country;
+    }
+
+    /**
+     * This function will allow us to get the object's protected variables as an array.
+     *
+     * @return array
+     */
+    function toArray()
+    {
+        return [
+            'addressLineOne' => $this->addressLineOne,
+            'addressLineTwo' => $this->addressLineTwo,
+            'town' => $this->town,
+            'county' => $this->county,
+            'postcode' => $this->postcode,
+            'country' => $this->country,
+        ];
     }
 }

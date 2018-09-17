@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class EnvelopeModel
+class EnvelopeModel implements ModelInterface
 {
     /**
      * @var int
@@ -126,5 +126,15 @@ class EnvelopeModel
     public function setEntity(array $entity)
     {
         $this->entity = $entity;
+    }
+
+    /**
+     * This function will allow us to get the object's protected variables as an array.
+     *
+     * @return array
+     */
+    function toArray()
+    {
+        // TODO: Implement toArray() method.
     }
 }

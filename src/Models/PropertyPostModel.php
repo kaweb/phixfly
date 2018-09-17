@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class PropertyPostModel
+class PropertyPostModel implements ModelInterface
 {
     /**
      * @var int
@@ -172,5 +172,15 @@ class PropertyPostModel
     public function setAssignedAgent(AssignedAgentModel $assignedAgent)
     {
         $this->assignedAgent = $assignedAgent;
+    }
+
+    /**
+     * This function will allow us to get the object's protected variables as an array.
+     *
+     * @return array
+     */
+    function toArray()
+    {
+        // TODO: Implement toArray() method.
     }
 }

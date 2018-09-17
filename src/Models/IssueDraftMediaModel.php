@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class IssueDraftMediaModel
+class IssueDraftMediaModel implements ModelInterface
 {
     /**
      * @var int
@@ -133,5 +133,15 @@ class IssueDraftMediaModel
     public function setShortDesc($shortDesc)
     {
         $this->shortDesc = $shortDesc;
+    }
+
+    /**
+     * This function will allow us to get the object's protected variables as an array.
+     *
+     * @return array
+     */
+    function toArray()
+    {
+        // TODO: Implement toArray() method.
     }
 }
