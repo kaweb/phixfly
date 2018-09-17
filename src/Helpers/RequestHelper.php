@@ -89,9 +89,7 @@ class RequestHelper
         $requestOptions = [
             "http" => [
                 "method" => $method,
-                "Content-type" => "application/json",
-//                "header" => "Authorization: Bearer {$this->token}\r\nContent-type: application-json",
-                "header" => "Authorization: Bearer {$this->token}",
+                "header" => "Authorization: Bearer {$this->token}\r\nContent-type: application-json",
                 "content" => http_build_query($contentStrings)
             ]
         ];
