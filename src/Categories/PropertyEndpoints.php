@@ -73,5 +73,24 @@ class PropertyEndpoints
         return $this->requestHelper->get('/property/'. $id .'/tenants');
     }
 
-
+    /**
+     * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-property-endpoints-search-properties
+     *
+     * @param string $keyword
+     * @param string $externalPropertyRef
+     * @param string $keyReference
+     * @param bool $hasExternalPropertyRef
+     * @param \DateTime $updatedSince
+     * @return array
+     */
+    public function searchProperties($keyword, $externalPropertyRef, $keyReference, $hasExternalPropertyRef, \DateTime $updatedSince)
+    {
+        return $this->requestHelper->get('/property/search', [
+            'Keyword' => $keyword,
+            'ExternalPropertyRef' => $externalPropertyRef,
+            'KeyReference' => $keyReference,
+            'HasExternalPropertyRef' => $hasExternalPropertyRef,
+            'UpdatedSince' => $updatedSince
+        ]);
+    }
 }
