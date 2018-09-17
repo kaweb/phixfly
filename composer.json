@@ -1,0 +1,17 @@
+{
+    "name": "kaweb/fixflo-client",
+    "description": "Fixflo API Client written in PHP",
+    "version": "1.0.0",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Alex Blackham",
+            "email": "alex.blackham@kaweb.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Kaweb\\FixfloClient\\": "src/"
+        }
+    }
+}
