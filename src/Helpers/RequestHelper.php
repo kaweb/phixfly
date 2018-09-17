@@ -35,7 +35,7 @@ class RequestHelper
      * @param array $content
      * @return array
      */
-    public function get(string $endpoint, array $content = []) : array
+    public function get($endpoint, array $content = [])
     {
         return $this->request('GET', $endpoint, $content);
     }
@@ -47,7 +47,7 @@ class RequestHelper
      * @param array $content
      * @return array
      */
-    public function post(string $endpoint, array $content = []) : array
+    public function post($endpoint, array $content = [])
     {
         return $this->request('POST', $endpoint, $content);
     }
@@ -59,7 +59,7 @@ class RequestHelper
      * @param array $content
      * @return array
      */
-    public function delete(string $endpoint, array $content = []) : array
+    public function delete($endpoint, array $content = [])
     {
         return $this->request('DELETE', $endpoint, $content);
     }
@@ -72,7 +72,7 @@ class RequestHelper
      * @param array $content
      * @return mixed
      */
-    public function request(string $method, string $endpoint, array $content)
+    public function request($method, $endpoint, array $content)
     {
         $contentStrings = [];
 
