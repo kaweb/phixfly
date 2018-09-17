@@ -93,4 +93,15 @@ class PropertyEndpoints
             'UpdatedSince' => $updatedSince
         ]);
     }
+
+    /**
+     * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-property-endpoints-get-propertyaddress
+     *
+     * @param int $id
+     * @return array
+     */
+    public function getPropertyAddress($id)
+    {
+        return $this->requestHelper->get('/propertyaddress/' . $id);
+    }
 }

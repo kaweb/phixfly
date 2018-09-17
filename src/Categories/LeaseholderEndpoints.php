@@ -64,7 +64,7 @@ class LeaseholderEndpoints
         return $this->requestHelper->get('/leaseholders', [
             'pg' => $pg,
             'Keyword' => $keyword,
-            'UpdatedSince' => $updatedSince
+            'UpdatedSince' => $updatedSince->getTimestamp()
         ]);
     }
 }

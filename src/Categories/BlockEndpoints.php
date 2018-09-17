@@ -48,7 +48,7 @@ class BlockEndpoints
         return $this->requestHelper->get('/blocks', [
             'pg' => $pg,
             'keyword' => $keyword,
-            'UpdatedSince' => $updatedSince
+            'UpdatedSince' => $updatedSince->getTimestamp()
         ]);
     }
 

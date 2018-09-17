@@ -45,10 +45,10 @@ class EstatesEndpoints
      */
     public function findEstates($pg, $keyword, \DateTime $updatedSince)
     {
-        return $this->requestHelper->get('estates', [
+        return $this->requestHelper->get('/estates', [
             'pg' => $pg,
             'keyword' => $keyword,
-            'UpdatedSince' => $updatedSince
+            'UpdatedSince' => $updatedSince->getTimestamp()
         ]);
     }
 

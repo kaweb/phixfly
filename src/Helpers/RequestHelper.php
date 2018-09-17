@@ -5,7 +5,7 @@ namespace Kaweb\Phixfly\Helpers;
 
 class RequestHelper
 {
-    const FIXFLOW_BASE = ".fixflo.com/api/v2/";
+    const FIXFLOW_BASE = ".fixflo.com/api/v2";
 
     /**
      * @var string
@@ -89,6 +89,8 @@ class RequestHelper
         $requestOptions = [
             "http" => [
                 "method" => $method,
+                "Content-type" => "application/json",
+//                "header" => "Authorization: Bearer {$this->token}\r\nContent-type: application-json",
                 "header" => "Authorization: Bearer {$this->token}",
                 "content" => http_build_query($contentStrings)
             ]

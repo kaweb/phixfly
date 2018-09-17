@@ -48,7 +48,7 @@ class ContractorEndpoints
         return $this->requestHelper->get('/contractors', [
             'pg' => $pg,
             'keyword' => $keyword,
-            'UpdatedSince' => $updatedSince
+            'UpdatedSince' => $updatedSince->getTimestamp()
         ]);
     }
 

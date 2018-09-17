@@ -26,7 +26,7 @@ class AdditionalDetailModel
      * @param string $label
      * @param string $value
      */
-    public function __construct($label = '', $value = '')
+    public function __construct($label, $value)
     {
         $this->label = $label;
         $this->value = $value;

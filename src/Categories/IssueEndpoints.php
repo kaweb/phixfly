@@ -58,8 +58,8 @@ class IssueEndpoints
     {
         return $this->requestHelper->get('/issues', [
             'page' => $page,
-            'CreatedSince' => $createdSince,
-            'CreatedBefore' => $createdBefore,
+            'CreatedSince' => $createdSince->getTimestamp(),
+            'CreatedBefore' => $createdBefore->getTimestamp(),
             'Status' => $status,
             'HasExternalPropertyRef' => $hasExternalPropertyRef
         ]);
