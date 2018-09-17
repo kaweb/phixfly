@@ -43,7 +43,7 @@ class EstatesEndpoints
      * @param \DateTime $updatedSince
      * @return array
      */
-    public function findEstates(int $pg, string $keyword, \DateTime $updatedSince)
+    public function findEstates($pg, $keyword, \DateTime $updatedSince)
     {
         return $this->requestHelper->get('estates', [
             'pg' => $pg,
@@ -57,10 +57,11 @@ class EstatesEndpoints
      *
      * @param int $estateId
      * @param string $externalRef
+     * @return array
      */
-    public function getEstate(int $estateId, string $externalRef)
+    public function getEstate($estateId, $externalRef)
     {
-        $this->requestHelper->get('/estate/' . $estateId, [
+        return $this->requestHelper->get('/estate/' . $estateId, [
             'ExternalRef' => $externalRef
         ]);
     }

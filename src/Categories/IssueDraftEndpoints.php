@@ -42,7 +42,7 @@ class IssueDraftEndpoints
      * @param string $id
      * @return array
      */
-    public function getIssueDraft(string $id)
+    public function getIssueDraft($id)
     {
         return $this->requestHelper->get('/issuedraft/' . $id);
     }
@@ -54,7 +54,7 @@ class IssueDraftEndpoints
      * @param int $pg
      * @return array
      */
-    public function issueDraftMedia(string $id, int $pg)
+    public function issueDraftMedia($id, $pg)
     {
         return $this->requestHelper->post('/issuedraft/' . $id . 'issuedraftmedia', [
             'pg' => $pg
@@ -106,7 +106,7 @@ class IssueDraftEndpoints
      * @param string $id
      * @return array
      */
-    public function getIssueDraftMedia(string $id)
+    public function getIssueDraftMedia($id)
     {
         return $this->requestHelper->get('/issuedraftmedia/' . $id);
     }
@@ -117,7 +117,7 @@ class IssueDraftEndpoints
      * @param string $id
      * @return array
      */
-    public function downloadIssueDraftMedia(string $id)
+    public function downloadIssueDraftMedia($id)
     {
         return $this->requestHelper->get('/issuedraftmedia/' . $id . '/download');
     }

@@ -26,10 +26,11 @@ class BlockEndpoints
      * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-block-add-block
      *
      * @param BlockModel $blockModel
+     * @return array
      */
     public function addBlock(BlockModel $blockModel)
     {
-        $this->requestHelper->post('/block', [
+        return $this->requestHelper->post('/block', [
             'block' => $blockModel
         ]);
     }
@@ -40,10 +41,11 @@ class BlockEndpoints
      * @param int $pg
      * @param string $keyword
      * @param \DateTime $updatedSince
+     * @return array
      */
-    public function findBlocks(int $pg, string $keyword, \DateTime $updatedSince)
+    public function findBlocks($pg, $keyword, \DateTime $updatedSince)
     {
-        $this->requestHelper->get('/blocks', [
+        return $this->requestHelper->get('/blocks', [
             'pg' => $pg,
             'keyword' => $keyword,
             'UpdatedSince' => $updatedSince
@@ -55,10 +57,11 @@ class BlockEndpoints
      *
      * @param int $blockId
      * @param string $externalBlockRef
+     * @return array
      */
-    public function getBlock(int $blockId, string $externalBlockRef)
+    public function getBlock($blockId, $externalBlockRef)
     {
-        $this->requestHelper->get('/block/' . $blockId, [
+        return $this->requestHelper->get('/block/' . $blockId, [
             'ExternalBlockRef' => $externalBlockRef
         ]);
     }

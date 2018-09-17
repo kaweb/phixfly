@@ -28,7 +28,7 @@ class JobEndpoints
      * @param string $id
      * @return array
      */
-    public function getJob(string $id)
+    public function getJob($id)
     {
         return $this->requestHelper->get('/job/' . $id);
     }

@@ -28,7 +28,7 @@ class IssueEndpoints
      * @param string $id
      * @return array
      */
-    public function getIssue(string $id)
+    public function getIssue($id)
     {
         return $this->requestHelper->get('/issue/' . $id);
     }
@@ -39,7 +39,7 @@ class IssueEndpoints
      * @param string $id
      * @return array
      */
-    public function getIssueReport(string $id)
+    public function getIssueReport($id)
     {
         return $this->requestHelper->get('/issue/' . $id . '/report');
     }
@@ -54,7 +54,7 @@ class IssueEndpoints
      * @param bool $hasExternalPropertyRef
      * @return array
      */
-    public function findIssues(int $page, \DateTime $createdSince, \DateTime $createdBefore, string $status, bool $hasExternalPropertyRef)
+    public function findIssues($page, \DateTime $createdSince, \DateTime $createdBefore, $status, $hasExternalPropertyRef)
     {
         return $this->requestHelper->get('/issues', [
             'page' => $page,
@@ -71,7 +71,7 @@ class IssueEndpoints
      * @param int $page
      * @return array
      */
-    public function getJobAwardedIssues(int $page)
+    public function getJobAwardedIssues($page)
     {
         return $this->requestHelper->get('/issues/jobawarded', [
             'page' => $page
@@ -84,7 +84,7 @@ class IssueEndpoints
      * @param int $page
      * @return array
      */
-    public function getJobCompletedIssues(int $page)
+    public function getJobCompletedIssues($page)
     {
         return $this->requestHelper->get('/issues/jobcompleted', [
             'page' => $page
@@ -97,7 +97,7 @@ class IssueEndpoints
      * @param int $page
      * @return array
      */
-    public function getClosedIssues(int $page)
+    public function getClosedIssues($page)
     {
         return $this->requestHelper->get('/issues/closed', [
             'page' => $page
@@ -111,7 +111,7 @@ class IssueEndpoints
      * @param int $pg
      * @return array
      */
-    public function getPropertyIssues(int $id, int $pg)
+    public function getPropertyIssues($id, $pg)
     {
         return $this->requestHelper->get('/property/' . $id . '/issues', [
             'pg' => $pg
@@ -122,10 +122,11 @@ class IssueEndpoints
      * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-issue-endpoints-saveissue
      *
      * @param IssueModel $issue
+     * @return array
      */
     public function saveIssue(IssueModel $issue)
     {
-        $this->requestHelper->get('/Issue', [
+        return $this->requestHelper->get('/Issue', [
             'issue' => $issue
         ]);
     }

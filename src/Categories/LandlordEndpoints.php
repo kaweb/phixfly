@@ -43,7 +43,7 @@ class LandlordEndpoints
      * @param string $externalRef
      * @return array
      */
-    public function getLandlord(string $landlordId, string $emailAddress, string $externalRef)
+    public function getLandlord($landlordId, $emailAddress, $externalRef)
     {
         return $this->requestHelper->get('/landlord/' . $landlordId, [
             'EmailAddress' => $emailAddress,
@@ -59,7 +59,7 @@ class LandlordEndpoints
      * @param \DateTime $updatedSince
      * @return array
      */
-    public function getLandlords(int $pg, string $keyword, \DateTime $updatedSince)
+    public function getLandlords($pg, $keyword, \DateTime $updatedSince)
     {
         return $this->requestHelper->get('landlords', [
             'pg' => $pg,

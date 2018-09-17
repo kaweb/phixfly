@@ -43,7 +43,7 @@ class ContractorEndpoints
      * @param \DateTime $updatedSince
      * @return array
      */
-    public function findContractors(int $pg, string $keyword, \DateTime $updatedSince)
+    public function findContractors($pg, $keyword, \DateTime $updatedSince)
     {
         return $this->requestHelper->get('/contractors', [
             'pg' => $pg,
@@ -60,7 +60,7 @@ class ContractorEndpoints
      * @param string $externalRef
      * @return array
      */
-    public function getContractor(string $contractorId, string $emailAddress, string $externalRef)
+    public function getContractor($contractorId, $emailAddress, $externalRef)
     {
         return $this->requestHelper->get('/contractor/' . $contractorId, [
             'EmailAddress' => $emailAddress,

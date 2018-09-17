@@ -43,7 +43,7 @@ class LandlordPropertyEndpoints
      * @param string $propertyId
      * @return array
      */
-    public function getLandlordProperty(int $landlordPropertyId, string $landlordId, string $propertyId)
+    public function getLandlordProperty($landlordPropertyId, $landlordId, $propertyId)
     {
         return $this->requestHelper->get('/landlordproperty/' . $landlordPropertyId, [
             'LandlordId' => $landlordId,
@@ -58,7 +58,7 @@ class LandlordPropertyEndpoints
      * @param int $pg
      * @return array
      */
-    public function getLandlordProperties(string $landlordId, int $pg)
+    public function getLandlordProperties($landlordId, $pg)
     {
         return $this->requestHelper->get('/landlord/' . $landlordId . '/landlordproperties', [
             'pg' => $pg

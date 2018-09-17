@@ -41,7 +41,7 @@ class PropertyEndpoints
      * @param int $pg
      * @return array
      */
-    public function getPropertyAddresses(int $id, int $pg)
+    public function getPropertyAddresses($id, $pg)
     {
         return $this->requestHelper->get('/property/'. $id . '/addresses', [
             'pg' => $pg
@@ -55,7 +55,7 @@ class PropertyEndpoints
      * @param string $externalPropertyRef
      * @return array
      */
-    public function getProperty(int $id, string $externalPropertyRef)
+    public function getProperty($id, $externalPropertyRef)
     {
         return $this->requestHelper->get('/property/' . $id, [
             'ExternalPropertyRef' => $externalPropertyRef
@@ -68,7 +68,7 @@ class PropertyEndpoints
      * @param int $id
      * @return array
      */
-    public function getPropertyTenants(int $id)
+    public function getPropertyTenants($id)
     {
         return $this->requestHelper->get('/property/'. $id .'/tenants');
     }

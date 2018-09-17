@@ -43,7 +43,7 @@ class LeaseholderPropertyEndpoints
      * @param int $propertyId
      * @return array
      */
-    public function getLeaseholderProperty(int $leaseholderPropertyId, string $leaseholderId, int $propertyId)
+    public function getLeaseholderProperty($leaseholderPropertyId, $leaseholderId, $propertyId)
     {
         return $this->requestHelper->get('/leaseholderproperty/' . $leaseholderPropertyId, [
             'LeaseholderId' => $leaseholderId,
@@ -58,7 +58,7 @@ class LeaseholderPropertyEndpoints
      * @param int $pg
      * @return array
      */
-    public function getLeaseholderProperties(string $leaseholderId, int $pg)
+    public function getLeaseholderProperties($leaseholderId, $pg)
     {
         return $this->requestHelper->get('/leaseholder/'. $leaseholderId .'/leaseholderproperties', [
             'pg' => $pg

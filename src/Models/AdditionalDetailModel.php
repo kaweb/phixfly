@@ -26,7 +26,7 @@ class AdditionalDetailModel
      * @param string $label
      * @param string $value
      */
-    public function __construct(string $label = '', string $value = '')
+    public function __construct($label = '', $value = '')
     {
         $this->label = $label;
         $this->value = $value;
@@ -35,7 +35,7 @@ class AdditionalDetailModel
     /**
      * @return string
      */
-    public function getLabel() : string
+    public function getLabel()
     {
         return $this->label;
     }
@@ -43,7 +43,7 @@ class AdditionalDetailModel
     /**
      * @param string $label
      */
-    public function setLabel(string $label)
+    public function setLabel($label)
     {
         $this->label = $label;
     }
@@ -51,7 +51,7 @@ class AdditionalDetailModel
     /**
      * @return string
      */
-    public function getValue() : string
+    public function getValue()
     {
         return $this->value;
     }
@@ -59,7 +59,7 @@ class AdditionalDetailModel
     /**
      * @param string $value
      */
-    public function setValue(string $value)
+    public function setValue($value)
     {
         $this->value = $value;
     }

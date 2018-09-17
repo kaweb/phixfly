@@ -43,7 +43,7 @@ class LeaseholderEndpoints
      * @param string $externalLeaseholderRef
      * @return array
      */
-    public function getLeaseholder(string $leaseholderId, string $emailAddress, string $externalLeaseholderRef)
+    public function getLeaseholder($leaseholderId, $emailAddress, $externalLeaseholderRef)
     {
         return $this->requestHelper->get('/leaseholder/' . $leaseholderId, [
             'EmailAddress' => $emailAddress,
@@ -59,7 +59,7 @@ class LeaseholderEndpoints
      * @param \DateTime $updatedSince
      * @return array
      */
-    public function getLeaseholders(int $pg, string $keyword, \DateTime $updatedSince)
+    public function getLeaseholders($pg, $keyword, \DateTime $updatedSince)
     {
         return $this->requestHelper->get('/leaseholders', [
             'pg' => $pg,
