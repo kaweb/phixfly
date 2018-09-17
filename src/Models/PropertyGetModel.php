@@ -51,7 +51,7 @@ class PropertyGetModel
      * @param \DateTime $updateDate
      * @param AssignedAgentModel $assignedAgent
      */
-    public function __construct(int $id, int $blockId, string $externalPropertyRef, int $propertyAddressId, AddressModel $address, \DateTime $updateDate, AssignedAgentModel $assignedAgent)
+    public function __construct($id, $blockId, $externalPropertyRef, $propertyAddressId, AddressModel $address, \DateTime $updateDate, AssignedAgentModel $assignedAgent)
     {
         $this->id = $id;
         $this->blockId = $blockId;
@@ -65,7 +65,7 @@ class PropertyGetModel
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
@@ -81,7 +81,7 @@ class PropertyGetModel
     /**
      * @return int
      */
-    public function getBlockId(): int
+    public function getBlockId()
     {
         return $this->blockId;
     }
@@ -89,7 +89,7 @@ class PropertyGetModel
     /**
      * @param int $blockId
      */
-    public function setBlockId(int $blockId)
+    public function setBlockId($blockId)
     {
         $this->blockId = $blockId;
     }
@@ -97,7 +97,7 @@ class PropertyGetModel
     /**
      * @return string
      */
-    public function getExternalPropertyRef(): string
+    public function getExternalPropertyRef()
     {
         return $this->externalPropertyRef;
     }
@@ -105,7 +105,7 @@ class PropertyGetModel
     /**
      * @param string $externalPropertyRef
      */
-    public function setExternalPropertyRef(string $externalPropertyRef)
+    public function setExternalPropertyRef($externalPropertyRef)
     {
         $this->externalPropertyRef = $externalPropertyRef;
     }
@@ -113,7 +113,7 @@ class PropertyGetModel
     /**
      * @return int
      */
-    public function getPropertyAddressId(): int
+    public function getPropertyAddressId()
     {
         return $this->propertyAddressId;
     }
@@ -121,7 +121,7 @@ class PropertyGetModel
     /**
      * @param int $propertyAddressId
      */
-    public function setPropertyAddressId(int $propertyAddressId)
+    public function setPropertyAddressId($propertyAddressId)
     {
         $this->propertyAddressId = $propertyAddressId;
     }
@@ -129,7 +129,7 @@ class PropertyGetModel
     /**
      * @return AddressModel
      */
-    public function getAddress(): AddressModel
+    public function getAddress()
     {
         return $this->address;
     }
@@ -145,7 +145,7 @@ class PropertyGetModel
     /**
      * @return \DateTime
      */
-    public function getUpdateDate(): \DateTime
+    public function getUpdateDate()
     {
         return $this->updateDate;
     }
@@ -161,7 +161,7 @@ class PropertyGetModel
     /**
      * @return AssignedAgentModel
      */
-    public function getAssignedAgent(): AssignedAgentModel
+    public function getAssignedAgent()
     {
         return $this->assignedAgent;
     }

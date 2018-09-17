@@ -63,7 +63,7 @@ class QuoteApprovalModel
      * @param string $priceAgencyReceivableNet
      * @param string $priceAgencyReceivableTax
      */
-    public function __construct(string $approvalNameType, bool $approved, \DateTime $approvedDate, int $quoteAmount, \DateTime $requestedDate, string $quoteId, string $priceAgencyReceivableGross, string $priceAgencyReceivableNet, string $priceAgencyReceivableTax)
+    public function __construct($approvalNameType, $approved, \DateTime $approvedDate, $quoteAmount, \DateTime $requestedDate, $quoteId, $priceAgencyReceivableGross, $priceAgencyReceivableNet, $priceAgencyReceivableTax)
     {
         $this->approvalNameType = $approvalNameType;
         $this->approved = $approved;
@@ -79,7 +79,7 @@ class QuoteApprovalModel
     /**
      * @return string
      */
-    public function getApprovalNameType(): string
+    public function getApprovalNameType()
     {
         return $this->approvalNameType;
     }
@@ -87,7 +87,7 @@ class QuoteApprovalModel
     /**
      * @param string $approvalNameType
      */
-    public function setApprovalNameType(string $approvalNameType)
+    public function setApprovalNameType($approvalNameType)
     {
         $this->approvalNameType = $approvalNameType;
     }
@@ -95,7 +95,7 @@ class QuoteApprovalModel
     /**
      * @return bool
      */
-    public function isApproved(): bool
+    public function isApproved()
     {
         return $this->approved;
     }
@@ -103,7 +103,7 @@ class QuoteApprovalModel
     /**
      * @param bool $approved
      */
-    public function setApproved(bool $approved)
+    public function setApproved($approved)
     {
         $this->approved = $approved;
     }
@@ -111,7 +111,7 @@ class QuoteApprovalModel
     /**
      * @return \DateTime
      */
-    public function getApprovedDate(): \DateTime
+    public function getApprovedDate()
     {
         return $this->approvedDate;
     }
@@ -127,7 +127,7 @@ class QuoteApprovalModel
     /**
      * @return int
      */
-    public function getQuoteAmount(): int
+    public function getQuoteAmount()
     {
         return $this->quoteAmount;
     }
@@ -135,7 +135,7 @@ class QuoteApprovalModel
     /**
      * @param int $quoteAmount
      */
-    public function setQuoteAmount(int $quoteAmount)
+    public function setQuoteAmount($quoteAmount)
     {
         $this->quoteAmount = $quoteAmount;
     }
@@ -143,7 +143,7 @@ class QuoteApprovalModel
     /**
      * @return \DateTime
      */
-    public function getRequestedDate(): \DateTime
+    public function getRequestedDate()
     {
         return $this->requestedDate;
     }
@@ -159,7 +159,7 @@ class QuoteApprovalModel
     /**
      * @return string
      */
-    public function getQuoteId(): string
+    public function getQuoteId()
     {
         return $this->quoteId;
     }
@@ -167,7 +167,7 @@ class QuoteApprovalModel
     /**
      * @param string $quoteId
      */
-    public function setQuoteId(string $quoteId)
+    public function setQuoteId($quoteId)
     {
         $this->quoteId = $quoteId;
     }
@@ -175,7 +175,7 @@ class QuoteApprovalModel
     /**
      * @return string
      */
-    public function getPriceAgencyReceivableGross(): string
+    public function getPriceAgencyReceivableGross()
     {
         return $this->priceAgencyReceivableGross;
     }
@@ -183,7 +183,7 @@ class QuoteApprovalModel
     /**
      * @param string $priceAgencyReceivableGross
      */
-    public function setPriceAgencyReceivableGross(string $priceAgencyReceivableGross)
+    public function setPriceAgencyReceivableGross($priceAgencyReceivableGross)
     {
         $this->priceAgencyReceivableGross = $priceAgencyReceivableGross;
     }
@@ -191,7 +191,7 @@ class QuoteApprovalModel
     /**
      * @return string
      */
-    public function getPriceAgencyReceivableNet(): string
+    public function getPriceAgencyReceivableNet()
     {
         return $this->priceAgencyReceivableNet;
     }
@@ -199,7 +199,7 @@ class QuoteApprovalModel
     /**
      * @param string $priceAgencyReceivableNet
      */
-    public function setPriceAgencyReceivableNet(string $priceAgencyReceivableNet)
+    public function setPriceAgencyReceivableNet($priceAgencyReceivableNet)
     {
         $this->priceAgencyReceivableNet = $priceAgencyReceivableNet;
     }
@@ -207,7 +207,7 @@ class QuoteApprovalModel
     /**
      * @return string
      */
-    public function getPriceAgencyReceivableTax(): string
+    public function getPriceAgencyReceivableTax()
     {
         return $this->priceAgencyReceivableTax;
     }
@@ -215,7 +215,7 @@ class QuoteApprovalModel
     /**
      * @param string $priceAgencyReceivableTax
      */
-    public function setPriceAgencyReceivableTax(string $priceAgencyReceivableTax)
+    public function setPriceAgencyReceivableTax($priceAgencyReceivableTax)
     {
         $this->priceAgencyReceivableTax = $priceAgencyReceivableTax;
     }

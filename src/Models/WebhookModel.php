@@ -21,7 +21,7 @@ class WebhookModel
      * @param string $id
      * @param string $url
      */
-    public function __construct(string $id, string $url)
+    public function __construct($id, $url)
     {
         $this->id = $id;
         $this->url = $url;
@@ -30,7 +30,7 @@ class WebhookModel
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId()
     {
         return $this->id;
     }
@@ -38,7 +38,7 @@ class WebhookModel
     /**
      * @param string $id
      */
-    public function setId(string $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -46,7 +46,7 @@ class WebhookModel
     /**
      * @return string
      */
-    public function getUrl(): string
+    public function getUrl()
     {
         return $this->url;
     }
@@ -54,7 +54,7 @@ class WebhookModel
     /**
      * @param string $url
      */
-    public function setUrl(string $url)
+    public function setUrl($url)
     {
         $this->url = $url;
     }

@@ -57,7 +57,7 @@ class WebhookDeliveryItemModel
      * @param string $requestBody
      * @param string $responseBody
      */
-    public function __construct(string $id, string $webHookUrl, \DateTime $sendTime, bool $failed, string $failureMessage, string $responseStatus, string $requestBody, string $responseBody)
+    public function __construct($id, $webHookUrl, \DateTime $sendTime, $failed, $failureMessage, $responseStatus, $requestBody, $responseBody)
     {
         $this->id = $id;
         $this->webHookUrl = $webHookUrl;
@@ -72,7 +72,7 @@ class WebhookDeliveryItemModel
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId()
     {
         return $this->id;
     }
@@ -80,7 +80,7 @@ class WebhookDeliveryItemModel
     /**
      * @param string $id
      */
-    public function setId(string $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -88,7 +88,7 @@ class WebhookDeliveryItemModel
     /**
      * @return string
      */
-    public function getWebHookUrl(): string
+    public function getWebHookUrl()
     {
         return $this->webHookUrl;
     }
@@ -96,7 +96,7 @@ class WebhookDeliveryItemModel
     /**
      * @param string $webHookUrl
      */
-    public function setWebHookUrl(string $webHookUrl)
+    public function setWebHookUrl($webHookUrl)
     {
         $this->webHookUrl = $webHookUrl;
     }
@@ -104,7 +104,7 @@ class WebhookDeliveryItemModel
     /**
      * @return \DateTime
      */
-    public function getSendTime(): \DateTime
+    public function getSendTime()
     {
         return $this->sendTime;
     }
@@ -120,7 +120,7 @@ class WebhookDeliveryItemModel
     /**
      * @return bool
      */
-    public function isFailed(): bool
+    public function isFailed()
     {
         return $this->failed;
     }
@@ -128,7 +128,7 @@ class WebhookDeliveryItemModel
     /**
      * @param bool $failed
      */
-    public function setFailed(bool $failed)
+    public function setFailed($failed)
     {
         $this->failed = $failed;
     }
@@ -136,7 +136,7 @@ class WebhookDeliveryItemModel
     /**
      * @return string
      */
-    public function getFailureMessage(): string
+    public function getFailureMessage()
     {
         return $this->failureMessage;
     }
@@ -144,7 +144,7 @@ class WebhookDeliveryItemModel
     /**
      * @param string $failureMessage
      */
-    public function setFailureMessage(string $failureMessage)
+    public function setFailureMessage($failureMessage)
     {
         $this->failureMessage = $failureMessage;
     }
@@ -152,7 +152,7 @@ class WebhookDeliveryItemModel
     /**
      * @return string
      */
-    public function getResponseStatus(): string
+    public function getResponseStatus()
     {
         return $this->responseStatus;
     }
@@ -160,7 +160,7 @@ class WebhookDeliveryItemModel
     /**
      * @param string $responseStatus
      */
-    public function setResponseStatus(string $responseStatus)
+    public function setResponseStatus($responseStatus)
     {
         $this->responseStatus = $responseStatus;
     }
@@ -168,7 +168,7 @@ class WebhookDeliveryItemModel
     /**
      * @return string
      */
-    public function getRequestBody(): string
+    public function getRequestBody()
     {
         return $this->requestBody;
     }
@@ -176,7 +176,7 @@ class WebhookDeliveryItemModel
     /**
      * @param string $requestBody
      */
-    public function setRequestBody(string $requestBody)
+    public function setRequestBody($requestBody)
     {
         $this->requestBody = $requestBody;
     }
@@ -184,7 +184,7 @@ class WebhookDeliveryItemModel
     /**
      * @return string
      */
-    public function getResponseBody(): string
+    public function getResponseBody()
     {
         return $this->responseBody;
     }
@@ -192,7 +192,7 @@ class WebhookDeliveryItemModel
     /**
      * @param string $responseBody
      */
-    public function setResponseBody(string $responseBody)
+    public function setResponseBody($responseBody)
     {
         $this->responseBody = $responseBody;
     }

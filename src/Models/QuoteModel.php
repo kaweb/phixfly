@@ -63,7 +63,7 @@ class QuoteModel
      * @param string $priceAgencyReceivableNet
      * @param string $priceAgencyReceivableTax
      */
-    public function __construct(string $id, string $status, ContractorModel $contractor, string $priceAgencyPayableGross, string $priceAgencyPayableNet, string $priceAgencyPayableTax, string $priceAgencyReceivableGross, string $priceAgencyReceivableNet, string $priceAgencyReceivableTax)
+    public function __construct($id, $status, ContractorModel $contractor, $priceAgencyPayableGross, $priceAgencyPayableNet, $priceAgencyPayableTax, $priceAgencyReceivableGross, $priceAgencyReceivableNet, $priceAgencyReceivableTax)
     {
         $this->id = $id;
         $this->status = $status;
@@ -79,7 +79,7 @@ class QuoteModel
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId()
     {
         return $this->id;
     }
@@ -87,7 +87,7 @@ class QuoteModel
     /**
      * @param string $id
      */
-    public function setId(string $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -95,7 +95,7 @@ class QuoteModel
     /**
      * @return string
      */
-    public function getStatus(): string
+    public function getStatus()
     {
         return $this->status;
     }
@@ -103,7 +103,7 @@ class QuoteModel
     /**
      * @param string $status
      */
-    public function setStatus(string $status)
+    public function setStatus($status)
     {
         $this->status = $status;
     }
@@ -111,7 +111,7 @@ class QuoteModel
     /**
      * @return ContractorModel
      */
-    public function getContractor(): ContractorModel
+    public function getContractor()
     {
         return $this->contractor;
     }
@@ -127,7 +127,7 @@ class QuoteModel
     /**
      * @return string
      */
-    public function getPriceAgencyPayableGross(): string
+    public function getPriceAgencyPayableGross()
     {
         return $this->priceAgencyPayableGross;
     }
@@ -135,7 +135,7 @@ class QuoteModel
     /**
      * @param string $priceAgencyPayableGross
      */
-    public function setPriceAgencyPayableGross(string $priceAgencyPayableGross)
+    public function setPriceAgencyPayableGross($priceAgencyPayableGross)
     {
         $this->priceAgencyPayableGross = $priceAgencyPayableGross;
     }
@@ -143,7 +143,7 @@ class QuoteModel
     /**
      * @return string
      */
-    public function getPriceAgencyPayableNet(): string
+    public function getPriceAgencyPayableNet()
     {
         return $this->priceAgencyPayableNet;
     }
@@ -151,7 +151,7 @@ class QuoteModel
     /**
      * @param string $priceAgencyPayableNet
      */
-    public function setPriceAgencyPayableNet(string $priceAgencyPayableNet)
+    public function setPriceAgencyPayableNet($priceAgencyPayableNet)
     {
         $this->priceAgencyPayableNet = $priceAgencyPayableNet;
     }
@@ -159,7 +159,7 @@ class QuoteModel
     /**
      * @return string
      */
-    public function getPriceAgencyPayableTax(): string
+    public function getPriceAgencyPayableTax()
     {
         return $this->priceAgencyPayableTax;
     }
@@ -167,7 +167,7 @@ class QuoteModel
     /**
      * @param string $priceAgencyPayableTax
      */
-    public function setPriceAgencyPayableTax(string $priceAgencyPayableTax)
+    public function setPriceAgencyPayableTax($priceAgencyPayableTax)
     {
         $this->priceAgencyPayableTax = $priceAgencyPayableTax;
     }
@@ -175,7 +175,7 @@ class QuoteModel
     /**
      * @return string
      */
-    public function getPriceAgencyReceivableGross(): string
+    public function getPriceAgencyReceivableGross()
     {
         return $this->priceAgencyReceivableGross;
     }
@@ -183,7 +183,7 @@ class QuoteModel
     /**
      * @param string $priceAgencyReceivableGross
      */
-    public function setPriceAgencyReceivableGross(string $priceAgencyReceivableGross)
+    public function setPriceAgencyReceivableGross($priceAgencyReceivableGross)
     {
         $this->priceAgencyReceivableGross = $priceAgencyReceivableGross;
     }
@@ -191,7 +191,7 @@ class QuoteModel
     /**
      * @return string
      */
-    public function getPriceAgencyReceivableNet(): string
+    public function getPriceAgencyReceivableNet()
     {
         return $this->priceAgencyReceivableNet;
     }
@@ -199,7 +199,7 @@ class QuoteModel
     /**
      * @param string $priceAgencyReceivableNet
      */
-    public function setPriceAgencyReceivableNet(string $priceAgencyReceivableNet)
+    public function setPriceAgencyReceivableNet($priceAgencyReceivableNet)
     {
         $this->priceAgencyReceivableNet = $priceAgencyReceivableNet;
     }
@@ -207,7 +207,7 @@ class QuoteModel
     /**
      * @return string
      */
-    public function getPriceAgencyReceivableTax(): string
+    public function getPriceAgencyReceivableTax()
     {
         return $this->priceAgencyReceivableTax;
     }
@@ -215,7 +215,7 @@ class QuoteModel
     /**
      * @param string $priceAgencyReceivableTax
      */
-    public function setPriceAgencyReceivableTax(string $priceAgencyReceivableTax)
+    public function setPriceAgencyReceivableTax($priceAgencyReceivableTax)
     {
         $this->priceAgencyReceivableTax = $priceAgencyReceivableTax;
     }

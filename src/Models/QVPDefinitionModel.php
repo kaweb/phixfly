@@ -33,7 +33,7 @@ class QVPDefinitionModel
      * @param string $explanation
      * @param string $url
      */
-    public function __construct(int $qvpTypeId, string $title, string $explanation, string $url)
+    public function __construct($qvpTypeId, $title, $explanation, $url)
     {
         $this->qvpTypeId = $qvpTypeId;
         $this->title = $title;
@@ -44,7 +44,7 @@ class QVPDefinitionModel
     /**
      * @return int
      */
-    public function getQvpTypeId(): int
+    public function getQvpTypeId()
     {
         return $this->qvpTypeId;
     }
@@ -52,7 +52,7 @@ class QVPDefinitionModel
     /**
      * @param int $qvpTypeId
      */
-    public function setQvpTypeId(int $qvpTypeId)
+    public function setQvpTypeId($qvpTypeId)
     {
         $this->qvpTypeId = $qvpTypeId;
     }
@@ -60,7 +60,7 @@ class QVPDefinitionModel
     /**
      * @return string
      */
-    public function getTitle(): string
+    public function getTitle()
     {
         return $this->title;
     }
@@ -68,7 +68,7 @@ class QVPDefinitionModel
     /**
      * @param string $title
      */
-    public function setTitle(string $title)
+    public function setTitle($title)
     {
         $this->title = $title;
     }
@@ -76,7 +76,7 @@ class QVPDefinitionModel
     /**
      * @return string
      */
-    public function getExplanation(): string
+    public function getExplanation()
     {
         return $this->explanation;
     }
@@ -84,7 +84,7 @@ class QVPDefinitionModel
     /**
      * @param string $explanation
      */
-    public function setExplanation(string $explanation)
+    public function setExplanation($explanation)
     {
         $this->explanation = $explanation;
     }
@@ -92,7 +92,7 @@ class QVPDefinitionModel
     /**
      * @return string
      */
-    public function getUrl(): string
+    public function getUrl()
     {
         return $this->url;
     }
@@ -100,7 +100,7 @@ class QVPDefinitionModel
     /**
      * @param string $url
      */
-    public function setUrl(string $url)
+    public function setUrl($url)
     {
         $this->url = $url;
     }

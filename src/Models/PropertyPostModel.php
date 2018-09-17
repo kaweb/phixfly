@@ -51,7 +51,7 @@ class PropertyPostModel
      * @param AddressModel $address
      * @param AssignedAgentModel $assignedAgent
      */
-    public function __construct(int $id, int $blockId, string $externalPropertyRef, string $keyReference, int $propertyAddressId, AddressModel $address, AssignedAgentModel $assignedAgent)
+    public function __construct($id, $blockId, $externalPropertyRef, $keyReference, $propertyAddressId, AddressModel $address, AssignedAgentModel $assignedAgent)
     {
         $this->id = $id;
         $this->blockId = $blockId;
@@ -65,7 +65,7 @@ class PropertyPostModel
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
@@ -73,7 +73,7 @@ class PropertyPostModel
     /**
      * @param int $id
      */
-    public function setId(int $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -81,7 +81,7 @@ class PropertyPostModel
     /**
      * @return int
      */
-    public function getBlockId(): int
+    public function getBlockId()
     {
         return $this->blockId;
     }
@@ -89,7 +89,7 @@ class PropertyPostModel
     /**
      * @param int $blockId
      */
-    public function setBlockId(int $blockId)
+    public function setBlockId($blockId)
     {
         $this->blockId = $blockId;
     }
@@ -97,7 +97,7 @@ class PropertyPostModel
     /**
      * @return string
      */
-    public function getExternalPropertyRef(): string
+    public function getExternalPropertyRef()
     {
         return $this->externalPropertyRef;
     }
@@ -105,7 +105,7 @@ class PropertyPostModel
     /**
      * @param string $externalPropertyRef
      */
-    public function setExternalPropertyRef(string $externalPropertyRef)
+    public function setExternalPropertyRef($externalPropertyRef)
     {
         $this->externalPropertyRef = $externalPropertyRef;
     }
@@ -113,7 +113,7 @@ class PropertyPostModel
     /**
      * @return string
      */
-    public function getKeyReference(): string
+    public function getKeyReference()
     {
         return $this->keyReference;
     }
@@ -121,7 +121,7 @@ class PropertyPostModel
     /**
      * @param string $keyReference
      */
-    public function setKeyReference(string $keyReference)
+    public function setKeyReference($keyReference)
     {
         $this->keyReference = $keyReference;
     }
@@ -129,7 +129,7 @@ class PropertyPostModel
     /**
      * @return int
      */
-    public function getPropertyAddressId(): int
+    public function getPropertyAddressId()
     {
         return $this->propertyAddressId;
     }
@@ -137,7 +137,7 @@ class PropertyPostModel
     /**
      * @param int $propertyAddressId
      */
-    public function setPropertyAddressId(int $propertyAddressId)
+    public function setPropertyAddressId($propertyAddressId)
     {
         $this->propertyAddressId = $propertyAddressId;
     }
@@ -145,7 +145,7 @@ class PropertyPostModel
     /**
      * @return AddressModel
      */
-    public function getAddress(): AddressModel
+    public function getAddress()
     {
         return $this->address;
     }
@@ -161,7 +161,7 @@ class PropertyPostModel
     /**
      * @return AssignedAgentModel
      */
-    public function getAssignedAgent(): AssignedAgentModel
+    public function getAssignedAgent()
     {
         return $this->assignedAgent;
     }

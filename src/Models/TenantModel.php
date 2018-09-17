@@ -87,7 +87,7 @@ class TenantModel
      * @param bool $isDeleted
      * @param \DateTime $updateDate
      */
-    public function __construct(string $id, string $externalRef, string $title, string $firstName, string $surname, string $companyName, AddressModel $address, string $emailAddress, string $contactNumber, string $contactNumberAlt, string $displayName, bool $isDeleted, \DateTime $updateDate)
+    public function __construct($id, $externalRef, $title, $firstName, $surname, $companyName, AddressModel $address, $emailAddress, $contactNumber, $contactNumberAlt, $displayName, $isDeleted, \DateTime $updateDate)
     {
         $this->id = $id;
         $this->externalRef = $externalRef;
@@ -107,7 +107,7 @@ class TenantModel
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId()
     {
         return $this->id;
     }
@@ -115,7 +115,7 @@ class TenantModel
     /**
      * @param string $id
      */
-    public function setId(string $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -123,7 +123,7 @@ class TenantModel
     /**
      * @return string
      */
-    public function getExternalRef(): string
+    public function getExternalRef()
     {
         return $this->externalRef;
     }
@@ -131,7 +131,7 @@ class TenantModel
     /**
      * @param string $externalRef
      */
-    public function setExternalRef(string $externalRef)
+    public function setExternalRef($externalRef)
     {
         $this->externalRef = $externalRef;
     }
@@ -139,7 +139,7 @@ class TenantModel
     /**
      * @return string
      */
-    public function getTitle(): string
+    public function getTitle()
     {
         return $this->title;
     }
@@ -147,7 +147,7 @@ class TenantModel
     /**
      * @param string $title
      */
-    public function setTitle(string $title)
+    public function setTitle($title)
     {
         $this->title = $title;
     }
@@ -155,7 +155,7 @@ class TenantModel
     /**
      * @return string
      */
-    public function getFirstName(): string
+    public function getFirstName()
     {
         return $this->firstName;
     }
@@ -163,7 +163,7 @@ class TenantModel
     /**
      * @param string $firstName
      */
-    public function setFirstName(string $firstName)
+    public function setFirstName($firstName)
     {
         $this->firstName = $firstName;
     }
@@ -171,7 +171,7 @@ class TenantModel
     /**
      * @return string
      */
-    public function getSurname(): string
+    public function getSurname()
     {
         return $this->surname;
     }
@@ -179,7 +179,7 @@ class TenantModel
     /**
      * @param string $surname
      */
-    public function setSurname(string $surname)
+    public function setSurname($surname)
     {
         $this->surname = $surname;
     }
@@ -187,7 +187,7 @@ class TenantModel
     /**
      * @return string
      */
-    public function getCompanyName(): string
+    public function getCompanyName()
     {
         return $this->companyName;
     }
@@ -195,7 +195,7 @@ class TenantModel
     /**
      * @param string $companyName
      */
-    public function setCompanyName(string $companyName)
+    public function setCompanyName($companyName)
     {
         $this->companyName = $companyName;
     }
@@ -203,7 +203,7 @@ class TenantModel
     /**
      * @return AddressModel
      */
-    public function getAddress(): AddressModel
+    public function getAddress()
     {
         return $this->address;
     }
@@ -219,7 +219,7 @@ class TenantModel
     /**
      * @return string
      */
-    public function getEmailAddress(): string
+    public function getEmailAddress()
     {
         return $this->emailAddress;
     }
@@ -227,7 +227,7 @@ class TenantModel
     /**
      * @param string $emailAddress
      */
-    public function setEmailAddress(string $emailAddress)
+    public function setEmailAddress($emailAddress)
     {
         $this->emailAddress = $emailAddress;
     }
@@ -235,7 +235,7 @@ class TenantModel
     /**
      * @return string
      */
-    public function getContactNumber(): string
+    public function getContactNumber()
     {
         return $this->contactNumber;
     }
@@ -243,7 +243,7 @@ class TenantModel
     /**
      * @param string $contactNumber
      */
-    public function setContactNumber(string $contactNumber)
+    public function setContactNumber($contactNumber)
     {
         $this->contactNumber = $contactNumber;
     }
@@ -251,7 +251,7 @@ class TenantModel
     /**
      * @return string
      */
-    public function getContactNumberAlt(): string
+    public function getContactNumberAlt()
     {
         return $this->contactNumberAlt;
     }
@@ -259,7 +259,7 @@ class TenantModel
     /**
      * @param string $contactNumberAlt
      */
-    public function setContactNumberAlt(string $contactNumberAlt)
+    public function setContactNumberAlt($contactNumberAlt)
     {
         $this->contactNumberAlt = $contactNumberAlt;
     }
@@ -267,7 +267,7 @@ class TenantModel
     /**
      * @return string
      */
-    public function getDisplayName(): string
+    public function getDisplayName()
     {
         return $this->displayName;
     }
@@ -275,7 +275,7 @@ class TenantModel
     /**
      * @param string $displayName
      */
-    public function setDisplayName(string $displayName)
+    public function setDisplayName($displayName)
     {
         $this->displayName = $displayName;
     }
@@ -283,7 +283,7 @@ class TenantModel
     /**
      * @return bool
      */
-    public function isDeleted(): bool
+    public function isDeleted()
     {
         return $this->isDeleted;
     }
@@ -291,7 +291,7 @@ class TenantModel
     /**
      * @param bool $isDeleted
      */
-    public function setIsDeleted(bool $isDeleted)
+    public function setIsDeleted($isDeleted)
     {
         $this->isDeleted = $isDeleted;
     }
@@ -299,7 +299,7 @@ class TenantModel
     /**
      * @return \DateTime
      */
-    public function getUpdateDate(): \DateTime
+    public function getUpdateDate()
     {
         return $this->updateDate;
     }
