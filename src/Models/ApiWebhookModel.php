@@ -21,7 +21,7 @@ class ApiWebhookModel
      * @param string $targetUrl
      * @param string $event
      */
-    public function __construct(string $targetUrl, string $event)
+    public function __construct($targetUrl, $event)
     {
         $this->targetUrl = $targetUrl;
         $this->event = $event;
@@ -30,7 +30,7 @@ class ApiWebhookModel
     /**
      * @return string
      */
-    public function getTargetUrl(): string
+    public function getTargetUrl()
     {
         return $this->targetUrl;
     }
@@ -38,7 +38,7 @@ class ApiWebhookModel
     /**
      * @param string $targetUrl
      */
-    public function setTargetUrl(string $targetUrl)
+    public function setTargetUrl($targetUrl)
     {
         $this->targetUrl = $targetUrl;
     }
@@ -46,7 +46,7 @@ class ApiWebhookModel
     /**
      * @return string
      */
-    public function getEvent(): string
+    public function getEvent()
     {
         return $this->event;
     }
@@ -54,7 +54,7 @@ class ApiWebhookModel
     /**
      * @param string $event
      */
-    public function setEvent(string $event)
+    public function setEvent($event)
     {
         $this->event = $event;
     }

@@ -45,7 +45,7 @@ class AddressModel
      * @param string $postcode
      * @param string $country
      */
-    public function __construct(string $addressLineOne, string $addressLineTwo, string $town, string $county, string $postcode, string $country)
+    public function __construct($addressLineOne, $addressLineTwo, $town, $county, $postcode, $country)
     {
         $this->addressLineOne = $addressLineOne;
         $this->addressLineTwo = $addressLineTwo;
@@ -58,7 +58,7 @@ class AddressModel
     /**
      * @return string
      */
-    public function getAddressLineOne(): string
+    public function getAddressLineOne()
     {
         return $this->addressLineOne;
     }
@@ -66,7 +66,7 @@ class AddressModel
     /**
      * @param string $addressLineOne
      */
-    public function setAddressLineOne(string $addressLineOne)
+    public function setAddressLineOne($addressLineOne)
     {
         $this->addressLineOne = $addressLineOne;
     }
@@ -74,7 +74,7 @@ class AddressModel
     /**
      * @return string
      */
-    public function getAddressLineTwo(): string
+    public function getAddressLineTwo()
     {
         return $this->addressLineTwo;
     }
@@ -82,7 +82,7 @@ class AddressModel
     /**
      * @param string $addressLineTwo
      */
-    public function setAddressLineTwo(string $addressLineTwo)
+    public function setAddressLineTwo($addressLineTwo)
     {
         $this->addressLineTwo = $addressLineTwo;
     }
@@ -90,7 +90,7 @@ class AddressModel
     /**
      * @return string
      */
-    public function getTown(): string
+    public function getTown()
     {
         return $this->town;
     }
@@ -98,7 +98,7 @@ class AddressModel
     /**
      * @param string $town
      */
-    public function setTown(string $town)
+    public function setTown($town)
     {
         $this->town = $town;
     }
@@ -106,7 +106,7 @@ class AddressModel
     /**
      * @return string
      */
-    public function getCounty(): string
+    public function getCounty()
     {
         return $this->county;
     }
@@ -114,7 +114,7 @@ class AddressModel
     /**
      * @param string $county
      */
-    public function setCounty(string $county)
+    public function setCounty($county)
     {
         $this->county = $county;
     }
@@ -122,7 +122,7 @@ class AddressModel
     /**
      * @return string
      */
-    public function getPostcode(): string
+    public function getPostcode()
     {
         return $this->postcode;
     }
@@ -130,7 +130,7 @@ class AddressModel
     /**
      * @param string $postcode
      */
-    public function setPostcode(string $postcode)
+    public function setPostcode($postcode)
     {
         $this->postcode = $postcode;
     }
@@ -138,7 +138,7 @@ class AddressModel
     /**
      * @return string
      */
-    public function getCountry(): string
+    public function getCountry()
     {
         return $this->country;
     }
@@ -146,7 +146,7 @@ class AddressModel
     /**
      * @param string $country
      */
-    public function setCountry(string $country)
+    public function setCountry($country)
     {
         $this->country = $country;
     }

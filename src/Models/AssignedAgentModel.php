@@ -33,7 +33,7 @@ class AssignedAgentModel
      * @param string $externalRef
      * @param string $displayName
      */
-    public function __construct(string $id, string $emailAddress, string $externalRef, string $displayName)
+    public function __construct($id, $emailAddress, $externalRef, $displayName)
     {
         $this->id = $id;
         $this->emailAddress = $emailAddress;
@@ -44,7 +44,7 @@ class AssignedAgentModel
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId()
     {
         return $this->id;
     }
@@ -52,7 +52,7 @@ class AssignedAgentModel
     /**
      * @param string $id
      */
-    public function setId(string $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -60,7 +60,7 @@ class AssignedAgentModel
     /**
      * @return string
      */
-    public function getEmailAddress(): string
+    public function getEmailAddress()
     {
         return $this->emailAddress;
     }
@@ -68,7 +68,7 @@ class AssignedAgentModel
     /**
      * @param string $emailAddress
      */
-    public function setEmailAddress(string $emailAddress)
+    public function setEmailAddress($emailAddress)
     {
         $this->emailAddress = $emailAddress;
     }
@@ -76,7 +76,7 @@ class AssignedAgentModel
     /**
      * @return string
      */
-    public function getExternalRef(): string
+    public function getExternalRef()
     {
         return $this->externalRef;
     }
@@ -84,7 +84,7 @@ class AssignedAgentModel
     /**
      * @param string $externalRef
      */
-    public function setExternalRef(string $externalRef)
+    public function setExternalRef($externalRef)
     {
         $this->externalRef = $externalRef;
     }
@@ -92,7 +92,7 @@ class AssignedAgentModel
     /**
      * @return string
      */
-    public function getDisplayName(): string
+    public function getDisplayName()
     {
         return $this->displayName;
     }
@@ -100,7 +100,7 @@ class AssignedAgentModel
     /**
      * @param string $displayName
      */
-    public function setDisplayName(string $displayName)
+    public function setDisplayName($displayName)
     {
         $this->displayName = $displayName;
     }

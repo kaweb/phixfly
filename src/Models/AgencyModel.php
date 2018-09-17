@@ -81,7 +81,7 @@ class AgencyModel
      * @param string $defaultTimeZoneId
      * @param string $locale
      */
-    public function __construct(string $id, string $agencyName, string $customDomain, string $emailAddress, string $password, bool $isDeleted, \DateTime $created, int $featureType, int $issueTreeRoot, string $siteBaseUrl, string $defaultTimeZoneId, string $locale)
+    public function __construct($id, $agencyName, $customDomain, $emailAddress, $password, $isDeleted, \DateTime $created, $featureType, $issueTreeRoot, $siteBaseUrl, $defaultTimeZoneId, $locale)
     {
         $this->id = $id;
         $this->agencyName = $agencyName;
@@ -100,7 +100,7 @@ class AgencyModel
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId()
     {
         return $this->id;
     }
@@ -108,7 +108,7 @@ class AgencyModel
     /**
      * @param string $id
      */
-    public function setId(string $id)
+    public function setId($id)
     {
         $this->id = $id;
     }
@@ -116,7 +116,7 @@ class AgencyModel
     /**
      * @return string
      */
-    public function getAgencyName(): string
+    public function getAgencyName()
     {
         return $this->agencyName;
     }
@@ -124,7 +124,7 @@ class AgencyModel
     /**
      * @param string $agencyName
      */
-    public function setAgencyName(string $agencyName)
+    public function setAgencyName($agencyName)
     {
         $this->agencyName = $agencyName;
     }
@@ -132,7 +132,7 @@ class AgencyModel
     /**
      * @return string
      */
-    public function getCustomDomain(): string
+    public function getCustomDomain()
     {
         return $this->customDomain;
     }
@@ -140,7 +140,7 @@ class AgencyModel
     /**
      * @param string $customDomain
      */
-    public function setCustomDomain(string $customDomain)
+    public function setCustomDomain($customDomain)
     {
         $this->customDomain = $customDomain;
     }
@@ -148,7 +148,7 @@ class AgencyModel
     /**
      * @return string
      */
-    public function getEmailAddress(): string
+    public function getEmailAddress()
     {
         return $this->emailAddress;
     }
@@ -156,7 +156,7 @@ class AgencyModel
     /**
      * @param string $emailAddress
      */
-    public function setEmailAddress(string $emailAddress)
+    public function setEmailAddress($emailAddress)
     {
         $this->emailAddress = $emailAddress;
     }
@@ -164,7 +164,7 @@ class AgencyModel
     /**
      * @return string
      */
-    public function getPassword(): string
+    public function getPassword()
     {
         return $this->password;
     }
@@ -172,7 +172,7 @@ class AgencyModel
     /**
      * @param string $password
      */
-    public function setPassword(string $password)
+    public function setPassword($password)
     {
         $this->password = $password;
     }
@@ -180,7 +180,7 @@ class AgencyModel
     /**
      * @return bool
      */
-    public function isDeleted(): bool
+    public function isDeleted()
     {
         return $this->isDeleted;
     }
@@ -188,7 +188,7 @@ class AgencyModel
     /**
      * @param bool $isDeleted
      */
-    public function setIsDeleted(bool $isDeleted)
+    public function setIsDeleted($isDeleted)
     {
         $this->isDeleted = $isDeleted;
     }
@@ -196,7 +196,7 @@ class AgencyModel
     /**
      * @return \DateTime
      */
-    public function getCreated(): \DateTime
+    public function getCreated()
     {
         return $this->created;
     }
@@ -212,7 +212,7 @@ class AgencyModel
     /**
      * @return int
      */
-    public function getFeatureType(): int
+    public function getFeatureType()
     {
         return $this->featureType;
     }
@@ -220,7 +220,7 @@ class AgencyModel
     /**
      * @param int $featureType
      */
-    public function setFeatureType(int $featureType)
+    public function setFeatureType($featureType)
     {
         $this->featureType = $featureType;
     }
@@ -228,7 +228,7 @@ class AgencyModel
     /**
      * @return int
      */
-    public function getIssueTreeRoot(): int
+    public function getIssueTreeRoot()
     {
         return $this->issueTreeRoot;
     }
@@ -236,7 +236,7 @@ class AgencyModel
     /**
      * @param int $issueTreeRoot
      */
-    public function setIssueTreeRoot(int $issueTreeRoot)
+    public function setIssueTreeRoot($issueTreeRoot)
     {
         $this->issueTreeRoot = $issueTreeRoot;
     }
@@ -244,7 +244,7 @@ class AgencyModel
     /**
      * @return string
      */
-    public function getSiteBaseUrl(): string
+    public function getSiteBaseUrl()
     {
         return $this->siteBaseUrl;
     }
@@ -252,7 +252,7 @@ class AgencyModel
     /**
      * @param string $siteBaseUrl
      */
-    public function setSiteBaseUrl(string $siteBaseUrl)
+    public function setSiteBaseUrl($siteBaseUrl)
     {
         $this->siteBaseUrl = $siteBaseUrl;
     }
@@ -260,7 +260,7 @@ class AgencyModel
     /**
      * @return string
      */
-    public function getDefaultTimeZoneId(): string
+    public function getDefaultTimeZoneId()
     {
         return $this->defaultTimeZoneId;
     }
@@ -268,7 +268,7 @@ class AgencyModel
     /**
      * @param string $defaultTimeZoneId
      */
-    public function setDefaultTimeZoneId(string $defaultTimeZoneId)
+    public function setDefaultTimeZoneId($defaultTimeZoneId)
     {
         $this->defaultTimeZoneId = $defaultTimeZoneId;
     }
@@ -276,7 +276,7 @@ class AgencyModel
     /**
      * @return string
      */
-    public function getLocale(): string
+    public function getLocale()
     {
         return $this->locale;
     }
@@ -284,7 +284,7 @@ class AgencyModel
     /**
      * @param string $locale
      */
-    public function setLocale(string $locale)
+    public function setLocale($locale)
     {
         $this->locale = $locale;
     }
