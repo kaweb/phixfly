@@ -7,12 +7,12 @@ class AddressModel extends BaseModel
     /**
      * @var string
      */
-    protected $addressLineOne;
+    protected $addressLine1;
 
     /**
      * @var string
      */
-    protected $addressLineTwo;
+    protected $addressLine2;
 
     /**
      * @var string
@@ -38,17 +38,17 @@ class AddressModel extends BaseModel
      * AddressModel constructor.
      * http://api-docs.fixflo.com/?php#resources-address
      *
-     * @param string $addressLineOne
-     * @param string $addressLineTwo
+     * @param string $addressLine1
+     * @param string $addressLine2
      * @param string $town
      * @param string $county
      * @param string $postcode
      * @param string $country
      */
-    public function __construct($addressLineOne, $addressLineTwo, $town, $county, $postcode, $country)
+    public function __construct($addressLine1, $addressLine2, $town, $county, $postcode, $country)
     {
-        $this->addressLineOne = $addressLineOne;
-        $this->addressLineTwo = $addressLineTwo;
+        $this->addressLine1 = $addressLine1;
+        $this->addressLine2 = $addressLine2;
         $this->town = $town;
         $this->county = $county;
         $this->postcode = $postcode;
@@ -58,33 +58,33 @@ class AddressModel extends BaseModel
     /**
      * @return string
      */
-    public function getAddressLineOne()
+    public function getAddressLine1()
     {
-        return $this->addressLineOne;
+        return $this->addressLine1;
     }
 
     /**
-     * @param string $addressLineOne
+     * @param string $addressLine1
      */
-    public function setAddressLineOne($addressLineOne)
+    public function setAddressLine1($addressLine1)
     {
-        $this->addressLineOne = $addressLineOne;
+        $this->addressLine1 = $addressLine1;
     }
 
     /**
      * @return string
      */
-    public function getAddressLineTwo()
+    public function getAddressLine2()
     {
-        return $this->addressLineTwo;
+        return $this->addressLine2;
     }
 
     /**
-     * @param string $addressLineTwo
+     * @param string $addressLine2
      */
-    public function setAddressLineTwo($addressLineTwo)
+    public function setAddressLine2($addressLine2)
     {
-        $this->addressLineTwo = $addressLineTwo;
+        $this->addressLine2 = $addressLine2;
     }
 
     /**

@@ -31,9 +31,7 @@ class IssueDraftEndpoints
      */
     public function issueDraftSave(IssueDraftModel $issueDraftModel)
     {
-        return $this->requestHelper->post('/issuedraft', [
-            'IssueDraftSrc' => $issueDraftModel->toArray()
-        ]);
+        return $this->requestHelper->post('/issuedraft', $issueDraftModel->toArray());
     }
 
     /**
@@ -69,9 +67,7 @@ class IssueDraftEndpoints
      */
     public function commitIssueDraft(IssueDraftModel $issueDraft)
     {
-        return $this->requestHelper->post('/issuedraft/commit', [
-           'IssueDraftSrc' => $issueDraft->toArray()
-        ]);
+        return $this->requestHelper->post('/issuedraft/commit', $issueDraft->toArray());
     }
 
     /**
@@ -82,9 +78,7 @@ class IssueDraftEndpoints
      */
     public function deleteIssueDraft(IssueDraftModel $issueDraft)
     {
-        return $this->requestHelper->post('/issuedraft/delete', [
-            'IssueDraftSrc' => $issueDraft->toArray()
-        ]);
+        return $this->requestHelper->post('/issuedraft/delete', $issueDraft->toArray());
     }
 
     /**
@@ -95,9 +89,7 @@ class IssueDraftEndpoints
      */
     public function saveIssueDraftMedia(IssueDraftMediaModel $issueDraftMedia)
     {
-        return $this->requestHelper->post('/issuedraftmedia', [
-            'IssueDraftMediaSrc' => $issueDraftMedia->toArray()
-        ]);
+        return $this->requestHelper->post('/issuedraftmedia', $issueDraftMedia->toArray());
     }
 
     /**
@@ -130,8 +122,6 @@ class IssueDraftEndpoints
      */
     public function deleteIssueDraftMedia(IssueDraftMediaModel $issueDraftMedia)
     {
-        return $this->requestHelper->post('/issuedraftmedia/delete', [
-            'IssueDraftMediaSrc' => $issueDraftMedia->toArray()
-        ]);
+        return $this->requestHelper->post('/issuedraftmedia/delete', $issueDraftMedia->toArray());
     }
 }

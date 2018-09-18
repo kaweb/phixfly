@@ -93,7 +93,7 @@ class IssueDraftModel extends BaseModel
      * @param int $propertyId
      * @param string $externalPropertyRef
      */
-    public function __construct($id, \DateTime $updated, $issueTitle, $faultId, $faultNotes, array $issueDraftMedia, $title, $firstName, $surname, $contactNumber, $contactNumberAlt, AddressModel $address, $propertyId, $externalPropertyRef)
+    public function __construct($id, \DateTime $updated, $issueTitle, $faultId, $faultNotes, $issueDraftMedia, $title, $firstName, $surname, $contactNumber, $contactNumberAlt, AddressModel $address, $propertyId, $externalPropertyRef)
     {
         $this->id = $id;
         $this->updated = $updated;

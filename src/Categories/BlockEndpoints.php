@@ -30,9 +30,7 @@ class BlockEndpoints
      */
     public function addBlock(BlockModel $blockModel)
     {
-        return $this->requestHelper->post('/block', [
-            'block' => $blockModel->toArray()
-        ]);
+        return $this->requestHelper->post('/block', $blockModel->toArray());
     }
 
     /**
