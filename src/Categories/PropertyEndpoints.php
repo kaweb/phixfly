@@ -3,7 +3,8 @@
 namespace Kaweb\Phixfly\Categories;
 
 use Kaweb\Phixfly\Helpers\RequestHelper;
-use Kaweb\Phixfly\Models\PropertyModel;
+use Kaweb\Phixfly\Models\PropertyAddressModel;
+use Kaweb\Phixfly\Models\PropertyPostModel;
 
 class PropertyEndpoints
 {
@@ -24,10 +25,10 @@ class PropertyEndpoints
     /**
      * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-property-endpoints-post-property
      *
-     * @param PropertyModel $property
+     * @param PropertyPostModel $property
      * @return array
      */
-    public function postProperty(PropertyModel $property)
+    public function postProperty(PropertyPostModel $property)
     {
         return $this->requestHelper->post('/property', [
             'property' => $property
@@ -103,5 +104,50 @@ class PropertyEndpoints
     public function getPropertyAddress($id)
     {
         return $this->requestHelper->get('/propertyaddress/' . $id);
+    }
+
+    /**
+     * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-property-endpoints-merge-altaddress
+     *
+     * @param PropertyAddressModel $pa
+     * @return array
+     */
+    public function mergeAltAddress(PropertyAddressModel $pa)
+    {
+        return $this->requestHelper->post('/propertyaddress/merge', [
+            'pa' => $pa
+        ]);
+    }
+
+    /**
+     * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-property-endpoints-search-propertyaddress
+     *
+     * @param string $keyword
+     * @param string $externalPropertyRef
+     * @param string $keyReference
+     * @param bool $hasExternalPropertyRef
+     * @return array
+     */
+    public function searchPropertyAddress($keyword, $externalPropertyRef, $keyReference, $hasExternalPropertyRef)
+    {
+        return $this->requestHelper->get('/propertyaddress/search', [
+            'Keyword' => $keyword,
+            'ExternalPropertyRef' => $externalPropertyRef,
+            'KeyReference' => $keyReference,
+            'HasExternalPropertyRef' => $hasExternalPropertyRef
+        ]);
+    }
+
+    /**
+     * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-property-endpoints-split-altaddress
+     *
+     * @param PropertyAddressModel $pa
+     * @return array
+     */
+    public function splitAltAddress(PropertyAddressModel $pa)
+    {
+        return $this->requestHelper->post('/propertyaddress/split', [
+            'pa' => $pa
+        ]);
     }
 }
