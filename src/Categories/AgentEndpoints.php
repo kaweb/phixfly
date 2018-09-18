@@ -30,9 +30,7 @@ class AgentEndpoints
      */
     public function saveAgent(AssignedAgentModel $assignedAgent)
     {
-        return $this->requestHelper->post('/agent', [
-            'agent' => $assignedAgent->toArray()
-        ]);
+        return $this->requestHelper->post('/agent', $assignedAgent->toArray());
     }
 
     /**

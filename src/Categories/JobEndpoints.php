@@ -41,8 +41,6 @@ class JobEndpoints
      */
     public function saveJob(JobModel $job)
     {
-        return $this->requestHelper->post('/job/', [
-            'Job' => $job->toArray()
-        ]);
+        return $this->requestHelper->post('/job/', $job->toArray());
     }
 }

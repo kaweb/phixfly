@@ -126,8 +126,6 @@ class IssueEndpoints
      */
     public function saveIssue(IssueModel $issue)
     {
-        return $this->requestHelper->get('/Issue', [
-            'issue' => $issue->toArray()
-        ]);
+        return $this->requestHelper->get('/Issue', $issue->toArray());
     }
 }

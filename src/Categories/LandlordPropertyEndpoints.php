@@ -30,9 +30,7 @@ class LandlordPropertyEndpoints
      */
     public function saveLandlordProperty(LandlordPropertyModel $landlordProperty)
     {
-        return $this->requestHelper->post('/landlordproperty', [
-            'LandlordProperty' => $landlordProperty->toArray()
-        ]);
+        return $this->requestHelper->post('/landlordproperty', $landlordProperty->toArray());
     }
 
     /**
@@ -73,8 +71,6 @@ class LandlordPropertyEndpoints
      */
     public function deleteLandlordProperty(LandlordPropertyModel $landlordProperty)
     {
-        return $this->requestHelper->post('/landlord-property/delete', [
-            'LandlordProperty' => $landlordProperty->toArray()
-        ]);
+        return $this->requestHelper->post('/landlord-property/delete', $landlordProperty->toArray());
     }
 }

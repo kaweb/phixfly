@@ -19,7 +19,18 @@ class BaseModel
             $objectParameters = [];
             foreach ($protectedProperties as $protectedProperty) {
                 $protectedProperty->setAccessible(true);
-                $objectParameters[$protectedProperty->getName()] = $protectedProperty->getValue($this);
+
+                $correctValue = $protectedProperty->getValue($this);
+
+                if (is_object($correctValue)) {
+                    if (strpos(get_class($correctValue), 'Model') !== false) {
+                        $correctValue = $correctValue->toArray();
+                    } else if (get_class($correctValue) === 'DateTime') {
+                        $correctValue = $correctValue->getTimestamp();
+                    }
+                }
+
+                $objectParameters[ucfirst($protectedProperty->getName())] = $correctValue;
             }
 
             return $objectParameters;

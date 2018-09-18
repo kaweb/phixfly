@@ -30,9 +30,7 @@ class ContractorEndpoints
      */
     public function addContractor(ContractorModel $contractor)
     {
-        return $this->requestHelper->post('/contractor', [
-            'contrator' => $contractor->toArray()
-        ]);
+        return $this->requestHelper->post('/contractor', $contractor->toArray());
     }
 
     /**
