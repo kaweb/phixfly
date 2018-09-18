@@ -13,15 +13,17 @@ class BaseModel
      */
     function toArray()
     {
-        $reflection = new \ReflectionClass(AdditionalDetailModel::class);
+        $backtrace = debug_backtrace();
+
+        $reflection = new \ReflectionClass(get_class($backtrace[sizeof(0) - 1]['object']));
         $protectedProperties = $reflection->getProperties(\ReflectionProperty::IS_PROTECTED);
 
-        $arrayParameters = [];
+        $objectParameters = [];
         foreach ($protectedProperties as $protectedProperty) {
             $protectedProperty->setAccessible(true);
-            $arrayParameters[$protectedProperty->getName()] = $protectedProperty->getValue($this);
+            $objectParameters[$protectedProperty->getName()] = $protectedProperty->getValue($this);
         }
 
-        return $arrayParameters;
+        return $objectParameters;
     }
 }
