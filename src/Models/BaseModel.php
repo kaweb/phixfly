@@ -13,9 +13,7 @@ class BaseModel
     function toArray()
     {
         try {
-            $backtrace = debug_backtrace();
-
-            $reflection = new \ReflectionClass(get_class($backtrace[sizeof(0) - 1]['object']));
+            $reflection = new \ReflectionClass($this);
             $protectedProperties = $reflection->getProperties(\ReflectionProperty::IS_PROTECTED);
 
             $objectParameters = [];
