@@ -70,7 +70,7 @@ class RequestHelper
      * @param string $method
      * @param string $endpoint
      * @param array $content
-     * @return mixed
+     * @return array
      */
     public function request($method, $endpoint, array $content)
     {
@@ -83,13 +83,13 @@ class RequestHelper
         $requestOptions = [
             "http" => [
                 "method" => $method,
-                "header" => "Authorization: Bearer {$this->token}\r\nContent-type: application-json",
+                "header" => "Authorization: Bearer {$this->token}\r\nContent-Type: application/x-www-form-urlencoded",
                 "content" => http_build_query($content)
             ]
         ];
 
         $context = stream_context_create($requestOptions);
-
-        return json_decode(file_get_contents($requestUrl, false, $context), true);
+        $contents = file_get_contents($requestUrl, false, $context);
+        return json_decode($contents, true);
     }
 }
