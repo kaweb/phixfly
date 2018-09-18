@@ -80,10 +80,14 @@ class RequestHelper
             $requestUrl = $endpoint;
         }
 
+        $headers = [
+            "Authorization: Bearer {$this->token}",
+            "Content-Type: application/x-www-form-urlencoded"
+        ];
         $requestOptions = [
             "http" => [
                 "method" => $method,
-                "header" => "Authorization: Bearer {$this->token}\r\nContent-Type: application/x-www-form-urlencoded",
+                "header" => implode("\r\n", $headers),
                 "content" => http_build_query($content)
             ]
         ];
