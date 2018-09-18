@@ -1,6 +1,6 @@
 {
-    "name": "kaweb/fixflo-client",
-    "description": "Fixflo API Client written in PHP",
+    "name": "kaweb/phixfly",
+    "description": "A pretty fly PHP Client for the Fixflo API",
     "version": "1.0.0",
     "type": "library",
     "authors": [

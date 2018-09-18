@@ -41,8 +41,6 @@ class Client
     /**
      * Client constructor.
      *
-     * @param string $subdomain
-     * @param string $authToken
      * @param RequestHelper $requestHelper
      */
     public function __construct(RequestHelper $requestHelper)
