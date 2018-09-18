@@ -1,8 +1,8 @@
-![Phixfly][.github/README/phixfly-banner.png]
+![Phixfly](.github/README/phixfly-banner.png)
 
-# Phixfly
+# What does "Phixfly" mean?
 
-A pretty fly PHP Client for the [Fixflo API](https://api-docs.fixflo.com).
+It's a gathering of the words in the description pretty fly PHP Client for the [Fixflo API](https://api-docs.fixflo.com).
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ php example.php
 
 If you get the following output
 
-![success][.github/README/success.png]
+![success](.github/README/success.png)
 
 Then it's correctly installed!
 
