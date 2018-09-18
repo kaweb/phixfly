@@ -2,7 +2,7 @@
 
 # What does "Phixfly" mean?
 
-It's a gathering of the words in the description pretty fly PHP Client for the [Fixflo API](https://api-docs.fixflo.com).
+It's a gathering of the description: A pretty fly PHP Client for the [Fixflo API](https://api-docs.fixflo.com).
 
 ## Prerequisites
 
