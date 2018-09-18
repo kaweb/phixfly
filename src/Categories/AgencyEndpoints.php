@@ -46,7 +46,7 @@ class AgencyEndpoints
     public function addAgency(AgencyModel $agency)
     {
         return $this->requestHelper->post(self::ENDPOINT_URL . '/agency', [
-            'agency' => $agency
+            'agency' => $agency->toArray()
         ]);
     }
 
@@ -70,7 +70,7 @@ class AgencyEndpoints
     public function deleteAgency(AgencyModel $agency)
     {
         return $this->requestHelper->post(self::ENDPOINT_URL . '/agency/delete', [
-            'agency' => $agency
+            'agency' => $agency->toArray()
         ]);
     }
 
@@ -83,7 +83,7 @@ class AgencyEndpoints
     public function restoreAgency(AgencyModel $agency)
     {
         return $this->requestHelper->post(self::ENDPOINT_URL . '/agency/undelete', [
-            'agency' => $agency
+            'agency' => $agency->toArray()
         ]);
     }
 
@@ -97,7 +97,7 @@ class AgencyEndpoints
     public function deleteAgencyLegacy(AgencyModel $agency, $id)
     {
         return $this->requestHelper->delete(self::ENDPOINT_URL . '/agency/' . $id, [
-            'agency' => $agency,
+            'agency' => $agency->toArray(),
             'id' => $id
         ]);
     }

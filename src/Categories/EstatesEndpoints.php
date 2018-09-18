@@ -31,7 +31,7 @@ class EstatesEndpoints
     public function addEstate(EstateModel $contractor)
     {
         return $this->requestHelper->post('/estate', [
-            'contractor' => $contractor
+            'contractor' => $contractor->toArray()
         ]);
     }
 

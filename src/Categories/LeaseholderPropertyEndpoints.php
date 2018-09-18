@@ -31,7 +31,7 @@ class LeaseholderPropertyEndpoints
     public function saveLeaseholderProperty(LeaseholderPropertyModel $leaseholderProperty)
     {
         return $this->requestHelper->post('/leaseholderproperty', [
-            'LeaseholderProperty' => $leaseholderProperty
+            'LeaseholderProperty' => $leaseholderProperty->toArray()
         ]);
     }
 
@@ -74,7 +74,7 @@ class LeaseholderPropertyEndpoints
     public function deleteLeaseholderProperty(LeaseholderPropertyModel $leaseholderProperty)
     {
         return $this->requestHelper->post('/leaseholderproperty/delete', [
-            'LeaseholderProperty' => $leaseholderProperty
+            'LeaseholderProperty' => $leaseholderProperty->toArray()
         ]);
     }
 }

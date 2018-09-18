@@ -31,7 +31,7 @@ class LeaseholderEndpoints
     public function saveLeaseholder(LeaseholderModel $leaseholder)
     {
         return $this->requestHelper->post('/leaseholder', [
-            'Leaseholder' => $leaseholder
+            'Leaseholder' => $leaseholder->toArray()
         ]);
     }
 

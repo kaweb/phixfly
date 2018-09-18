@@ -31,7 +31,7 @@ class TenantEndpoints
     public function addOrUpdateTenant(TenantModel $tenant)
     {
         return $this->requestHelper->post('/tenant', [
-            'tenant' => $tenant
+            'tenant' => $tenant->toArray()
         ]);
     }
 

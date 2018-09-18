@@ -31,7 +31,7 @@ class ContractorEndpoints
     public function addContractor(ContractorModel $contractor)
     {
         return $this->requestHelper->post('/contractor', [
-            'contrator' => $contractor
+            'contrator' => $contractor->toArray()
         ]);
     }
 

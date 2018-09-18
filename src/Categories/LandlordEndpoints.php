@@ -31,7 +31,7 @@ class LandlordEndpoints
     public function saveLandlord(LandlordModel $landlord)
     {
         return $this->requestHelper->post('/landlord', [
-            'Landlord' => $landlord
+            'Landlord' => $landlord->toArray()
         ]);
     }
 

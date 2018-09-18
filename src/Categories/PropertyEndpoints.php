@@ -115,7 +115,7 @@ class PropertyEndpoints
     public function mergeAltAddress(PropertyAddressModel $pa)
     {
         return $this->requestHelper->post('/propertyaddress/merge', [
-            'pa' => $pa
+            'pa' => $pa->toArray()
         ]);
     }
 
@@ -147,7 +147,7 @@ class PropertyEndpoints
     public function splitAltAddress(PropertyAddressModel $pa)
     {
         return $this->requestHelper->post('/propertyaddress/split', [
-            'pa' => $pa
+            'pa' => $pa->toArray()
         ]);
     }
 }
