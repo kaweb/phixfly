@@ -74,12 +74,6 @@ class RequestHelper
      */
     public function request($method, $endpoint, array $content)
     {
-        $contentStrings = [];
-
-        foreach ($content as $contentKey => $contentValue) {
-            $contentStrings[] = $contentKey . '=' . $contentValue;
-        }
-
         $requestUrl = $this->baseUrl . $endpoint;
 
         if (substr($endpoint, 0, 1) !== '/') {
@@ -90,7 +84,7 @@ class RequestHelper
             "http" => [
                 "method" => $method,
                 "header" => "Authorization: Bearer {$this->token}\r\nContent-type: application-json",
-                "content" => http_build_query($contentStrings)
+                "content" => http_build_query($content)
             ]
         ];
 
