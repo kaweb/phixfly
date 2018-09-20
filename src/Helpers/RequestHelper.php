@@ -88,12 +88,21 @@ class RequestHelper
             "http" => [
                 "method" => $method,
                 "header" => implode("\r\n", $headers),
-                "content" => http_build_query($content)
+                "content" => http_build_query($content),
+                "ignore_errors" => true
             ]
         ];
 
         $context = stream_context_create($requestOptions);
         $contents = file_get_contents($requestUrl, false, $context);
-        return json_decode($contents, true);
+        $response = json_decode($contents, true);
+
+        $response['success'] = !is_null($response);
+
+        if (!$response['success']) {
+            $response['error'] = "Please check your OAuth token and sub domain are correct.";
+        }
+
+        return $response;
     }
 }
