@@ -18,7 +18,7 @@ To install this library locally we recommend using [Composer](https://getcompose
 
 You can use `composer require kaweb/phixfly` to get the latest released version of the project. 
 
-To above command will pull [this version](https://github.com/kaweb/Phixfly/releases/latest) of the project locally.
+The above command will pull [this version](https://github.com/kaweb/Phixfly/releases/latest) of the project locally.
 
 To test that this has worked locally you should run
 ```
