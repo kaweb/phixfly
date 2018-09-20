@@ -48,6 +48,19 @@ class Client
         $this->requestHelper = $requestHelper;
     }
 
+    /**
+     * Checks the current credentials and returns true if they're correct.
+     *
+     * @return bool
+     */
+    public function checkCredentials()
+    {
+        $testOne = $this->quickViewPanelEndpoints()->getQuickViewPanel();
+        $testTwo = $this->webhooksEndpoints()->listWebhooks();
+
+        return !(array_key_exists('error', $testOne) && array_key_exists('error', $testTwo));
+    }
+
     public function agencyEndpoints()
     {
         return new AgencyEndpoints($this->requestHelper);

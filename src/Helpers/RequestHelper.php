@@ -97,9 +97,7 @@ class RequestHelper
         $contents = file_get_contents($requestUrl, false, $context);
         $response = json_decode($contents, true);
 
-        $response['success'] = !is_null($response);
-
-        if (!$response['success']) {
+        if (is_null($response)) {
             $response['error'] = "Please check your OAuth token and sub domain are correct.";
         }
 
