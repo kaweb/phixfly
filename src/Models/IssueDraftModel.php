@@ -60,7 +60,7 @@ class IssueDraftModel extends BaseModel
     protected $contactNumberAlt;
     
     /**
-     * @var AddressModel
+     * @var AddressModelTestTest
      */
     protected $address;
     
@@ -89,11 +89,11 @@ class IssueDraftModel extends BaseModel
      * @param string $surname
      * @param string $contactNumber
      * @param string $contactNumberAlt
-     * @param AddressModel $address
+     * @param AddressModelTestTest $address
      * @param int $propertyId
      * @param string $externalPropertyRef
      */
-    public function __construct($id, \DateTime $updated, $issueTitle, $faultId, $faultNotes, $issueDraftMedia, $title, $firstName, $surname, $contactNumber, $contactNumberAlt, AddressModel $address, $propertyId, $externalPropertyRef)
+    public function __construct($id, \DateTime $updated, $issueTitle, $faultId, $faultNotes, $issueDraftMedia, $title, $firstName, $surname, $contactNumber, $contactNumberAlt, AddressModelTestTest $address, $propertyId, $externalPropertyRef)
     {
         $this->id = $id;
         $this->updated = $updated;
@@ -272,7 +272,7 @@ class IssueDraftModel extends BaseModel
     }
 
     /**
-     * @return AddressModel
+     * @return AddressModelTestTest
      */
     public function getAddress()
     {
@@ -280,9 +280,9 @@ class IssueDraftModel extends BaseModel
     }
 
     /**
-     * @param AddressModel $address
+     * @param AddressModelTestTest $address
      */
-    public function setAddress(AddressModel $address)
+    public function setAddress(AddressModelTestTest $address)
     {
         $this->address = $address;
     }

@@ -3,22 +3,22 @@
 namespace Kaweb\Phixfly\Categories;
 
 
-use Kaweb\Phixfly\Helpers\RequestHelper;
+use Kaweb\Phixfly\Helpers\RequestHelperTest;
 use Kaweb\Phixfly\Models\IssueDraftMediaModel;
 use Kaweb\Phixfly\Models\IssueDraftModel;
 
 class IssueDraftEndpoints
 {
     /**
-     * @var RequestHelper
+     * @var RequestHelperTest
      */
     protected $requestHelper;
 
     /**
      * IssueDraftEndpoint constructor.
-     * @param RequestHelper $requestHelper
+     * @param RequestHelperTest $requestHelper
      */
-    public function __construct(RequestHelper $requestHelper)
+    public function __construct(RequestHelperTest $requestHelper)
     {
         $this->requestHelper = $requestHelper;
     }

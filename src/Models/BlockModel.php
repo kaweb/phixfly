@@ -25,7 +25,7 @@ class BlockModel extends BaseModel
     protected $name;
 
     /**
-     * @var AddressModel
+     * @var AddressModelTestTest
      */
     protected $address;
 
@@ -65,7 +65,7 @@ class BlockModel extends BaseModel
     protected $externalLandlordRef;
 
     /**
-     * @var AssignedAgentModel
+     * @var AssignedAgentModelTestTest
      */
     protected $assignedAgent;
 
@@ -82,7 +82,7 @@ class BlockModel extends BaseModel
      * @param string $externalBlockRef
      * @param bool $isStandAlone
      * @param string $name
-     * @param AddressModel $address
+     * @param AddressModelTestTest $address
      * @param string $keyReference
      * @param \DateTime $managementStartDate
      * @param \DateTime $managementEndDate
@@ -90,10 +90,10 @@ class BlockModel extends BaseModel
      * @param string $externalEstateRef
      * @param string $landlordId
      * @param string $externalLandlordRef
-     * @param AssignedAgentModel $assignedAgent
+     * @param AssignedAgentModelTestTest $assignedAgent
      * @param \DateTime $updateDate
      */
-    public function __construct($id, $externalBlockRef, $isStandAlone, $name, AddressModel $address, $keyReference, \DateTime $managementStartDate, \DateTime $managementEndDate, $estateId, $externalEstateRef, $landlordId, $externalLandlordRef, AssignedAgentModel $assignedAgent, \DateTime $updateDate)
+    public function __construct($id, $externalBlockRef, $isStandAlone, $name, AddressModelTestTest $address, $keyReference, \DateTime $managementStartDate, \DateTime $managementEndDate, $estateId, $externalEstateRef, $landlordId, $externalLandlordRef, AssignedAgentModelTestTest $assignedAgent, \DateTime $updateDate)
     {
         $this->id = $id;
         $this->externalBlockRef = $externalBlockRef;
@@ -176,7 +176,7 @@ class BlockModel extends BaseModel
     }
 
     /**
-     * @return AddressModel
+     * @return AddressModelTestTest
      */
     public function getAddress()
     {
@@ -184,9 +184,9 @@ class BlockModel extends BaseModel
     }
 
     /**
-     * @param AddressModel $address
+     * @param AddressModelTestTest $address
      */
-    public function setAddress(AddressModel $address)
+    public function setAddress(AddressModelTestTest $address)
     {
         $this->address = $address;
     }
@@ -304,7 +304,7 @@ class BlockModel extends BaseModel
     }
 
     /**
-     * @return AssignedAgentModel
+     * @return AssignedAgentModelTestTest
      */
     public function getAssignedAgent()
     {
@@ -312,9 +312,9 @@ class BlockModel extends BaseModel
     }
 
     /**
-     * @param AssignedAgentModel $assignedAgent
+     * @param AssignedAgentModelTestTest $assignedAgent
      */
-    public function setAssignedAgent(AssignedAgentModel $assignedAgent)
+    public function setAssignedAgent(AssignedAgentModelTestTest $assignedAgent)
     {
         $this->assignedAgent = $assignedAgent;
     }

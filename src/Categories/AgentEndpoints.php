@@ -3,21 +3,21 @@
 namespace Kaweb\Phixfly\Categories;
 
 
-use Kaweb\Phixfly\Helpers\RequestHelper;
-use Kaweb\Phixfly\Models\AssignedAgentModel;
+use Kaweb\Phixfly\Helpers\RequestHelperTest;
+use Kaweb\Phixfly\Models\AssignedAgentModelTestTest;
 
 class AgentEndpoints
 {
     /**
-     * @var RequestHelper
+     * @var RequestHelperTest
      */
     protected $requestHelper;
 
     /**
      * AgentEndpoint constructor.
-     * @param RequestHelper $requestHelper
+     * @param RequestHelperTest $requestHelper
      */
-    public function __construct(RequestHelper $requestHelper)
+    public function __construct(RequestHelperTest $requestHelper)
     {
         $this->requestHelper = $requestHelper;
     }
@@ -25,10 +25,10 @@ class AgentEndpoints
     /**
      * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-agent-save-agent
      *
-     * @param AssignedAgentModel $assignedAgent
+     * @param AssignedAgentModelTestTest $assignedAgent
      * @return array
      */
-    public function saveAgent(AssignedAgentModel $assignedAgent)
+    public function saveAgent(AssignedAgentModelTestTest $assignedAgent)
     {
         return $this->requestHelper->post('/agent', $assignedAgent->toArray());
     }

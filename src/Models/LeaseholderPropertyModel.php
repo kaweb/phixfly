@@ -30,7 +30,7 @@ class LeaseholderPropertyModel extends BaseModel
     protected $dateTo;
     
     /**
-     * @var AddressModel
+     * @var AddressModelTestTest
      */
     protected $address;
     
@@ -58,12 +58,12 @@ class LeaseholderPropertyModel extends BaseModel
      * @param int $propertyId
      * @param \DateTime $dateFrom
      * @param \DateTime $dateTo
-     * @param AddressModel $address
+     * @param AddressModelTestTest $address
      * @param int $blockId
      * @param string $externalBlockRef
      * @param \DateTime $updateDate
      */
-    public function __construct($id, $leaseHolderId, $propertyId, \DateTime $dateFrom, \DateTime $dateTo, AddressModel $address, $blockId, $externalBlockRef, \DateTime $updateDate)
+    public function __construct($id, $leaseHolderId, $propertyId, \DateTime $dateFrom, \DateTime $dateTo, AddressModelTestTest $address, $blockId, $externalBlockRef, \DateTime $updateDate)
     {
         $this->id = $id;
         $this->leaseHolderId = $leaseHolderId;
@@ -157,7 +157,7 @@ class LeaseholderPropertyModel extends BaseModel
     }
 
     /**
-     * @return AddressModel
+     * @return AddressModelTestTest
      */
     public function getAddress()
     {
@@ -165,9 +165,9 @@ class LeaseholderPropertyModel extends BaseModel
     }
 
     /**
-     * @param AddressModel $address
+     * @param AddressModelTestTest $address
      */
-    public function setAddress(AddressModel $address)
+    public function setAddress(AddressModelTestTest $address)
     {
         $this->address = $address;
     }

@@ -25,7 +25,7 @@ class PropertyAddressModel extends BaseModel
     protected $keyReference;
     
     /**
-     * @var AddressModel
+     * @var AddressModelTestTest
      */
     protected $address;
 
@@ -37,9 +37,9 @@ class PropertyAddressModel extends BaseModel
      * @param int $propertyId
      * @param string $externalPropertyRef
      * @param string $keyReference
-     * @param AddressModel $address
+     * @param AddressModelTestTest $address
      */
-    public function __construct($id, $propertyId, $externalPropertyRef, $keyReference, AddressModel $address)
+    public function __construct($id, $propertyId, $externalPropertyRef, $keyReference, AddressModelTestTest $address)
     {
         $this->id = $id;
         $this->propertyId = $propertyId;
@@ -113,7 +113,7 @@ class PropertyAddressModel extends BaseModel
     }
 
     /**
-     * @return AddressModel
+     * @return AddressModelTestTest
      */
     public function getAddress()
     {
@@ -121,9 +121,9 @@ class PropertyAddressModel extends BaseModel
     }
 
     /**
-     * @param AddressModel $address
+     * @param AddressModelTestTest $address
      */
-    public function setAddress(AddressModel $address)
+    public function setAddress(AddressModelTestTest $address)
     {
         $this->address = $address;
     }

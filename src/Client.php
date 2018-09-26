@@ -2,27 +2,27 @@
 
 namespace Kaweb\Phixfly;
 
-use Kaweb\Phixfly\Categories\AgencyEndpoints;
-use Kaweb\Phixfly\Categories\AgentEndpoints;
-use Kaweb\Phixfly\Categories\BlockEndpoints;
-use Kaweb\Phixfly\Categories\ContractorEndpoints;
-use Kaweb\Phixfly\Categories\EstatesEndpoints;
-use Kaweb\Phixfly\Categories\IssueDraftEndpoints;
-use Kaweb\Phixfly\Categories\IssueEndpoints;
-use Kaweb\Phixfly\Categories\JobEndpoints;
-use Kaweb\Phixfly\Categories\LandlordEndpoints;
-use Kaweb\Phixfly\Categories\LandlordPropertyEndpoints;
-use Kaweb\Phixfly\Categories\LeaseholderEndpoints;
-use Kaweb\Phixfly\Categories\PropertyEndpoints;
-use Kaweb\Phixfly\Categories\QuickViewPanelEndpoints;
-use Kaweb\Phixfly\Categories\TenantEndpoints;
-use Kaweb\Phixfly\Categories\WebhooksEndpoints;
-use Kaweb\Phixfly\Helpers\RequestHelper;
+use Kaweb\Phixfly\Categories\AgencyEndpointsTest;
+use Kaweb\Phixfly\Categories\AgentEndpointsTest;
+use Kaweb\Phixfly\Categories\BlockEndpointsTest;
+use Kaweb\Phixfly\Categories\ContractorEndpointsTest;
+use Kaweb\Phixfly\Categories\EstatesEndpointsTest;
+use Kaweb\Phixfly\Categories\IssueDraftEndpointsTest;
+use Kaweb\Phixfly\Categories\IssueEndpointsTest;
+use Kaweb\Phixfly\Categories\JobEndpointsTest;
+use Kaweb\Phixfly\Categories\LandlordEndpointsTest;
+use Kaweb\Phixfly\Categories\LandlordPropertyEndpointsTest;
+use Kaweb\Phixfly\Categories\LeaseholderEndpointsTest;
+use Kaweb\Phixfly\Categories\PropertyEndpointsTest;
+use Kaweb\Phixfly\Categories\QuickViewPanelEndpointsTest;
+use Kaweb\Phixfly\Categories\TenantEndpointsTest;
+use Kaweb\Phixfly\Categories\WebhooksEndpointsTest;
+use Kaweb\Phixfly\Helpers\RequestHelperTest;
 
 class Client
 {
     /**
-     * @var RequestHelper
+     * @var RequestHelperTest
      */
     protected $requestHelper;
 
@@ -35,15 +35,15 @@ class Client
      */
     public static function create($subdomain, $authToken)
     {
-        return new self(new RequestHelper($subdomain, $authToken));
+        return new self(new RequestHelperTest($subdomain, $authToken));
     }
 
     /**
      * Client constructor.
      *
-     * @param RequestHelper $requestHelper
+     * @param RequestHelperTest $requestHelper
      */
-    public function __construct(RequestHelper $requestHelper)
+    public function __construct(RequestHelperTest $requestHelper)
     {
         $this->requestHelper = $requestHelper;
     }
@@ -63,76 +63,76 @@ class Client
 
     public function agencyEndpoints()
     {
-        return new AgencyEndpoints($this->requestHelper);
+        return new AgencyEndpointsTest($this->requestHelper);
     }
 
     public function agentEndpoints()
     {
-        return new AgentEndpoints($this->requestHelper);
+        return new AgentEndpointsTest($this->requestHelper);
     }
 
     public function blockEndpoints()
     {
-        return new BlockEndpoints($this->requestHelper);
+        return new BlockEndpointsTest($this->requestHelper);
     }
 
     public function contractorEndpoints()
     {
-        return new ContractorEndpoints($this->requestHelper);
+        return new ContractorEndpointsTest($this->requestHelper);
     }
 
     public function estatesEndpoints()
     {
-        return new EstatesEndpoints($this->requestHelper);
+        return new EstatesEndpointsTest($this->requestHelper);
     }
 
     public function issueDraftEndpoints()
     {
-        return new IssueDraftEndpoints($this->requestHelper);
+        return new IssueDraftEndpointsTest($this->requestHelper);
     }
 
     public function issueEndpoints()
     {
-        return new IssueEndpoints($this->requestHelper);
+        return new IssueEndpointsTest($this->requestHelper);
     }
 
     public function jobEndpoints()
     {
-        return new JobEndpoints($this->requestHelper);
+        return new JobEndpointsTest($this->requestHelper);
     }
 
     public function landlordEndpoints()
     {
-        return new LandlordEndpoints($this->requestHelper);
+        return new LandlordEndpointsTest($this->requestHelper);
     }
 
     public function landlordPropertyEndpoints()
     {
-        return new LandlordPropertyEndpoints($this->requestHelper);
+        return new LandlordPropertyEndpointsTest($this->requestHelper);
     }
 
     public function leaseholderEndpoints()
     {
-        return new LeaseholderEndpoints($this->requestHelper);
+        return new LeaseholderEndpointsTest($this->requestHelper);
     }
 
     public function propertyEndpoints()
     {
-        return new PropertyEndpoints($this->requestHelper);
+        return new PropertyEndpointsTest($this->requestHelper);
     }
 
     public function quickViewPanelEndpoints()
     {
-        return new QuickViewPanelEndpoints($this->requestHelper);
+        return new QuickViewPanelEndpointsTest($this->requestHelper);
     }
 
     public function tenantEndpoints()
     {
-        return new TenantEndpoints($this->requestHelper);
+        return new TenantEndpointsTest($this->requestHelper);
     }
 
     public function webhooksEndpoints()
     {
-        return new WebhooksEndpoints($this->requestHelper);
+        return new WebhooksEndpointsTest($this->requestHelper);
     }
 }

@@ -2,22 +2,22 @@
 
 namespace Kaweb\Phixfly\Categories;
 
-use Kaweb\Phixfly\Helpers\RequestHelper;
+use Kaweb\Phixfly\Helpers\RequestHelperTest;
 use Kaweb\Phixfly\Models\PropertyAddressModel;
 use Kaweb\Phixfly\Models\PropertyPostModel;
 
 class PropertyEndpoints
 {
     /**
-     * @var RequestHelper
+     * @var RequestHelperTest
      */
     protected $requestHelper;
 
     /**
      * PropertyEndpoint constructor.
-     * @param RequestHelper $requestHelper
+     * @param RequestHelperTest $requestHelper
      */
-    public function __construct(RequestHelper $requestHelper)
+    public function __construct(RequestHelperTest $requestHelper)
     {
         $this->requestHelper = $requestHelper;
     }

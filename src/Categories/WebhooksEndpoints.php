@@ -3,20 +3,20 @@
 namespace Kaweb\Phixfly\Categories;
 
 
-use Kaweb\Phixfly\Helpers\RequestHelper;
+use Kaweb\Phixfly\Helpers\RequestHelperTest;
 
 class WebhooksEndpoints
 {
     /**
-     * @var RequestHelper
+     * @var RequestHelperTest
      */
     protected $requestHelper;
 
     /**
      * WebhooksEndpoint constructor.
-     * @param RequestHelper $requestHelper
+     * @param RequestHelperTest $requestHelper
      */
-    public function __construct(RequestHelper $requestHelper)
+    public function __construct(RequestHelperTest $requestHelper)
     {
         $this->requestHelper = $requestHelper;
     }

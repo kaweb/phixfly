@@ -35,7 +35,7 @@ class IssueModel extends BaseModel
     protected $faultCategory;
     
     /**
-     * @var AdditionalDetailModel[]
+     * @var AdditionalDetailModelTestTest[]
      */
     protected $additionalDetails;
     
@@ -145,7 +145,7 @@ class IssueModel extends BaseModel
     protected $blockName;
     
     /**
-     * @var AssignedAgentModel
+     * @var AssignedAgentModelTestTest
      */
     protected $assignedAgent;
     
@@ -174,7 +174,7 @@ class IssueModel extends BaseModel
      * @param string $title
      * @param string $faultTitle
      * @param string $faultCategory
-     * @param AdditionalDetailModel[] $additionalDetails
+     * @param AdditionalDetailModelTestTest[] $additionalDetails
      * @param string $faultNotes
      * @param string $faultPriority
      * @param string $salutation
@@ -196,12 +196,12 @@ class IssueModel extends BaseModel
      * @param FaultTreeModel $faultTree
      * @param string $worksAuthorisationLimit
      * @param string $blockName
-     * @param AssignedAgentModel $assignedAgent
+     * @param AssignedAgentModelTestTest $assignedAgent
      * @param QuoteModel[] $quotes
      * @param \DateTime $quoteEndTime
      * @param \DateTime $attendanceDate
      */
-    public function __construct($id, $tenantId, $externalRefTenancyAgreement, $title, $faultTitle, $faultCategory, array $additionalDetails, $faultNotes, $faultPriority, $salutation, $firstName, $surname, $emailAddress, array $media, $tenantNotes, $status, $statusChanged, $created, $tenantPresenceRequested, $tenantAcceptComplete, $termsAccepted, $callbackId, PropertyPostModel $property, BlockModel $block, JobModel $job, FaultTreeModel $faultTree, $worksAuthorisationLimit, $blockName, AssignedAgentModel $assignedAgent, array $quotes, \DateTime $quoteEndTime, \DateTime $attendanceDate)
+    public function __construct($id, $tenantId, $externalRefTenancyAgreement, $title, $faultTitle, $faultCategory, array $additionalDetails, $faultNotes, $faultPriority, $salutation, $firstName, $surname, $emailAddress, array $media, $tenantNotes, $status, $statusChanged, $created, $tenantPresenceRequested, $tenantAcceptComplete, $termsAccepted, $callbackId, PropertyPostModel $property, BlockModel $block, JobModel $job, FaultTreeModel $faultTree, $worksAuthorisationLimit, $blockName, AssignedAgentModelTestTest $assignedAgent, array $quotes, \DateTime $quoteEndTime, \DateTime $attendanceDate)
     {
         $this->id = $id;
         $this->tenantId = $tenantId;
@@ -334,7 +334,7 @@ class IssueModel extends BaseModel
     }
 
     /**
-     * @return AdditionalDetailModel[]
+     * @return AdditionalDetailModelTestTest[]
      */
     public function getAdditionalDetails()
     {
@@ -342,7 +342,7 @@ class IssueModel extends BaseModel
     }
 
     /**
-     * @param AdditionalDetailModel[] $additionalDetails
+     * @param AdditionalDetailModelTestTest[] $additionalDetails
      */
     public function setAdditionalDetails(array $additionalDetails)
     {
@@ -686,7 +686,7 @@ class IssueModel extends BaseModel
     }
 
     /**
-     * @return AssignedAgentModel
+     * @return AssignedAgentModelTestTest
      */
     public function getAssignedAgent()
     {
@@ -694,9 +694,9 @@ class IssueModel extends BaseModel
     }
 
     /**
-     * @param AssignedAgentModel $assignedAgent
+     * @param AssignedAgentModelTestTest $assignedAgent
      */
-    public function setAssignedAgent(AssignedAgentModel $assignedAgent)
+    public function setAssignedAgent(AssignedAgentModelTestTest $assignedAgent)
     {
         $this->assignedAgent = $assignedAgent;
     }

@@ -25,7 +25,7 @@ class PropertyGetModel extends BaseModel
     protected $propertyAddressId;
     
     /**
-     * @var AddressModel
+     * @var AddressModelTestTest
      */
     protected $address;
     
@@ -35,7 +35,7 @@ class PropertyGetModel extends BaseModel
     protected $updateDate;
     
     /**
-     * @var AssignedAgentModel
+     * @var AssignedAgentModelTestTest
      */
     protected $assignedAgent;
 
@@ -47,11 +47,11 @@ class PropertyGetModel extends BaseModel
      * @param int $blockId
      * @param string $externalPropertyRef
      * @param int $propertyAddressId
-     * @param AddressModel $address
+     * @param AddressModelTestTest $address
      * @param \DateTime $updateDate
-     * @param AssignedAgentModel $assignedAgent
+     * @param AssignedAgentModelTestTest $assignedAgent
      */
-    public function __construct($id, $blockId, $externalPropertyRef, $propertyAddressId, AddressModel $address, \DateTime $updateDate, AssignedAgentModel $assignedAgent)
+    public function __construct($id, $blockId, $externalPropertyRef, $propertyAddressId, AddressModelTestTest $address, \DateTime $updateDate, AssignedAgentModelTestTest $assignedAgent)
     {
         $this->id = $id;
         $this->blockId = $blockId;
@@ -127,7 +127,7 @@ class PropertyGetModel extends BaseModel
     }
 
     /**
-     * @return AddressModel
+     * @return AddressModelTestTest
      */
     public function getAddress()
     {
@@ -135,9 +135,9 @@ class PropertyGetModel extends BaseModel
     }
 
     /**
-     * @param AddressModel $address
+     * @param AddressModelTestTest $address
      */
-    public function setAddress(AddressModel $address)
+    public function setAddress(AddressModelTestTest $address)
     {
         $this->address = $address;
     }
@@ -159,7 +159,7 @@ class PropertyGetModel extends BaseModel
     }
 
     /**
-     * @return AssignedAgentModel
+     * @return AssignedAgentModelTestTest
      */
     public function getAssignedAgent()
     {
@@ -167,9 +167,9 @@ class PropertyGetModel extends BaseModel
     }
 
     /**
-     * @param AssignedAgentModel $assignedAgent
+     * @param AssignedAgentModelTestTest $assignedAgent
      */
-    public function setAssignedAgent(AssignedAgentModel $assignedAgent)
+    public function setAssignedAgent(AssignedAgentModelTestTest $assignedAgent)
     {
         $this->assignedAgent = $assignedAgent;
     }

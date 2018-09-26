@@ -3,23 +3,23 @@
 namespace Kaweb\Phixfly\Categories;
 
 
-use Kaweb\Phixfly\Helpers\RequestHelper;
-use Kaweb\Phixfly\Models\AgencyModel;
+use Kaweb\Phixfly\Helpers\RequestHelperTest;
+use Kaweb\Phixfly\Models\AgencyModelTestTest;
 
 class AgencyEndpoints
 {
     const ENDPOINT_URL = 'https://api.fixflo.com/api/v2';
 
     /**
-     * @var RequestHelper
+     * @var RequestHelperTest
      */
     protected $requestHelper;
 
     /**
      * AgencyEndpoint constructor.
-     * @param RequestHelper $requestHelper
+     * @param RequestHelperTest $requestHelper
      */
-    public function __construct(RequestHelper $requestHelper)
+    public function __construct(RequestHelperTest $requestHelper)
     {
         $this->requestHelper = $requestHelper;
     }
@@ -40,10 +40,10 @@ class AgencyEndpoints
     /**
      * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-agency-add-agency
      *
-     * @param AgencyModel $agency
+     * @param AgencyModelTestTest $agency
      * @return array
      */
-    public function addAgency(AgencyModel $agency)
+    public function addAgency(AgencyModelTestTest $agency)
     {
         return $this->requestHelper->post(self::ENDPOINT_URL . '/agency', $agency->toArray());
     }
@@ -62,10 +62,10 @@ class AgencyEndpoints
     /**
      * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-agency-delete-agency
      *
-     * @param AgencyModel $agency
+     * @param AgencyModelTestTest $agency
      * @return array
      */
-    public function deleteAgency(AgencyModel $agency)
+    public function deleteAgency(AgencyModelTestTest $agency)
     {
         return $this->requestHelper->post(self::ENDPOINT_URL . '/agency/delete', $agency->toArray());
     }
@@ -73,10 +73,10 @@ class AgencyEndpoints
     /**
      * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-agency-restore-agency
      *
-     * @param AgencyModel $agency
+     * @param AgencyModelTestTest $agency
      * @return array
      */
-    public function restoreAgency(AgencyModel $agency)
+    public function restoreAgency(AgencyModelTestTest $agency)
     {
         return $this->requestHelper->post(self::ENDPOINT_URL . '/agency/undelete', $agency->toArray());
     }
@@ -84,11 +84,11 @@ class AgencyEndpoints
     /**
      * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-agency-delete-agency-legacy
      *
-     * @param AgencyModel $agency
+     * @param AgencyModelTestTest $agency
      * @param string $id
      * @return array
      */
-    public function deleteAgencyLegacy(AgencyModel $agency, $id)
+    public function deleteAgencyLegacy(AgencyModelTestTest $agency, $id)
     {
         return $this->requestHelper->delete(self::ENDPOINT_URL . '/agency/' . $id, $agency->toArray());
     }

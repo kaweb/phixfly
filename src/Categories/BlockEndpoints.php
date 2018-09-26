@@ -3,21 +3,21 @@
 namespace Kaweb\Phixfly\Categories;
 
 
-use Kaweb\Phixfly\Helpers\RequestHelper;
+use Kaweb\Phixfly\Helpers\RequestHelperTest;
 use Kaweb\Phixfly\Models\BlockModel;
 
 class BlockEndpoints
 {
     /**
-     * @var RequestHelper
+     * @var RequestHelperTest
      */
     protected $requestHelper;
 
     /**
      * BlockEndpoint constructor.
-     * @param RequestHelper $requestHelper
+     * @param RequestHelperTest $requestHelper
      */
-    public function __construct(RequestHelper $requestHelper)
+    public function __construct(RequestHelperTest $requestHelper)
     {
         $this->requestHelper = $requestHelper;
     }
