@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class AssignedAgentModelTestTest extends \PHPUnit\Framework\TestCase
+class AssignedAgentModelTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var string

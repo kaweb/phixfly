@@ -30,7 +30,7 @@ class LandlordPropertyModelTest extends \PHPUnit\Framework\TestCase
     private $dateTo;
     
     /**
-     * @var AddressModelTestTest
+     * @var AddressModelTest
      */
     private $address;
 
@@ -43,9 +43,9 @@ class LandlordPropertyModelTest extends \PHPUnit\Framework\TestCase
      * @param int $propertyId
      * @param \DateTime $dateFrom
      * @param \DateTime $dateTo
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      */
-    public function __construct($id, $landlordId, $propertyId, \DateTime $dateFrom, \DateTime $dateTo, AddressModelTestTest $address)
+    public function __construct($id, $landlordId, $propertyId, \DateTime $dateFrom, \DateTime $dateTo, AddressModelTest $address)
     {
         $this->id = $id;
         $this->landlordId = $landlordId;
@@ -136,7 +136,7 @@ class LandlordPropertyModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @return AddressModelTestTest
+     * @return AddressModelTest
      */
     public function getAddress()
     {
@@ -144,9 +144,9 @@ class LandlordPropertyModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      */
-    public function setAddress(AddressModelTestTest $address)
+    public function setAddress(AddressModelTest $address)
     {
         $this->address = $address;
     }

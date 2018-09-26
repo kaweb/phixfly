@@ -75,12 +75,12 @@ class LandlordModel extends BaseModel
     protected $updateDate;
     
     /**
-     * @var AssignedAgentModelTestTest
+     * @var AssignedAgentModel
      */
     protected $assignedAgent;
     
     /**
-     * @var AddressModelTestTest
+     * @var AddressModel
      */
     protected $address;
 
@@ -102,10 +102,10 @@ class LandlordModel extends BaseModel
      * @param string $emailCC
      * @param bool $isDeleted
      * @param \DateTime $updateDate
-     * @param AssignedAgentModelTestTest $assignedAgent
-     * @param AddressModelTestTest $address
+     * @param AssignedAgentModel $assignedAgent
+     * @param AddressModel $address
      */
-    public function __construct($id, $externalRef, $companyName, $title, $firstName, $surname, $emailAddress, $contactNumber, $contactNumberAlt, $displayName, $worksAuthorisationLimit, $emailCC, $isDeleted, \DateTime $updateDate, AssignedAgentModelTestTest $assignedAgent, AddressModelTestTest $address)
+    public function __construct($id, $externalRef, $companyName, $title, $firstName, $surname, $emailAddress, $contactNumber, $contactNumberAlt, $displayName, $worksAuthorisationLimit, $emailCC, $isDeleted, \DateTime $updateDate, AssignedAgentModel $assignedAgent, AddressModel $address)
     {
         $this->id = $id;
         $this->externalRef = $externalRef;
@@ -350,7 +350,7 @@ class LandlordModel extends BaseModel
     }
 
     /**
-     * @return AssignedAgentModelTestTest
+     * @return AssignedAgentModel
      */
     public function getAssignedAgent()
     {
@@ -358,15 +358,15 @@ class LandlordModel extends BaseModel
     }
 
     /**
-     * @param AssignedAgentModelTestTest $assignedAgent
+     * @param AssignedAgentModel $assignedAgent
      */
-    public function setAssignedAgent(AssignedAgentModelTestTest $assignedAgent)
+    public function setAssignedAgent(AssignedAgentModel $assignedAgent)
     {
         $this->assignedAgent = $assignedAgent;
     }
 
     /**
-     * @return AddressModelTestTest
+     * @return AddressModel
      */
     public function getAddress()
     {
@@ -374,9 +374,9 @@ class LandlordModel extends BaseModel
     }
 
     /**
-     * @param AddressModelTestTest $address
+     * @param AddressModel $address
      */
-    public function setAddress(AddressModelTestTest $address)
+    public function setAddress(AddressModel $address)
     {
         $this->address = $address;
     }

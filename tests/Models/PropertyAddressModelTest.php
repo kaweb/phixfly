@@ -25,7 +25,7 @@ class PropertyAddressModelTest extends \PHPUnit\Framework\TestCase
     protected $keyReference;
     
     /**
-     * @var AddressModelTestTest
+     * @var AddressModelTest
      */
     protected $address;
 
@@ -37,9 +37,9 @@ class PropertyAddressModelTest extends \PHPUnit\Framework\TestCase
      * @param int $propertyId
      * @param string $externalPropertyRef
      * @param string $keyReference
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      */
-    public function __construct($id, $propertyId, $externalPropertyRef, $keyReference, AddressModelTestTest $address)
+    public function __construct($id, $propertyId, $externalPropertyRef, $keyReference, AddressModelTest $address)
     {
         $this->id = $id;
         $this->propertyId = $propertyId;
@@ -113,7 +113,7 @@ class PropertyAddressModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @return AddressModelTestTest
+     * @return AddressModelTest
      */
     public function getAddress()
     {
@@ -121,9 +121,9 @@ class PropertyAddressModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      */
-    public function setAddress(AddressModelTestTest $address)
+    public function setAddress(AddressModelTest $address)
     {
         $this->address = $address;
     }

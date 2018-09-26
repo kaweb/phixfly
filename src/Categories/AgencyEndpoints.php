@@ -4,7 +4,7 @@ namespace Kaweb\Phixfly\Categories;
 
 
 use Kaweb\Phixfly\Helpers\RequestHelperTest;
-use Kaweb\Phixfly\Models\AgencyModelTestTest;
+use Kaweb\Phixfly\Models\AgencyModelTest;
 
 class AgencyEndpoints
 {
@@ -40,10 +40,10 @@ class AgencyEndpoints
     /**
      * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-agency-add-agency
      *
-     * @param AgencyModelTestTest $agency
+     * @param AgencyModelTest $agency
      * @return array
      */
-    public function addAgency(AgencyModelTestTest $agency)
+    public function addAgency(AgencyModelTest $agency)
     {
         return $this->requestHelper->post(self::ENDPOINT_URL . '/agency', $agency->toArray());
     }
@@ -62,10 +62,10 @@ class AgencyEndpoints
     /**
      * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-agency-delete-agency
      *
-     * @param AgencyModelTestTest $agency
+     * @param AgencyModelTest $agency
      * @return array
      */
-    public function deleteAgency(AgencyModelTestTest $agency)
+    public function deleteAgency(AgencyModelTest $agency)
     {
         return $this->requestHelper->post(self::ENDPOINT_URL . '/agency/delete', $agency->toArray());
     }
@@ -73,10 +73,10 @@ class AgencyEndpoints
     /**
      * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-agency-restore-agency
      *
-     * @param AgencyModelTestTest $agency
+     * @param AgencyModelTest $agency
      * @return array
      */
-    public function restoreAgency(AgencyModelTestTest $agency)
+    public function restoreAgency(AgencyModelTest $agency)
     {
         return $this->requestHelper->post(self::ENDPOINT_URL . '/agency/undelete', $agency->toArray());
     }
@@ -84,11 +84,11 @@ class AgencyEndpoints
     /**
      * http://api-docs.fixflo.com/#v2-endpoints-v2-endpoints-agency-delete-agency-legacy
      *
-     * @param AgencyModelTestTest $agency
+     * @param AgencyModelTest $agency
      * @param string $id
      * @return array
      */
-    public function deleteAgencyLegacy(AgencyModelTestTest $agency, $id)
+    public function deleteAgencyLegacy(AgencyModelTest $agency, $id)
     {
         return $this->requestHelper->delete(self::ENDPOINT_URL . '/agency/' . $id, $agency->toArray());
     }

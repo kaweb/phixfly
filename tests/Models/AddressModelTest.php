@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class AddressModelTestTest extends \PHPUnit\Framework\TestCase
+class AddressModelTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var string

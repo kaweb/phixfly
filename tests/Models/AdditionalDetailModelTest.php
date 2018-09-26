@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class AdditionalDetailModelTestTest extends \PHPUnit\Framework\TestCase
+class AdditionalDetailModelTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * The question/prompt offered to the reporting user

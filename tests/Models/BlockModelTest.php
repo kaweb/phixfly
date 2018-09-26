@@ -25,7 +25,7 @@ class BlockModelTest extends \PHPUnit\Framework\TestCase
     protected $name;
 
     /**
-     * @var AddressModelTestTest
+     * @var AddressModelTest
      */
     protected $address;
 
@@ -65,7 +65,7 @@ class BlockModelTest extends \PHPUnit\Framework\TestCase
     protected $externalLandlordRef;
 
     /**
-     * @var AssignedAgentModelTestTest
+     * @var AssignedAgentModelTest
      */
     protected $assignedAgent;
 
@@ -82,7 +82,7 @@ class BlockModelTest extends \PHPUnit\Framework\TestCase
      * @param string $externalBlockRef
      * @param bool $isStandAlone
      * @param string $name
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      * @param string $keyReference
      * @param \DateTime $managementStartDate
      * @param \DateTime $managementEndDate
@@ -90,10 +90,10 @@ class BlockModelTest extends \PHPUnit\Framework\TestCase
      * @param string $externalEstateRef
      * @param string $landlordId
      * @param string $externalLandlordRef
-     * @param AssignedAgentModelTestTest $assignedAgent
+     * @param AssignedAgentModelTest $assignedAgent
      * @param \DateTime $updateDate
      */
-    public function __construct($id, $externalBlockRef, $isStandAlone, $name, AddressModelTestTest $address, $keyReference, \DateTime $managementStartDate, \DateTime $managementEndDate, $estateId, $externalEstateRef, $landlordId, $externalLandlordRef, AssignedAgentModelTestTest $assignedAgent, \DateTime $updateDate)
+    public function __construct($id, $externalBlockRef, $isStandAlone, $name, AddressModelTest $address, $keyReference, \DateTime $managementStartDate, \DateTime $managementEndDate, $estateId, $externalEstateRef, $landlordId, $externalLandlordRef, AssignedAgentModelTest $assignedAgent, \DateTime $updateDate)
     {
         $this->id = $id;
         $this->externalBlockRef = $externalBlockRef;
@@ -176,7 +176,7 @@ class BlockModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @return AddressModelTestTest
+     * @return AddressModelTest
      */
     public function getAddress()
     {
@@ -184,9 +184,9 @@ class BlockModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      */
-    public function setAddress(AddressModelTestTest $address)
+    public function setAddress(AddressModelTest $address)
     {
         $this->address = $address;
     }
@@ -304,7 +304,7 @@ class BlockModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @return AssignedAgentModelTestTest
+     * @return AssignedAgentModelTest
      */
     public function getAssignedAgent()
     {
@@ -312,9 +312,9 @@ class BlockModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @param AssignedAgentModelTestTest $assignedAgent
+     * @param AssignedAgentModelTest $assignedAgent
      */
-    public function setAssignedAgent(AssignedAgentModelTestTest $assignedAgent)
+    public function setAssignedAgent(AssignedAgentModelTest $assignedAgent)
     {
         $this->assignedAgent = $assignedAgent;
     }

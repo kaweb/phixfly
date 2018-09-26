@@ -30,12 +30,12 @@ class PropertyPostModelTest extends \PHPUnit\Framework\TestCase
     protected $propertyAddressId;
 
     /**
-     * @var AddressModelTestTest
+     * @var AddressModelTest
      */
     protected $address;
 
     /**
-     * @var AssignedAgentModelTestTest
+     * @var AssignedAgentModelTest
      */
     protected $assignedAgent;
 
@@ -48,10 +48,10 @@ class PropertyPostModelTest extends \PHPUnit\Framework\TestCase
      * @param string $externalPropertyRef
      * @param string $keyReference
      * @param int $propertyAddressId
-     * @param AddressModelTestTest $address
-     * @param AssignedAgentModelTestTest $assignedAgent
+     * @param AddressModelTest $address
+     * @param AssignedAgentModelTest $assignedAgent
      */
-    public function __construct($id, $blockId, $externalPropertyRef, $keyReference, $propertyAddressId, AddressModelTestTest $address, AssignedAgentModelTestTest $assignedAgent)
+    public function __construct($id, $blockId, $externalPropertyRef, $keyReference, $propertyAddressId, AddressModelTest $address, AssignedAgentModelTest $assignedAgent)
     {
         $this->id = $id;
         $this->blockId = $blockId;
@@ -143,7 +143,7 @@ class PropertyPostModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @return AddressModelTestTest
+     * @return AddressModelTest
      */
     public function getAddress()
     {
@@ -151,15 +151,15 @@ class PropertyPostModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      */
-    public function setAddress(AddressModelTestTest $address)
+    public function setAddress(AddressModelTest $address)
     {
         $this->address = $address;
     }
 
     /**
-     * @return AssignedAgentModelTestTest
+     * @return AssignedAgentModelTest
      */
     public function getAssignedAgent()
     {
@@ -167,9 +167,9 @@ class PropertyPostModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @param AssignedAgentModelTestTest $assignedAgent
+     * @param AssignedAgentModelTest $assignedAgent
      */
-    public function setAssignedAgent(AssignedAgentModelTestTest $assignedAgent)
+    public function setAssignedAgent(AssignedAgentModelTest $assignedAgent)
     {
         $this->assignedAgent = $assignedAgent;
     }

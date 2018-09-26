@@ -35,7 +35,7 @@ class IssueModelTest extends \PHPUnit\Framework\TestCase
     protected $faultCategory;
     
     /**
-     * @var AdditionalDetailModelTestTest[]
+     * @var AdditionalDetailModelTest[]
      */
     protected $additionalDetails;
     
@@ -145,7 +145,7 @@ class IssueModelTest extends \PHPUnit\Framework\TestCase
     protected $blockName;
     
     /**
-     * @var AssignedAgentModelTestTest
+     * @var AssignedAgentModelTest
      */
     protected $assignedAgent;
     
@@ -174,7 +174,7 @@ class IssueModelTest extends \PHPUnit\Framework\TestCase
      * @param string $title
      * @param string $faultTitle
      * @param string $faultCategory
-     * @param AdditionalDetailModelTestTest[] $additionalDetails
+     * @param AdditionalDetailModelTest[] $additionalDetails
      * @param string $faultNotes
      * @param string $faultPriority
      * @param string $salutation
@@ -196,12 +196,12 @@ class IssueModelTest extends \PHPUnit\Framework\TestCase
      * @param FaultTreeModel $faultTree
      * @param string $worksAuthorisationLimit
      * @param string $blockName
-     * @param AssignedAgentModelTestTest $assignedAgent
+     * @param AssignedAgentModelTest $assignedAgent
      * @param QuoteModel[] $quotes
      * @param \DateTime $quoteEndTime
      * @param \DateTime $attendanceDate
      */
-    public function __construct($id, $tenantId, $externalRefTenancyAgreement, $title, $faultTitle, $faultCategory, array $additionalDetails, $faultNotes, $faultPriority, $salutation, $firstName, $surname, $emailAddress, array $media, $tenantNotes, $status, $statusChanged, $created, $tenantPresenceRequested, $tenantAcceptComplete, $termsAccepted, $callbackId, PropertyPostModel $property, BlockModel $block, JobModel $job, FaultTreeModel $faultTree, $worksAuthorisationLimit, $blockName, AssignedAgentModelTestTest $assignedAgent, array $quotes, \DateTime $quoteEndTime, \DateTime $attendanceDate)
+    public function __construct($id, $tenantId, $externalRefTenancyAgreement, $title, $faultTitle, $faultCategory, array $additionalDetails, $faultNotes, $faultPriority, $salutation, $firstName, $surname, $emailAddress, array $media, $tenantNotes, $status, $statusChanged, $created, $tenantPresenceRequested, $tenantAcceptComplete, $termsAccepted, $callbackId, PropertyPostModel $property, BlockModel $block, JobModel $job, FaultTreeModel $faultTree, $worksAuthorisationLimit, $blockName, AssignedAgentModelTest $assignedAgent, array $quotes, \DateTime $quoteEndTime, \DateTime $attendanceDate)
     {
         $this->id = $id;
         $this->tenantId = $tenantId;
@@ -334,7 +334,7 @@ class IssueModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @return AdditionalDetailModelTestTest[]
+     * @return AdditionalDetailModelTest[]
      */
     public function getAdditionalDetails()
     {
@@ -342,7 +342,7 @@ class IssueModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @param AdditionalDetailModelTestTest[] $additionalDetails
+     * @param AdditionalDetailModelTest[] $additionalDetails
      */
     public function setAdditionalDetails(array $additionalDetails)
     {
@@ -686,7 +686,7 @@ class IssueModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @return AssignedAgentModelTestTest
+     * @return AssignedAgentModelTest
      */
     public function getAssignedAgent()
     {
@@ -694,9 +694,9 @@ class IssueModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @param AssignedAgentModelTestTest $assignedAgent
+     * @param AssignedAgentModelTest $assignedAgent
      */
-    public function setAssignedAgent(AssignedAgentModelTestTest $assignedAgent)
+    public function setAssignedAgent(AssignedAgentModelTest $assignedAgent)
     {
         $this->assignedAgent = $assignedAgent;
     }

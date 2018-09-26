@@ -40,7 +40,7 @@ class IssueSummaryModel extends BaseModel
     protected $issueTitle;
     
     /**
-     * @var AddressModelTestTest
+     * @var AddressModel
      */
     protected $address;
 
@@ -55,9 +55,9 @@ class IssueSummaryModel extends BaseModel
      * @param \DateTime $statusChanged
      * @param \DateTime $created
      * @param string $issueTitle
-     * @param AddressModelTestTest $address
+     * @param AddressModel $address
      */
-    public function __construct($id, $issueId, $statusId, $status, \DateTime $statusChanged, \DateTime $created, $issueTitle, AddressModelTestTest $address)
+    public function __construct($id, $issueId, $statusId, $status, \DateTime $statusChanged, \DateTime $created, $issueTitle, AddressModel $address)
     {
         $this->id = $id;
         $this->issueId = $issueId;
@@ -182,7 +182,7 @@ class IssueSummaryModel extends BaseModel
     }
 
     /**
-     * @return AddressModelTestTest
+     * @return AddressModel
      */
     public function getAddress()
     {
@@ -190,9 +190,9 @@ class IssueSummaryModel extends BaseModel
     }
 
     /**
-     * @param AddressModelTestTest $address
+     * @param AddressModel $address
      */
-    public function setAddress(AddressModelTestTest $address)
+    public function setAddress(AddressModel $address)
     {
         $this->address = $address;
     }

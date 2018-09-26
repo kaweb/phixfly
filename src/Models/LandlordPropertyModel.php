@@ -30,7 +30,7 @@ class LandlordPropertyModel extends BaseModel
     private $dateTo;
     
     /**
-     * @var AddressModelTestTest
+     * @var AddressModel
      */
     private $address;
 
@@ -43,9 +43,9 @@ class LandlordPropertyModel extends BaseModel
      * @param int $propertyId
      * @param \DateTime $dateFrom
      * @param \DateTime $dateTo
-     * @param AddressModelTestTest $address
+     * @param AddressModel $address
      */
-    public function __construct($id, $landlordId, $propertyId, \DateTime $dateFrom, \DateTime $dateTo, AddressModelTestTest $address)
+    public function __construct($id, $landlordId, $propertyId, \DateTime $dateFrom, \DateTime $dateTo, AddressModel $address)
     {
         $this->id = $id;
         $this->landlordId = $landlordId;
@@ -136,7 +136,7 @@ class LandlordPropertyModel extends BaseModel
     }
 
     /**
-     * @return AddressModelTestTest
+     * @return AddressModel
      */
     public function getAddress()
     {
@@ -144,9 +144,9 @@ class LandlordPropertyModel extends BaseModel
     }
 
     /**
-     * @param AddressModelTestTest $address
+     * @param AddressModel $address
      */
-    public function setAddress(AddressModelTestTest $address)
+    public function setAddress(AddressModel $address)
     {
         $this->address = $address;
     }

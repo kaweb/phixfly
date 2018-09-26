@@ -35,7 +35,7 @@ class TenantModel extends BaseModel
     protected $companyName;
     
     /**
-     * @var AddressModelTestTest
+     * @var AddressModel
      */
     protected $address;
     
@@ -79,7 +79,7 @@ class TenantModel extends BaseModel
      * @param string $firstName
      * @param string $surname
      * @param string $companyName
-     * @param AddressModelTestTest $address
+     * @param AddressModel $address
      * @param string $emailAddress
      * @param string $contactNumber
      * @param string $contactNumberAlt
@@ -87,7 +87,7 @@ class TenantModel extends BaseModel
      * @param bool $isDeleted
      * @param \DateTime $updateDate
      */
-    public function __construct($id, $externalRef, $title, $firstName, $surname, $companyName, AddressModelTestTest $address, $emailAddress, $contactNumber, $contactNumberAlt, $displayName, $isDeleted, \DateTime $updateDate)
+    public function __construct($id, $externalRef, $title, $firstName, $surname, $companyName, AddressModel $address, $emailAddress, $contactNumber, $contactNumberAlt, $displayName, $isDeleted, \DateTime $updateDate)
     {
         $this->id = $id;
         $this->externalRef = $externalRef;
@@ -201,7 +201,7 @@ class TenantModel extends BaseModel
     }
 
     /**
-     * @return AddressModelTestTest
+     * @return AddressModel
      */
     public function getAddress()
     {
@@ -209,9 +209,9 @@ class TenantModel extends BaseModel
     }
 
     /**
-     * @param AddressModelTestTest $address
+     * @param AddressModel $address
      */
-    public function setAddress(AddressModelTestTest $address)
+    public function setAddress(AddressModel $address)
     {
         $this->address = $address;
     }

@@ -60,7 +60,7 @@ class IssueDraftModelTest extends \PHPUnit\Framework\TestCase
     protected $contactNumberAlt;
     
     /**
-     * @var AddressModelTestTest
+     * @var AddressModelTest
      */
     protected $address;
     
@@ -89,11 +89,11 @@ class IssueDraftModelTest extends \PHPUnit\Framework\TestCase
      * @param string $surname
      * @param string $contactNumber
      * @param string $contactNumberAlt
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      * @param int $propertyId
      * @param string $externalPropertyRef
      */
-    public function __construct($id, \DateTime $updated, $issueTitle, $faultId, $faultNotes, $issueDraftMedia, $title, $firstName, $surname, $contactNumber, $contactNumberAlt, AddressModelTestTest $address, $propertyId, $externalPropertyRef)
+    public function __construct($id, \DateTime $updated, $issueTitle, $faultId, $faultNotes, $issueDraftMedia, $title, $firstName, $surname, $contactNumber, $contactNumberAlt, AddressModelTest $address, $propertyId, $externalPropertyRef)
     {
         $this->id = $id;
         $this->updated = $updated;
@@ -272,7 +272,7 @@ class IssueDraftModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @return AddressModelTestTest
+     * @return AddressModelTest
      */
     public function getAddress()
     {
@@ -280,9 +280,9 @@ class IssueDraftModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      */
-    public function setAddress(AddressModelTestTest $address)
+    public function setAddress(AddressModelTest $address)
     {
         $this->address = $address;
     }

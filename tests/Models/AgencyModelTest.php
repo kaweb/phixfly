@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class AgencyModelTestTest extends \PHPUnit\Framework\TestCase
+class AgencyModelTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var string

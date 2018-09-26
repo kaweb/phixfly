@@ -70,7 +70,7 @@ class LeaseholderModelTest extends \PHPUnit\Framework\TestCase
     protected $updateDate;
     
     /**
-     * @var AddressModelTestTest
+     * @var AddressModelTest
      */
     protected $address;
 
@@ -91,9 +91,9 @@ class LeaseholderModelTest extends \PHPUnit\Framework\TestCase
      * @param string $emailCC
      * @param bool $isDeleted
      * @param \DateTime $updateDate
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      */
-    public function __construct($id, $externalLeaseholderReference, $companyName, $title, $firstName, $surname, $emailAddress, $contactNumber, $contactNumberAlt, $displayName, $emailCC, $isDeleted, \DateTime $updateDate, AddressModelTestTest $address)
+    public function __construct($id, $externalLeaseholderReference, $companyName, $title, $firstName, $surname, $emailAddress, $contactNumber, $contactNumberAlt, $displayName, $emailCC, $isDeleted, \DateTime $updateDate, AddressModelTest $address)
     {
         $this->id = $id;
         $this->externalLeaseholderReference = $externalLeaseholderReference;
@@ -320,7 +320,7 @@ class LeaseholderModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @return AddressModelTestTest
+     * @return AddressModelTest
      */
     public function getAddress()
     {
@@ -328,9 +328,9 @@ class LeaseholderModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      */
-    public function setAddress(AddressModelTestTest $address)
+    public function setAddress(AddressModelTest $address)
     {
         $this->address = $address;
     }

@@ -20,7 +20,7 @@ class EstateModel extends BaseModel
     protected $externalEstateRef;
 
     /**
-     * @var AssignedAgentModelTestTest
+     * @var AssignedAgentModel
      */
     protected $assignedAgent;
 
@@ -36,10 +36,10 @@ class EstateModel extends BaseModel
      * @param int $id
      * @param string $name
      * @param string $externalEstateRef
-     * @param AssignedAgentModelTestTest $assignedAgent
+     * @param AssignedAgentModel $assignedAgent
      * @param \DateTime $updateDate
      */
-    public function __construct($id, $name, $externalEstateRef, AssignedAgentModelTestTest $assignedAgent, \DateTime $updateDate)
+    public function __construct($id, $name, $externalEstateRef, AssignedAgentModel $assignedAgent, \DateTime $updateDate)
     {
         $this->id = $id;
         $this->name = $name;
@@ -97,7 +97,7 @@ class EstateModel extends BaseModel
     }
 
     /**
-     * @return AssignedAgentModelTestTest
+     * @return AssignedAgentModel
      */
     public function getAssignedAgent()
     {
@@ -105,7 +105,7 @@ class EstateModel extends BaseModel
     }
 
     /**
-     * @param AssignedAgentModelTestTest $assignedAgent
+     * @param AssignedAgentModel $assignedAgent
      */
     public function setAssignedAgent($assignedAgent)
     {

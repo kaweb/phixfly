@@ -7,5 +7,15 @@ use \PHPUnit\Framework\TestCase;
 
 class ClientTest extends TestCase
 {
-    public function test
+    public function createTest()
+    {
+        $creation = Client::create('Alex', 'Blackham');
+
+        $this->assertTrue($creation instanceof Client);
+    }
+
+    public function checkCredentialsTest()
+    {
+        $creation = Client::create('Alex', 'Blackham');
+    }
 }

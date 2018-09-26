@@ -40,7 +40,7 @@ class IssueSummaryModelTest extends \PHPUnit\Framework\TestCase
     protected $issueTitle;
     
     /**
-     * @var AddressModelTestTest
+     * @var AddressModelTest
      */
     protected $address;
 
@@ -55,9 +55,9 @@ class IssueSummaryModelTest extends \PHPUnit\Framework\TestCase
      * @param \DateTime $statusChanged
      * @param \DateTime $created
      * @param string $issueTitle
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      */
-    public function __construct($id, $issueId, $statusId, $status, \DateTime $statusChanged, \DateTime $created, $issueTitle, AddressModelTestTest $address)
+    public function __construct($id, $issueId, $statusId, $status, \DateTime $statusChanged, \DateTime $created, $issueTitle, AddressModelTest $address)
     {
         $this->id = $id;
         $this->issueId = $issueId;
@@ -182,7 +182,7 @@ class IssueSummaryModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @return AddressModelTestTest
+     * @return AddressModelTest
      */
     public function getAddress()
     {
@@ -190,9 +190,9 @@ class IssueSummaryModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      */
-    public function setAddress(AddressModelTestTest $address)
+    public function setAddress(AddressModelTest $address)
     {
         $this->address = $address;
     }

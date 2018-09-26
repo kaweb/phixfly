@@ -65,7 +65,7 @@ class ContractorModelTest extends \PHPUnit\Framework\TestCase
     protected $services;
 
     /**
-     * @var AddressModelTestTest
+     * @var AddressModelTest
      */
     protected $address;
 
@@ -95,11 +95,11 @@ class ContractorModelTest extends \PHPUnit\Framework\TestCase
      * @param string $displayName
      * @param bool $isDeleted
      * @param array $services
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      * @param array $certifications
      * @param \DateTime $updateDate
      */
-    public function __construct($id, $externalRef, $companyName, $title, $firstName, $surname, $emailAddress, $contactNumber, $contactNumberAlt, $displayName, $isDeleted, array $services, AddressModelTestTest $address, array $certifications, \DateTime $updateDate)
+    public function __construct($id, $externalRef, $companyName, $title, $firstName, $surname, $emailAddress, $contactNumber, $contactNumberAlt, $displayName, $isDeleted, array $services, AddressModelTest $address, array $certifications, \DateTime $updateDate)
     {
         $this->id = $id;
         $this->externalRef = $externalRef;
@@ -311,7 +311,7 @@ class ContractorModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @return AddressModelTestTest
+     * @return AddressModelTest
      */
     public function getAddress()
     {
@@ -319,7 +319,7 @@ class ContractorModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      */
     public function setAddress($address)
     {

@@ -20,7 +20,7 @@ class EstateModelTest extends \PHPUnit\Framework\TestCase
     protected $externalEstateRef;
 
     /**
-     * @var AssignedAgentModelTestTest
+     * @var AssignedAgentModelTest
      */
     protected $assignedAgent;
 
@@ -36,10 +36,10 @@ class EstateModelTest extends \PHPUnit\Framework\TestCase
      * @param int $id
      * @param string $name
      * @param string $externalEstateRef
-     * @param AssignedAgentModelTestTest $assignedAgent
+     * @param AssignedAgentModelTest $assignedAgent
      * @param \DateTime $updateDate
      */
-    public function __construct($id, $name, $externalEstateRef, AssignedAgentModelTestTest $assignedAgent, \DateTime $updateDate)
+    public function __construct($id, $name, $externalEstateRef, AssignedAgentModelTest $assignedAgent, \DateTime $updateDate)
     {
         $this->id = $id;
         $this->name = $name;
@@ -97,7 +97,7 @@ class EstateModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @return AssignedAgentModelTestTest
+     * @return AssignedAgentModelTest
      */
     public function getAssignedAgent()
     {
@@ -105,7 +105,7 @@ class EstateModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @param AssignedAgentModelTestTest $assignedAgent
+     * @param AssignedAgentModelTest $assignedAgent
      */
     public function setAssignedAgent($assignedAgent)
     {

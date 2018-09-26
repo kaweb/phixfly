@@ -25,7 +25,7 @@ class PropertyGetModelTest extends \PHPUnit\Framework\TestCase
     protected $propertyAddressId;
     
     /**
-     * @var AddressModelTestTest
+     * @var AddressModelTest
      */
     protected $address;
     
@@ -35,7 +35,7 @@ class PropertyGetModelTest extends \PHPUnit\Framework\TestCase
     protected $updateDate;
     
     /**
-     * @var AssignedAgentModelTestTest
+     * @var AssignedAgentModelTest
      */
     protected $assignedAgent;
 
@@ -47,11 +47,11 @@ class PropertyGetModelTest extends \PHPUnit\Framework\TestCase
      * @param int $blockId
      * @param string $externalPropertyRef
      * @param int $propertyAddressId
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      * @param \DateTime $updateDate
-     * @param AssignedAgentModelTestTest $assignedAgent
+     * @param AssignedAgentModelTest $assignedAgent
      */
-    public function __construct($id, $blockId, $externalPropertyRef, $propertyAddressId, AddressModelTestTest $address, \DateTime $updateDate, AssignedAgentModelTestTest $assignedAgent)
+    public function __construct($id, $blockId, $externalPropertyRef, $propertyAddressId, AddressModelTest $address, \DateTime $updateDate, AssignedAgentModelTest $assignedAgent)
     {
         $this->id = $id;
         $this->blockId = $blockId;
@@ -127,7 +127,7 @@ class PropertyGetModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @return AddressModelTestTest
+     * @return AddressModelTest
      */
     public function getAddress()
     {
@@ -135,9 +135,9 @@ class PropertyGetModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @param AddressModelTestTest $address
+     * @param AddressModelTest $address
      */
-    public function setAddress(AddressModelTestTest $address)
+    public function setAddress(AddressModelTest $address)
     {
         $this->address = $address;
     }
@@ -159,7 +159,7 @@ class PropertyGetModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @return AssignedAgentModelTestTest
+     * @return AssignedAgentModelTest
      */
     public function getAssignedAgent()
     {
@@ -167,9 +167,9 @@ class PropertyGetModelTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @param AssignedAgentModelTestTest $assignedAgent
+     * @param AssignedAgentModelTest $assignedAgent
      */
-    public function setAssignedAgent(AssignedAgentModelTestTest $assignedAgent)
+    public function setAssignedAgent(AssignedAgentModelTest $assignedAgent)
     {
         $this->assignedAgent = $assignedAgent;
     }

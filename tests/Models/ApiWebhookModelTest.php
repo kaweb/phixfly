@@ -2,7 +2,7 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class ApiWebhookModelTestTest extends \PHPUnit\Framework\TestCase
+class ApiWebhookModelTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var string
