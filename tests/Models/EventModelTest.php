@@ -3,7 +3,9 @@
 namespace Kaweb\Phixfly\Models;
 
 
-class EventModelTest
+use PHPUnit\Framework\TestCase;
+
+class EventModelTest extends TestCase
 {
     const NOTHING = null;
     const ISSUE_STATE_CHANGE = "issue state change";

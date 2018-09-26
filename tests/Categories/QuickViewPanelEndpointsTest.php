@@ -5,7 +5,7 @@ namespace Kaweb\Phixfly\Categories;
 
 use Kaweb\Phixfly\Helpers\RequestHelperTest;
 
-class QuickViewPanelEndpointsTest
+class QuickViewPanelEndpointsTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var RequestHelperTest

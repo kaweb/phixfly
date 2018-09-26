@@ -5,7 +5,7 @@ namespace Kaweb\Phixfly\Categories;
 use Kaweb\Phixfly\Helpers\RequestHelperTest;
 use Kaweb\Phixfly\Models\AgencyModelTest;
 
-class AgencyEndpointsTest
+class AgencyEndpointsTest extends \PHPUnit\Framework\TestCase
 {
     const ENDPOINT_URL = 'https://api.fixflo.com/api/v2';
 

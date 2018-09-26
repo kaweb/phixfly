@@ -6,7 +6,7 @@ namespace Kaweb\Phixfly\Categories;
 use Kaweb\Phixfly\Helpers\RequestHelperTest;
 use Kaweb\Phixfly\Models\JobModel;
 
-class JobEndpointsTest
+class JobEndpointsTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var RequestHelperTest

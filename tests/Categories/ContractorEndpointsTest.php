@@ -6,7 +6,7 @@ namespace Kaweb\Phixfly\Categories;
 use Kaweb\Phixfly\Helpers\RequestHelperTest;
 use Kaweb\Phixfly\Models\ContractorModel;
 
-class ContractorEndpointsTest
+class ContractorEndpointsTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var RequestHelperTest

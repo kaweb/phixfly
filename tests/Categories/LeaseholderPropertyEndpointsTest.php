@@ -6,7 +6,7 @@ namespace Kaweb\Phixfly\Categories;
 use Kaweb\Phixfly\Helpers\RequestHelperTest;
 use Kaweb\Phixfly\Models\LeaseholderPropertyModel;
 
-class LeaseholderPropertyEndpointsTest
+class LeaseholderPropertyEndpointsTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var RequestHelperTest

@@ -6,7 +6,7 @@ namespace Kaweb\Phixfly\Categories;
 use Kaweb\Phixfly\Helpers\RequestHelperTest;
 use Kaweb\Phixfly\Models\AssignedAgentModelTest;
 
-class AgentEndpointsTest
+class AgentEndpointsTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var RequestHelperTest

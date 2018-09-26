@@ -5,7 +5,7 @@ namespace Kaweb\Phixfly\Categories;
 
 use Kaweb\Phixfly\Helpers\RequestHelperTest;
 
-class WebhooksEndpointsTest
+class WebhooksEndpointsTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var RequestHelperTest

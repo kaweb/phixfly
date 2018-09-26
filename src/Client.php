@@ -17,12 +17,12 @@ use Kaweb\Phixfly\Categories\PropertyEndpointsTest;
 use Kaweb\Phixfly\Categories\QuickViewPanelEndpointsTest;
 use Kaweb\Phixfly\Categories\TenantEndpointsTest;
 use Kaweb\Phixfly\Categories\WebhooksEndpointsTest;
-use Kaweb\Phixfly\Helpers\RequestHelperTest;
+use Kaweb\Phixfly\Helpers\RequestHelper;
 
 class Client
 {
     /**
-     * @var RequestHelperTest
+     * @var RequestHelper
      */
     protected $requestHelper;
 
@@ -35,15 +35,15 @@ class Client
      */
     public static function create($subdomain, $authToken)
     {
-        return new self(new RequestHelperTest($subdomain, $authToken));
+        return new self(new RequestHelper($subdomain, $authToken));
     }
 
     /**
      * Client constructor.
      *
-     * @param RequestHelperTest $requestHelper
+     * @param RequestHelper $requestHelper
      */
-    public function __construct(RequestHelperTest $requestHelper)
+    public function __construct(RequestHelper $requestHelper)
     {
         $this->requestHelper = $requestHelper;
     }

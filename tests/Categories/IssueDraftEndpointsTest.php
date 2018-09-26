@@ -7,7 +7,7 @@ use Kaweb\Phixfly\Helpers\RequestHelperTest;
 use Kaweb\Phixfly\Models\IssueDraftMediaModel;
 use Kaweb\Phixfly\Models\IssueDraftModel;
 
-class IssueDraftEndpointsTest
+class IssueDraftEndpointsTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var RequestHelperTest

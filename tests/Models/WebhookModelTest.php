@@ -2,7 +2,9 @@
 
 namespace Kaweb\Phixfly\Models;
 
-class WebhookModelTest
+use PHPUnit\Framework\TestCase;
+
+class WebhookModelTest extends TestCase
 {
     /**
      * @var string

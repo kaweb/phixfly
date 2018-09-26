@@ -6,7 +6,7 @@ use Kaweb\Phixfly\Helpers\RequestHelperTest;
 use Kaweb\Phixfly\Models\PropertyAddressModel;
 use Kaweb\Phixfly\Models\PropertyPostModel;
 
-class PropertyEndpointsTest
+class PropertyEndpointsTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var RequestHelperTest
