@@ -1,7 +1,7 @@
 {
     "name": "kaweb/phixfly",
     "description": "A pretty fly PHP Client for the Fixflo API",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "license": "MIT",
     "type": "library",
     "authors": [
