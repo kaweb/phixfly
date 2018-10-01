@@ -48,6 +48,11 @@ class IssueDraftModel extends BaseModel
      * @var string
      */
     protected $surname;
+
+    /**
+     * @var string
+     */
+    protected $email;
     
     /**
      * @var string
@@ -87,13 +92,14 @@ class IssueDraftModel extends BaseModel
      * @param string $title
      * @param string $firstName
      * @param string $surname
+     * @param string $email
      * @param string $contactNumber
      * @param string $contactNumberAlt
      * @param AddressModel $address
      * @param int $propertyId
      * @param string $externalPropertyRef
      */
-    public function __construct($id, \DateTime $updated, $issueTitle, $faultId, $faultNotes, $issueDraftMedia, $title, $firstName, $surname, $contactNumber, $contactNumberAlt, AddressModel $address, $propertyId, $externalPropertyRef)
+    public function __construct($id, \DateTime $updated, $issueTitle, $faultId, $faultNotes, $issueDraftMedia, $title, $firstName, $surname, $email, $contactNumber, $contactNumberAlt, AddressModel $address, $propertyId, $externalPropertyRef)
     {
         $this->id = $id;
         $this->updated = $updated;
@@ -104,6 +110,7 @@ class IssueDraftModel extends BaseModel
         $this->title = $title;
         $this->firstName = $firstName;
         $this->surname = $surname;
+        $this->email = $email;
         $this->contactNumber = $contactNumber;
         $this->contactNumberAlt = $contactNumberAlt;
         $this->address = $address;
