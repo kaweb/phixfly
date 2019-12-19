@@ -8,42 +8,42 @@ class IssueDraftModel extends BaseModel
      * @var int
      */
     protected $id;
-    
+
     /**
      * @var \DateTime
      */
     protected $updated;
-    
+
     /**
      * @var string
      */
     protected $issueTitle;
-    
+
     /**
      * @var int
      */
     protected $faultId;
-    
+
     /**
      * @var string
      */
     protected $faultNotes;
-    
+
     /**
      * @var IssueDraftMediaModel[]
      */
     protected $issueDraftMedia;
-    
+
     /**
      * @var string
      */
     protected $title;
-    
+
     /**
      * @var string
      */
     protected $firstName;
-    
+
     /**
      * @var string
      */
@@ -53,31 +53,36 @@ class IssueDraftModel extends BaseModel
      * @var string
      */
     protected $emailAddress;
-    
+
     /**
      * @var string
      */
     protected $contactNumber;
-    
+
     /**
      * @var string
      */
     protected $contactNumberAlt;
-    
+
     /**
      * @var AddressModel
      */
     protected $address;
-    
+
     /**
      * @var int
      */
     protected $propertyId;
-    
+
     /**
      * @var string
      */
-    protected $externalPropertyRef;
+	protected $externalPropertyRef;
+
+	/**
+	 * @var Boolean
+	 */
+	protected $presenceRequired;
 
     /**
      * IssueDraftModel constructor.
@@ -115,7 +120,8 @@ class IssueDraftModel extends BaseModel
         $this->contactNumberAlt = $contactNumberAlt;
         $this->address = $address;
         $this->propertyId = $propertyId;
-        $this->externalPropertyRef = $externalPropertyRef;
+		$this->externalPropertyRef = $externalPropertyRef;
+		$this->presenceRequired = false;
     }
 
     /**
